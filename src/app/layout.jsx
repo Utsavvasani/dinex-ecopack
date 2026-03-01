@@ -1,13 +1,14 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -17,14 +18,17 @@ export const metadata = {
 };
 
 import { Navbar } from "@/components/layout/navbar/Navbar";
+import { Footer } from "@/components/layout/footer/Footer";
+import PageLoader from "@/components/PageLoader";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${outfit.variable} ${inter.variable} antialiased`}>
+        <PageLoader />
         <Navbar />
-        <main className="pt-20">{children}</main>
+        <main className="min-h-screen">{children}</main>
+        <Footer />
       </body>
     </html>
   );
