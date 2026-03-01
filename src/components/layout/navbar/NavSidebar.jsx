@@ -25,8 +25,8 @@ function NavSidebarAccordion() {
         <AccordionItem
           key={key}
           value={key}
-          className="border-b border-white/20">
-          <AccordionTrigger className="text-base font-semibold text-white hover:no-underline hover:text-white/70 [&>svg]:text-white">
+          className="border-b border-gray-100">
+          <AccordionTrigger className="text-base font-semibold text-foreground hover:no-underline hover:text-primary [&>svg]:text-foreground">
             {title.charAt(0) + title.slice(1).toLowerCase()}
           </AccordionTrigger>
           <AccordionContent className="flex flex-col space-y-2 pb-4">
@@ -34,7 +34,7 @@ function NavSidebarAccordion() {
               <Link
                 key={item.title}
                 href={item.href}
-                className="text-sm text-white/70 hover:text-white transition-colors pl-4 py-1">
+                className="text-sm text-foreground/60 hover:text-primary transition-colors pl-4 py-1">
                 {item.title}
               </Link>
             ))}
@@ -52,14 +52,14 @@ export function NavSidebar() {
       <SheetTrigger className="lg:hidden p-2 text-foreground/80 hover:text-primary transition-colors">
         <Menu className="size-6" />
       </SheetTrigger>
-      <SheetContent className="w-full sm:max-w-sm border-l border-white/20 bg-primary/15 backdrop-blur-xl p-0 text-white overflow-y-auto">
+      <SheetContent className="w-full sm:max-w-sm bg-white border-l border-gray-100 p-0 overflow-y-auto">
         <SheetHeader className="px-6 pt-8 pb-4">
-          <SheetTitle className="text-white text-xl font-bold">Menu</SheetTitle>
+          <SheetTitle className="text-foreground text-xl font-bold">Menu</SheetTitle>
         </SheetHeader>
         <div className="flex flex-col px-6 pb-6">
           <Link
             href="/about"
-            className="text-base font-semibold text-white hover:text-white/70 transition-colors py-4 border-b border-white/20">
+            className="text-base font-semibold text-foreground hover:text-primary transition-colors py-4 border-b border-gray-100">
             About Us
           </Link>
 
@@ -67,12 +67,12 @@ export function NavSidebar() {
 
           <Link
             href="/blog"
-            className="text-base font-semibold text-white hover:text-white/70 transition-colors py-4 border-t border-b border-white/20">
+            className="text-base font-semibold text-foreground hover:text-primary transition-colors py-4 border-t border-b border-gray-100">
             Blog
           </Link>
           <Link
             href="/career"
-            className="text-base font-semibold text-white hover:text-white/70 transition-colors py-4 border-b border-white/20">
+            className="text-base font-semibold text-foreground hover:text-primary transition-colors py-4 border-b border-gray-100">
             Career
           </Link>
           <Link

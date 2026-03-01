@@ -13,7 +13,10 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import { NAV_TRIGGER_STYLE, navDropdowns, navLinks } from "@/lib/navConstants";
+import { navDropdowns, navLinks } from "@/lib/navConstants";
+
+const NAV_TRIGGER_STYLE =
+  "text-white/90 hover:text-white hover:bg-white/10 focus:bg-white/10 focus:text-white data-[state=open]:bg-white/10 data-[state=open]:text-white bg-transparent text-xs xl:text-sm font-semibold tracking-wide";
 
 // ─── NavListItem ──────────────────────────────────────────────────────────────
 const NavListItem = React.forwardRef(
@@ -46,7 +49,7 @@ function NavDropdown({ title, items, isGrid }) {
   return (
     <NavigationMenuItem className="cursor-pointer">
       <NavigationMenuTrigger
-        className={cn("bg-transparent cursor-pointer", NAV_TRIGGER_STYLE)}>
+        className={cn("cursor-pointer", NAV_TRIGGER_STYLE)}>
         {title}
       </NavigationMenuTrigger>
       <NavigationMenuContent>
@@ -136,7 +139,7 @@ export function NavMenu() {
       <div className="hidden lg:flex shrink-0 items-center">
         <Link
           href="/contact"
-          className="inline-flex h-8 xl:h-10 items-center justify-center rounded-full bg-primary px-3 xl:px-6 text-xs xl:text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
+          className="inline-flex h-8 xl:h-10 items-center justify-center rounded-full bg-white px-3 xl:px-6 text-xs xl:text-sm font-semibold text-black transition-colors hover:bg-white/85 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
           CONTACT US
         </Link>
       </div>

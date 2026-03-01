@@ -21,28 +21,28 @@ export const navDropdowns = [
       {
         title: "Round Plates",
         href: "/products/round-plates",
-        image: "https://placehold.co/400x400/f8fafc/166534?text=Round+Plates",
+        image: "/assets/square_plate.png",
       },
       {
         title: "Compartment Plates",
         href: "/products/compartment-plates",
         image:
-          "https://placehold.co/400x400/f8fafc/166534?text=Compartment+Plates",
+          "/assets/square_plate.png",
       },
       {
         title: "Square Plates",
         href: "/products/square-plates",
-        image: "https://placehold.co/400x400/f8fafc/166534?text=Square+Plates",
+        image: "/assets/square_plate.png",
       },
       {
         title: "Bowls",
         href: "/products/bowls",
-        image: "https://placehold.co/400x400/f8fafc/166534?text=Bowls",
+        image: "/assets/square_plate.png",
       },
       {
         title: "Clamshell",
         href: "/products/clamshell",
-        image: "https://placehold.co/400x400/f8fafc/166534?text=Clamshell",
+        image: "/assets/square_plate.png",
       },
     ],
   },

@@ -8,8 +8,8 @@ import { Phone } from "lucide-react";
 
 export function Navbar() {
   return (
-    <div className="fixed top-6 z-50 w-full flex justify-center px-4 pointer-events-none">
-      <header className="pointer-events-auto flex items-center justify-between rounded-full border border-white/20 bg-primary/15 backdrop-blur-xl shadow-xl pr-2 pl-6 py-2 max-w-6xl w-full">
+    <div className="fixed top-0 z-50 w-full pointer-events-none">
+      <header className="pointer-events-auto flex items-center justify-between bg-black/70 backdrop-blur-md px-6 xl:px-12 py-3 w-full">
         {/* Logo */}
         <Link href="/" className="flex items-center shrink-0">
           <Image
@@ -26,7 +26,7 @@ export function Navbar() {
         <div className="flex items-center gap-1 lg:hidden">
           <Link
             href="/contact"
-            className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors">
+            className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white text-black hover:bg-white/80 transition-colors">
             <Phone className="size-4" />
           </Link>
           <NavSidebar />
