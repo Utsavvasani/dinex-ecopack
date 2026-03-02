@@ -91,7 +91,7 @@ export function ProcessLifecycleSection() {
   const activeStep = steps[activeStepIdx];
 
   return (
-    <section className="w-full py-20 bg-background relative overflow-hidden">
+    <section className="w-full pt-10 md:py-20 bg-background relative overflow-hidden">
       <div className="container px-4 md:px-8 mx-auto max-w-7xl">
         {/* Section Header - Restored */}
         <div className="text-center mb-16 md:mb-24">
@@ -99,7 +99,8 @@ export function ProcessLifecycleSection() {
             Sustainability Loop
           </div>
           <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-foreground leading-tight">
-            Product <span className="text-primary italic font-heading">Life Cycle</span>
+            Product{" "}
+            <span className="text-primary italic font-heading">Life Cycle</span>
           </h2>
           <div className="h-1.5 w-24 bg-primary/30 rounded-full mx-auto mt-6" />
         </div>
@@ -116,14 +117,16 @@ export function ProcessLifecycleSection() {
             {/* Satellite Items - Each moved via specific x/y transforms based on rotation */}
             {steps.map((step, idx) => {
               const baseAngle = (idx * 360) / steps.length;
-              
+
               const x = useTransform(
                 rotation,
-                (r) => Math.cos(((baseAngle + r - 90) * Math.PI) / 180) * radius,
+                (r) =>
+                  Math.cos(((baseAngle + r - 90) * Math.PI) / 180) * radius,
               );
               const y = useTransform(
                 rotation,
-                (r) => Math.sin(((baseAngle + r - 90) * Math.PI) / 180) * radius,
+                (r) =>
+                  Math.sin(((baseAngle + r - 90) * Math.PI) / 180) * radius,
               );
 
               const isActive = idx === activeStepIdx;
@@ -147,7 +150,9 @@ export function ProcessLifecycleSection() {
                           />
                         </div>
                       ) : (
-                        <span className="text-2xl md:text-3xl">{step.icon}</span>
+                        <span className="text-2xl md:text-3xl">
+                          {step.icon}
+                        </span>
                       )}
                     </div>
                     <h3

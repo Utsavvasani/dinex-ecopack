@@ -10,7 +10,7 @@ export function GreetingsSection() {
       <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -z-10 rounded-l-[100px] hidden lg:block" />
 
       <div className="container px-4 md:px-6 max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-center items-center gap-16 items-start">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-16 items-start">
           {/* Left Column: Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -49,7 +49,7 @@ export function GreetingsSection() {
               transition={{ duration: 1, delay: 0.2 }}
               className="relative aspect-square max-w-[500px] mx-auto flex items-center justify-center">
               {/* Feature list matching the vertical reference */}
-              <div className="flex flex-col gap-6 w-full max-w-sm relative z-20">
+              <div className="flex flex-col pb-2 gap-6 w-full max-w-sm relative z-20">
                 {[
                   {
                     title: "100% Compostable",
@@ -71,7 +71,7 @@ export function GreetingsSection() {
                     key={idx}
                     initial={{ opacity: 0, y: 20, x: 20 }}
                     whileInView={{ opacity: 1, y: 0, x: 0 }}
-                    transition={{ duration: 0.5, delay: 0.4 + idx * 0.1 }}
+                    transition={{ duration: 0.3, delay: 0.1 + idx * 0.1 }}
                     className="group p-6 rounded-3xl bg-background border border-border shadow-md hover:shadow-xl hover:border-primary/30 transition-all flex items-center gap-6">
                     <div className="w-16 h-16 shrink-0 rounded-2xl bg-primary/5 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
                       {feature.icon}
