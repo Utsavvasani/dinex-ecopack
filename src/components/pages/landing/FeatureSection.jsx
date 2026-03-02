@@ -92,7 +92,7 @@ const itemVariants = {
 
 export function FeatureSection() {
   return (
-    <section className="w-full py-24 bg-background relative overflow-hidden">
+    <section className="w-full bg-background relative overflow-hidden">
       {/* Decorative leaf/bagasse graphic suggestion */}
       <div className="absolute -right-[20%] top-[10%] opacity-5 pointer-events-none rotate-45 scale-150">
         <Leaf size={600} />

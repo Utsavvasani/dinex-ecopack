@@ -36,18 +36,29 @@ const productCategories = [
 
 export function ProductPreviewSection() {
   return (
-    <section className="w-full py-24 bg-card overflow-hidden">
+    <section className="w-full bg-background overflow-hidden">
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col items-center justify-center text-center mb-16 gap-6">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-3xl">
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
-              Explore Our Catalog
+            className="flex flex-col items-center gap-4">
+            <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-primary/5 border border-primary/20 text-primary text-sm font-bold uppercase tracking-widest">
+              Our Products
+            </div>
+
+            <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-foreground leading-tight">
+              Premium{" "}
+              <span className="text-primary mx-3 italic font-heading">
+                Eco-Friendly
+              </span>{" "}
+              Selection
             </h2>
-            <p className="text-muted-foreground text-lg">
+
+            <div className="h-1.5 w-24 bg-primary/30 rounded-full mx-auto" />
+
+            <p className="text-muted-foreground text-lg max-w-2xl mt-2">
               Discover our complete range of biodegradable bagasse tableware
               designed for modern catering, takeaways, and everyday use.
             </p>
@@ -59,7 +70,7 @@ export function ProductPreviewSection() {
             viewport={{ once: true }}>
             <Link
               href="/products"
-              className="inline-flex items-center text-primary font-semibold hover:text-primary/80 transition-colors group px-6 py-2 rounded-full bg-primary/5 border border-primary/20">
+              className="inline-flex items-center text-primary font-bold hover:text-primary/80 transition-colors group px-8 py-3 rounded-full bg-primary/5 border border-primary/20 uppercase tracking-widest text-xs">
               View Full Range
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Link>
@@ -77,12 +88,12 @@ export function ProductPreviewSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group relative overflow-hidden rounded-3xl border border-border bg-background transition-all hover:shadow-2xl hover:-translate-y-2 cursor-pointer flex flex-col aspect-4/5">
               {/* Product Image Area */}
-              <div className="relative grow w-full bg-primary/5 transition-colors group-hover:bg-primary/10 overflow-hidden p-8">
+              <div className="relative  grow w-full bg-primary/5 transition-colors group-hover:bg-primary/10 overflow-hidden p-8">
                 <Image
                   src={category.image}
                   alt={category.name}
                   fill
-                  className="object-contain p-4 group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover p-4 rounded-3xl group-hover:scale-115 transition-transform duration-500"
                 />
               </div>
 

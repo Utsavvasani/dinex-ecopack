@@ -9,7 +9,7 @@ import { Phone } from "lucide-react";
 export function Navbar() {
   return (
     <div className="fixed top-0 z-50 w-full pointer-events-none">
-      <header className="pointer-events-auto flex items-center justify-between bg-black/70 backdrop-blur-md px-6 xl:px-12 py-3 w-full">
+      <header className="pointer-events-auto flex items-center justify-between bg-primary/85 backdrop-blur-md px-6 xl:px-12 py-3 w-full">
         {/* Logo */}
         <Link href="/" className="flex items-center shrink-0">
           <Image
@@ -17,7 +17,7 @@ export function Navbar() {
             alt="Dinex Logo"
             width={90}
             height={10}
-            className="object-contain"
+            className="object-contain brightness-0 invert"
             priority
           />
         </Link>

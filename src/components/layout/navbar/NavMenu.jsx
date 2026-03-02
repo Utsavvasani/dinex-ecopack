@@ -16,7 +16,7 @@ import { cn } from "@/lib/utils";
 import { navDropdowns, navLinks } from "@/lib/navConstants";
 
 const NAV_TRIGGER_STYLE =
-  "text-white/90 hover:text-white hover:bg-white/10 focus:bg-white/10 focus:text-white data-[state=open]:bg-white/10 data-[state=open]:text-white bg-transparent text-xs xl:text-sm font-semibold tracking-wide";
+  "text-white/90 hover:text-white hover:bg-white/10 focus:bg-white/10 focus:text-white data-[state=open]:bg-white/10 data-[state=open]:text-white data-[state=open]:hover:bg-white/10 bg-transparent text-xs xl:text-sm font-semibold tracking-wide transition-colors";
 
 // ─── NavListItem ──────────────────────────────────────────────────────────────
 const NavListItem = React.forwardRef(

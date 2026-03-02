@@ -1,93 +1,95 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 import Image from "next/image";
+import { Leaf } from "lucide-react";
 
 export function MissionSection() {
   return (
-    <section className="w-full py-24 bg-card overflow-hidden">
-      <div className="container px-4 md:px-6 max-w-6xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-primary mb-4">
-            Green change
-          </h2>
-          <p className="text-xl md:text-2xl font-medium text-foreground max-w-3xl mx-auto">
-            DINEX ECOPACK IS A LEADING MANUFACTURER OF ECO-FRIENDLY SINGLE-USE
-            TABLEWARE PRODUCTS MADE FROM RENEWABLE SUGARCANE BAGASSE.
-          </p>
-        </motion.div>
-
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+    <section
+      className="w-full md:py-16 bg-background overflow-hidden relative">
+      <div className="container px-4 md:px-6 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-5 gap-12 md:gap-24 items-center">
+          {/* Left Column: Cinematic Visual */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex flex-col justify-center space-y-6">
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-foreground">
-                A Sustainable Alternative to Plastic
-              </h3>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                Our mission is to create sustainable products that benefit the
-                planet first. We are dedicated to providing environmentally
-                friendly solutions for our customers that reduce their carbon
-                footprint by switching to biodegradable alternatives for plastic
-                single-use products.
-              </p>
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative order-2 lg:order-1 lg:col-span-2">
+            <div className="relative aspect-[4/5] rounded-4xl overflow-hidden shadow-2xl border border-primary/10 bg-primary/5">
+              <Image
+                src="/landing/bamboo.jpg"
+                alt="The Essence of Sustainability"
+                fill
+                className="object-cover"
+                priority
+              />
+              {/* Glass overlay for depth */}
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent opacity-60" />
+
+              {/* Floating Badge - Now Static */}
+              <div className="absolute bottom-12 left-12 p-6 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 text-white max-w-[200px]">
+                <div className="text-xs font-black uppercase tracking-widest opacity-70 mb-2">
+                  Purity
+                </div>
+                <div className="text-xl font-bold leading-tight">
+                  100% Sugarcane Bagasse
+                </div>
+              </div>
             </div>
           </motion.div>
 
-          {/* Graphical Representation / Placeholder for overlapping plates from catalog page 2 */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9, rotate: 5 }}
-            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative h-[400px] rounded-full bg-primary/10 flex items-center justify-center border-8 border-primary/20">
-            {/* The circles represent the concentric green design from catalog Page 2 */}
-            <div className="absolute w-[80%] h-[80%] rounded-full bg-background flex flex-col items-center justify-center text-center p-8 shadow-inner">
-              <span className="text-primary font-bold text-xl md:text-2xl">
-                Join us to make
-              </span>
-              <span className="text-accent-foreground font-extrabold text-2xl md:text-4xl mt-2">
-                BIG <span className="text-primary">small GREEN</span> change.
-              </span>
-            </div>
-            {/* Floating Transparent Product Images */}
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-12 -left-12 w-40 h-40 md:w-56 md:h-56 -rotate-12 drop-shadow-2xl">
-              <Image
-                src="/landing/vecteezy_a-plain-transparent-foam-tray-on-a-transparent-background_55533363.png"
-                alt="Biodegradable Foam Tray"
-                fill
-                className="object-contain"
-              />
-            </motion.div>
+          {/* Right Column: Mission Statement */}
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="flex flex-col gap-4 order-1 lg:order-2 lg:col-span-3"
+          >
+            <div className="flex flex-col gap-4">
+              <div className="inline-flex w-fit items-center gap-3 px-5 py-2 rounded-full bg-primary/5 border border-primary/20 text-primary text-sm font-bold uppercase tracking-widest">
+                <Leaf size={16} className="fill-primary" />
+                Our Mission
+              </div>
 
-            <motion.div
-              animate={{ y: [0, 15, 0] }}
-              transition={{
-                duration: 5,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 1,
-              }}
-              className="absolute -bottom-8 -right-8 w-48 h-48 md:w-64 md:h-64 rotate-15 drop-shadow-2xl">
-              <Image
-                src="/landing/vecteezy_a-plain-transparent-paper-plate-isolated-on-a-clean_55326108.png"
-                alt="Biodegradable Plate"
-                fill
-                className="object-contain"
-              />
-            </motion.div>
+              <h2 className="text-5xl md:text-7xl font-black text-foreground leading-[0.95] tracking-tighter">
+                The Essence of <br />
+                <span className="text-primary italic font-heading">
+                  Sustainability
+                </span>
+              </h2>
+              <div className="h-2 w-32 bg-primary/30 rounded-full" />
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <p className="text-xl md:text-2xl font-medium text-muted-foreground leading-tight max-w-xl">
+                We are dedicated to providing environmentally friendly solutions
+                that reduce the carbon footprint by switching to biodegradable
+                alternatives.
+              </p>
+
+              <div className="space-y-4">
+                <div className="flex items-start gap-4">
+                  <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 mt-1">
+                    <span className="font-bold">01</span>
+                  </div>
+                  <p className="text-lg text-foreground font-semibold">
+                    Benefit the Planet First, always.
+                  </p>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 mt-1">
+                    <span className="font-bold">02</span>
+                  </div>
+                  <p className="text-lg text-foreground font-semibold">
+                    Transform waste into premium dining experiences.
+                  </p>
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>
