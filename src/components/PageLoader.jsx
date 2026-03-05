@@ -11,7 +11,7 @@ export default function PageLoader() {
     // Hide the loader after 8.5 seconds as requested (8-10 seconds)
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 8500);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
