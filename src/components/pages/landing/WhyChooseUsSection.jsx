@@ -5,33 +5,33 @@ import { motion } from "framer-motion";
 const reasons = [
   {
     number: "One",
-    title: "High Quality Products",
+    title: "Sustainable by Nature",
     description:
-      "Our tableware is crafted with precision to ensure durability and a premium feel for every occasion.",
+      "Our products are made from renewable sugarcane bagasse, turning agricultural waste into eco-friendly packaging solutions.",
   },
   {
     number: "Two",
-    title: "Eco-Friendly & Sustainable",
+    title: "Designed for Modern Food Service",
     description:
-      "100% biodegradable and compostable products made from renewable sugarcane bagasse.",
+      "Strong, durable, and heat-resistant tableware designed for restaurants, catering, and takeaway businesses.",
   },
   {
     number: "Three",
-    title: "Innovative Designs",
+    title: "Plastic-Free Alternative",
     description:
-      "A wide variety of shapes and sizes designed to meet modern catering and takeaway needs.",
+      "Replace harmful plastic and Styrofoam with biodegradable packaging that protects the environment.",
   },
   {
     number: "Four",
-    title: "Competitive Pricing",
+    title: "Reliable Manufacturing",
     description:
-      "Premium quality products at prices that make sustainability accessible for everyone.",
+      "Consistent quality and scalable production to support bulk orders and global distribution.",
   },
   {
     number: "Five",
-    title: "Global Reach",
+    title: "Global Supply Ready",
     description:
-      "Exporting to over 50 countries with a robust supply chain and reliable delivery.",
+      "We support distributors and businesses worldwide with export-ready packaging and efficient logistics.",
   },
 ];
 
@@ -41,8 +41,8 @@ export function WhyChooseUsSection() {
       <div className="container px-4 md:px-6 mx-auto max-w-5xl">
         <div className="text-center md:mb-20 mb-10">
           <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-foreground">
-            Why{" "}
-            <br className="md:hidden" /><span className="text-primary italic font-heading">
+            Why <br className="md:hidden" />
+            <span className="text-primary italic font-heading">
               DineX Ecopack
             </span>{" "}
             ?
