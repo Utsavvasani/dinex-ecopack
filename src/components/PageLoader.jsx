@@ -8,7 +8,7 @@ export default function PageLoader() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Hide the loader after 8.5 seconds as requested (8-10 seconds)
+    // Hide the loader after 4.25 seconds
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 2000);
@@ -23,7 +23,7 @@ export default function PageLoader() {
           key="page-loader"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, y: -50 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
           className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-background pointer-events-none">
           <div className="text-2xl md:text-5xl font-black tracking-tighter text-primary">
             <TextRoll

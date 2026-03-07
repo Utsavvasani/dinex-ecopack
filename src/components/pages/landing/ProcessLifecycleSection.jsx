@@ -12,7 +12,7 @@ const steps = [
   },
   {
     label: "Sugar Factory",
-    icon: "🏭",
+    icon: "�",
     description: "Processing sugar from harvested cane",
   },
   {
@@ -32,9 +32,9 @@ const steps = [
   },
   {
     label: "Compost & Farming",
-    icon: "🌱",
+    icon: "�",
     description: "Composting back to soil in 90 days",
-  },
+  }, 
 ];
 
 import { Leaf } from "lucide-react";
@@ -62,7 +62,7 @@ export function ProcessLifecycleSection() {
 
   // Continuous linear rotation for the motion value
   useEffect(() => {
-    const controls = animate(rotation, 360, {
+    const controls = animate(rotation, -360, {
       duration: 60,
       ease: "linear",
       repeat: Infinity,
