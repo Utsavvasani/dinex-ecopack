@@ -102,9 +102,9 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
             className="text-5xl md:text-7xl font-extrabold tracking-tight text-green-900">
-            Living Green <br className="hidden md:block" /> is a{" "}
+            Sustainable Tableware <br className="hidden md:block" /> for a{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
-              Must.
+              Plastic-Free Future.
             </span>
           </motion.h1>
         </Tilt>
@@ -127,12 +127,12 @@ export function HeroSection() {
           <Link
             href="/products"
             className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-8 text-base font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
-            Explore Catalog
+            Explore Our Products
           </Link>
           <Link
-            href="/about"
+            href="/contact"
             className="inline-flex h-12 items-center justify-center rounded-full border border-input bg-background/50 backdrop-blur-sm px-8 text-base font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
-            Our Mission
+            Request Bulk Quote
           </Link>
         </motion.div>
       </div>
