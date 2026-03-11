@@ -286,11 +286,10 @@ function MapModal({ onClose }) {
             <button
               key={t.id}
               onClick={() => setTab(t.id)}
-              className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all ${
-                tab === t.id
+              className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all ${tab === t.id
                   ? 'bg-primary text-white shadow-sm shadow-primary/20'
                   : 'text-gray-500 hover:bg-gray-100'
-              }`}
+                }`}
             >
               {t.label}
             </button>
@@ -473,12 +472,37 @@ export default function ContactPage() {
     setErrors({});
     setLoading(true);
 
-    // Simulate API call
-    await new Promise(r => setTimeout(r, 1500));
-    setLoading(false);
-    setShowSuccess(true);
-    setFirstName(''); setLastName(''); setEmail('');
-    setPhone(''); setSubject(''); setMessage('');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          firstName: firstName.trim(),
+          lastName: lastName.trim(),
+          email: email.trim(),
+          dialCode: selected?.dialCode || '+91',
+          phone: phone.trim(),
+          subject,
+          message: message.trim(),
+        }),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setShowSuccess(true);
+        setFirstName(''); setLastName(''); setEmail('');
+        setPhone(''); setSubject(''); setMessage('');
+      } else {
+        setErrorMessage(data.message || 'Something went wrong. Please try again.');
+        setShowError(true);
+      }
+    } catch {
+      setErrorMessage('Network error. Please check your connection and try again.');
+      setShowError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (

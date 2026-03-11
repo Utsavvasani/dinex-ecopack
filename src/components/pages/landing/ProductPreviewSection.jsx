@@ -9,28 +9,22 @@ import { ArrowRight } from "lucide-react";
 // 4 main product categories as per catalog
 const productCategories = [
   {
-    name: "Meal Trays",
-    description: "Multi-compartment food service",
-    image: "/landing/meal-trays.png",
-    link: "/products?category=trays",
-  },
-  {
     name: "Round Plates",
     description: "Classic round biodegradable plates",
     image: "/landing/round-plates.png",
     link: "/products?category=plates",
   },
   {
-    name: "Square Plates",
-    description: "Modern square serving plates",
-    image: "/landing/square-plates.png",
-    link: "/products?category=plates",
+    name: "Bowls",
+    description: "Deep biodegradable serving bowls",
+    image: "/landing/food-containers.png",
+    link: "/products?category=bowls",
   },
   {
-    name: "Food Containers",
-    description: "Secure leak-proof containers",
-    image: "/landing/food-containers.png",
-    link: "/products?category=containers",
+    name: "Meal Trays",
+    description: "Multi-compartment food service",
+    image: "/landing/meal-trays.png",
+    link: "/products?category=trays",
   },
   {
     name: "Clamshells",
@@ -83,8 +77,8 @@ export function ProductPreviewSection() {
           </motion.div>
         </div>
 
-        {/* 5-Category Premium Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        {/* 4-Category Premium Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {productCategories.map((category, index) => (
             <motion.div
               key={index}
