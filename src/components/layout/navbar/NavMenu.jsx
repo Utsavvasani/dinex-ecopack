@@ -45,11 +45,15 @@ const NavListItem = React.forwardRef(
 NavListItem.displayName = "NavListItem";
 
 // ─── NavDropdown ──────────────────────────────────────────────────────────────
-function NavDropdown({ title, items, isGrid }) {
+function NavDropdown({ title, items, isGrid, isActive }) {
   return (
     <NavigationMenuItem className="cursor-pointer">
       <NavigationMenuTrigger
-        className={cn("cursor-pointer", NAV_TRIGGER_STYLE)}>
+        className={cn(
+          "cursor-pointer",
+          NAV_TRIGGER_STYLE,
+          isActive && "text-primary bg-white/10",
+        )}>
         {title}
       </NavigationMenuTrigger>
       <NavigationMenuContent>
@@ -100,8 +104,18 @@ function NavDropdown({ title, items, isGrid }) {
   );
 }
 
+import { usePathname } from "next/navigation";
+
 // ─── NavMenu ──────────────────────────────────────────────────────────────────
 export function NavMenu() {
+  const pathname = usePathname();
+
+  const isActive = (href) => {
+    if (href === "/" && pathname === "/") return true;
+    if (href !== "/" && pathname.startsWith(href)) return true;
+    return false;
+  };
+
   return (
     <>
       <NavigationMenu className="hidden lg:flex shrink-0">
@@ -109,25 +123,39 @@ export function NavMenu() {
           <NavigationMenuItem>
             <NavigationMenuLink
               asChild
-              className={cn(navigationMenuTriggerStyle(), NAV_TRIGGER_STYLE)}>
+              className={cn(
+                navigationMenuTriggerStyle(),
+                NAV_TRIGGER_STYLE,
+                isActive("/about") && "text-primary bg-white/10",
+              )}>
               <Link href="/about">ABOUT US</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
 
-          {navDropdowns.map((dropdown) => (
-            <NavDropdown
-              key={dropdown.key}
-              title={dropdown.title}
-              items={dropdown.items}
-              isGrid={dropdown.isGrid}
-            />
-          ))}
+          {navDropdowns.map((dropdown) => {
+            const isAnyActive = dropdown.items.some((item) =>
+              isActive(item.href),
+            );
+            return (
+              <NavDropdown
+                key={dropdown.key}
+                title={dropdown.title}
+                items={dropdown.items}
+                isGrid={dropdown.isGrid}
+                isActive={isAnyActive}
+              />
+            );
+          })}
 
           {navLinks.slice(1).map((link) => (
             <NavigationMenuItem key={link.href}>
               <NavigationMenuLink
                 asChild
-                className={cn(navigationMenuTriggerStyle(), NAV_TRIGGER_STYLE)}>
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  NAV_TRIGGER_STYLE,
+                  isActive(link.href) && "text-primary bg-white/10",
+                )}>
                 <Link href={link.href}>{link.label.toUpperCase()}</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -139,7 +167,10 @@ export function NavMenu() {
       <div className="hidden lg:flex shrink-0 items-center">
         <Link
           href="/contact"
-          className="inline-flex h-8 xl:h-10 items-center justify-center rounded-full bg-white px-3 xl:px-6 text-xs xl:text-sm font-semibold text-black transition-colors hover:bg-white/85 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
+          className={cn(
+            "inline-flex h-8 xl:h-10 items-center justify-center rounded-full bg-white px-3 xl:px-6 text-xs xl:text-sm font-semibold text-black transition-colors hover:bg-white/85 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black",
+            pathname === "/contact" && "ring-2 ring-primary ring-offset-2",
+          )}>
           CONTACT US
         </Link>
       </div>

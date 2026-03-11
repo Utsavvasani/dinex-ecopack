@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
+import { Leaf, Factory, Settings, UtensilsCrossed } from "lucide-react";
+
 const steps = [
   {
     label: "Sugar Cane",
@@ -12,7 +14,7 @@ const steps = [
   },
   {
     label: "Sugar Factory",
-    icon: "�",
+    iconComponent: Factory,
     description: "Processing sugar from harvested cane",
   },
   {
@@ -32,12 +34,11 @@ const steps = [
   },
   {
     label: "Compost & Farming",
-    icon: "�",
+    iconPath: "/landing/compost.png",
     description: "Composting back to soil in 90 days",
-  }, 
+  },
 ];
 
-import { Leaf } from "lucide-react";
 import { useMotionValue, useTransform, animate } from "framer-motion";
 
 export function ProcessLifecycleSection() {
@@ -139,16 +140,20 @@ export function ProcessLifecycleSection() {
                   <div
                     className={`flex flex-col items-center gap-2 w-28 md:w-36 text-center ${isActive ? "scale-110" : "scale-90 opacity-60"} transition-opacity duration-300`}>
                     <div
-                      className={`w-14 h-14 md:w-20 md:h-20 rounded-full bg-white border-2 ${isActive ? "border-primary shadow-md" : "border-primary/10"} flex items-center justify-center relative overflow-hidden`}>
+                      className={`w-14 h-14 md:w-20 md:h-20 rounded-full ${isActive ? "bg-white border-primary shadow-md" : "bg-transparent border-primary/10"} border-2 flex items-center justify-center relative overflow-hidden transition-colors`}>
                       {step.iconPath ? (
-                        <div className="relative w-8 h-8 md:w-12 md:h-12">
-                          <Image
-                            src={step.iconPath}
-                            alt={step.label}
-                            fill
-                            className="object-contain p-0.5"
-                          />
-                        </div>
+                        <img
+                          src={step.iconPath}
+                          alt={step.label}
+                          className="w-8 h-8 md:w-12 md:h-12 object-contain p-0.5"
+                        />
+                      ) : step.iconComponent ? (
+                        (() => {
+                          const IconComp = step.iconComponent;
+                          return (
+                            <IconComp className="w-8 h-8 md:w-12 md:h-12 text-primary" />
+                          );
+                        })()
                       ) : (
                         <span className="text-2xl md:text-3xl">
                           {step.icon}
@@ -185,7 +190,26 @@ export function ProcessLifecycleSection() {
               className="space-y-6">
               <div className="flex items-center gap-5 text-primary">
                 <div className="p-3 rounded-2xl bg-primary/5 border border-primary/10">
-                  <Leaf className="w-10 h-10 md:w-14 md:h-14 rotate-[-45deg]" />
+                  {activeStep.iconPath ? (
+                    <img
+                      src={activeStep.iconPath}
+                      alt={activeStep.label}
+                      className="w-10 h-10 md:w-14 md:h-14 object-contain"
+                    />
+                  ) : activeStep.iconComponent ? (
+                    (() => {
+                      const IconComp = activeStep.iconComponent;
+                      return (
+                        <IconComp className="w-10 h-10 md:w-14 md:h-14 text-primary" />
+                      );
+                    })()
+                  ) : activeStep.icon ? (
+                    <span className="text-4xl md:text-5xl">
+                      {activeStep.icon}
+                    </span>
+                  ) : (
+                    <Leaf className="w-10 h-10 md:w-14 md:h-14 rotate-[-45deg]" />
+                  )}
                 </div>
                 <div className="flex flex-col">
                   <span className="text-xl md:text-2xl font-medium tracking-tight text-foreground/50">

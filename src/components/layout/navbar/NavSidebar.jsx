@@ -8,6 +8,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
+  SheetClose,
 } from "@/components/ui/sheet";
 import {
   Accordion,
@@ -31,12 +32,13 @@ function NavSidebarAccordion() {
           </AccordionTrigger>
           <AccordionContent className="flex flex-col space-y-2 pb-4">
             {items.map((item) => (
-              <Link
-                key={item.title}
-                href={item.href}
-                className="text-sm text-foreground/60 hover:text-primary transition-colors pl-4 py-1">
-                {item.title}
-              </Link>
+              <SheetClose asChild key={item.title}>
+                <Link
+                  href={item.href}
+                  className="text-sm text-foreground/60 hover:text-primary transition-colors pl-4 py-1">
+                  {item.title}
+                </Link>
+              </SheetClose>
             ))}
           </AccordionContent>
         </AccordionItem>
@@ -54,32 +56,35 @@ export function NavSidebar() {
       </SheetTrigger>
       <SheetContent className="w-full sm:max-w-sm bg-white border-l border-gray-100 p-0 overflow-y-auto">
         <SheetHeader className="px-6 pt-8 pb-4">
-          <SheetTitle className="text-foreground text-xl font-bold">Menu</SheetTitle>
+          <SheetTitle className="text-foreground text-xl font-bold">
+            Menu
+          </SheetTitle>
         </SheetHeader>
         <div className="flex flex-col px-6 pb-6">
-          <Link
-            href="/about"
-            className="text-base font-semibold text-foreground hover:text-primary transition-colors py-4 border-b border-gray-100">
-            About Us
-          </Link>
+          <SheetClose asChild>
+            <Link
+              href="/about"
+              className="text-base font-semibold text-foreground hover:text-primary transition-colors py-4 border-b border-gray-100">
+              About Us
+            </Link>
+          </SheetClose>
 
           <NavSidebarAccordion />
 
-          <Link
-            href="/blog"
-            className="text-base font-semibold text-foreground hover:text-primary transition-colors py-4 border-t border-b border-gray-100">
-            Blog
-          </Link>
-          <Link
-            href="/career"
-            className="text-base font-semibold text-foreground hover:text-primary transition-colors py-4 border-b border-gray-100">
-            Career
-          </Link>
-          <Link
-            href="/contact"
-            className="mt-6 inline-flex h-10 items-center justify-center rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90">
-            Contact Us
-          </Link>
+          <SheetClose asChild>
+            <Link
+              href="/blog"
+              className="text-base font-semibold text-foreground hover:text-primary transition-colors py-4 border-t border-b border-gray-100">
+              Blog
+            </Link>
+          </SheetClose>
+          <SheetClose asChild>
+            <Link
+              href="/contact"
+              className="mt-6 inline-flex h-10 items-center justify-center rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90">
+              Contact Us
+            </Link>
+          </SheetClose>
         </div>
       </SheetContent>
     </Sheet>

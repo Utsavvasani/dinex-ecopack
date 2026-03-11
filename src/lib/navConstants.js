@@ -9,7 +9,6 @@ export const NAV_TRIGGER_STYLE =
 export const navLinks = [
   { label: "About Us", href: "/about" },
   { label: "Blog", href: "/blog" },
-  { label: "Career", href: "/career" },
 ];
 
 export const navDropdowns = [
@@ -21,28 +20,22 @@ export const navDropdowns = [
       {
         title: "Round Plates",
         href: "/products/round-plates",
-        image: "/assets/square_plate.png",
-      },
-      {
-        title: "Compartment Plates",
-        href: "/products/compartment-plates",
-        image:
-          "/assets/square_plate.png",
-      },
-      {
-        title: "Square Plates",
-        href: "/products/square-plates",
-        image: "/assets/square_plate.png",
+        image: "/landing/round-plates.png",
       },
       {
         title: "Bowls",
         href: "/products/bowls",
-        image: "/assets/square_plate.png",
+        image: "/landing/food-containers.png",
       },
       {
-        title: "Clamshell",
-        href: "/products/clamshell",
-        image: "/assets/square_plate.png",
+        title: "Meal Trays",
+        href: "/products/meal-trays",
+        image: "/landing/meal-trays.png",
+      },
+      {
+        title: "Clamshells",
+        href: "/products/clamshells",
+        image: "/landing/clamshell.png",
       },
     ],
   },

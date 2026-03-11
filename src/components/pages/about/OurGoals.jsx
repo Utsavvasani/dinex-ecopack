@@ -46,23 +46,16 @@ export function OurGoals() {
             {/* Left — Image with centered title overlay */}
             <div className="relative min-h-[340px] lg:min-h-[500px] border-b lg:border-b-0 lg:border-r border-primary/10">
               <Image
-                src="/landing/sugarcane.jpg"
+                src="/landing/sugarcane_premium.png"
                 alt="Sugarcane Bagasse"
                 fill
-                className="object-cover"
+                className="object-cover opacity-65"
               />
-              {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-linear-to-t from-background/90 via-background/40 to-transparent lg:bg-linear-to-r lg:from-transparent lg:via-background/60 lg:to-background" />
-
               {/* Centered title */}
               <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center">
-                <h2 className="text-6xl font-black text-foreground mb-3 drop-shadow-sm">
+                <h2 className="text-5xl md:text-7xl font-black text-white mb-3 drop-shadow-sm">
                   Our <span className="text-primary">Goals</span>
                 </h2>
-                <p className="text-foreground/80 font-medium text-lg max-w-[240px]">
-                  Setting the standard for responsible manufacturing and global
-                  supply.
-                </p>
               </div>
             </div>
 
