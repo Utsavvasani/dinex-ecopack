@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+export const dynamicParams = true;
 import { products, categories } from "@/lib/productData";
 import { ProductDetails } from "@/components/pages/products/ProductDetails";
 import { CategoryHeader } from "@/components/pages/products/CategoryHeader";
