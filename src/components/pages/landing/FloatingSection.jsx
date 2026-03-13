@@ -12,7 +12,7 @@ export function FloatingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="text-center">
+          className="flex flex-col items-center text-center">
           <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-primary mb-6 md:mb-12 leading-tight">
             The Future of Packaging
           </h2>
@@ -24,7 +24,7 @@ export function FloatingSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex flex-col justify-center space-y-6">
+            className="flex flex-col items-center text-center md:items-start md:text-left space-y-6">
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-foreground">
                 Harnessing Earth&apos;s Most Renewable Resources

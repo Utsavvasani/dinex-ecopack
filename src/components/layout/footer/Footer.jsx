@@ -11,7 +11,7 @@ export function Footer() {
         <div className="space-y-6">
           <Link
             href="/"
-            className="inline-block bg-white/10 p-2 rounded-xl backdrop-blur-sm">
+            className="inline-block">
             <Image
               src="/logo.png"
               alt="Dinex Logo"
@@ -84,18 +84,6 @@ export function Footer() {
 
       <div className="container px-4 md:px-6 mx-auto pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row items-center justify-between text-sm text-primary-foreground/60">
         <p>© {new Date().getFullYear()} Dinex Ecopack. All rights reserved.</p>
-        <div className="flex space-x-6 mt-4 md:mt-0">
-          <Link
-            href="/privacy"
-            className="hover:text-primary-foreground transition-colors">
-            Privacy Policy
-          </Link>
-          <Link
-            href="/terms"
-            className="hover:text-primary-foreground transition-colors">
-            Terms of Service
-          </Link>
-        </div>
       </div>
     </footer>
   );
