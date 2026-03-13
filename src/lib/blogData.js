@@ -52,7 +52,7 @@ export const BLOG_POSTS = [
       <h2>2. The Psychology of the 'Modern Diner'</h2>
       <p>GEN-Z and Millennials now represent 47% of the total food service spending block in 2026. This demographic does not view sustainability as a 'nice to have' feature; they view it as a prerequisite for loyalty. Studies show that 78% of these diners will actively abandon a brand if their food is served in Styrofoam or single-use plastic.</p>
 
-      <img src="https://images.unsplash.com/photo-1466973054481-9b45602b3e4c?auto=format&fit=crop&q=80&w=1600" alt="Sustainable Dinner Experience" class="rounded-2xl md:rounded-3xl my-6 object-cover shadow-lg mx-auto" />
+      <img src="/blog/photo-1514362545857-3bc16c4c7d1b.avif" alt="Sustainable Dinner Experience" class="rounded-2xl md:rounded-3xl my-6 object-cover shadow-lg mx-auto" />
 
       <p>Sugarcane bagasse offers a tactile, premium experience that plastic simply cannot replicate. The natural fiber texture and neutral ivory finish signal a 'clean label' and 'healthy' image for the food itself. In the age of social media, the packaging *is* a significant part of the brand's visual identity. A meal served in a DineX Ecopack clamshell isn't just a meal; it's a statement of values that diners are proud to share.</p>
 
@@ -157,7 +157,7 @@ export const BLOG_POSTS = [
         </table>
       </div>
 
-      <img src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&q=80&w=1600" alt="DineX Premium Packaging in Active Use" class="rounded-2xl md:rounded-3xl my-8 object-cover shadow-lg mx-auto" />
+      <img src="/blog/photo-1530587191325-3db32d826c18.avif" alt="DineX Premium Packaging in Active Use" class="rounded-2xl md:rounded-3xl my-8 object-cover shadow-lg mx-auto" />
 
       <h2>3. The Brand Equity Multiplier</h2>
       <p>Marketing is expensive. Retaining a customer is even more expensive. However, packaging is a 'silent salesperson' that sits on the table for 30 minutes during every meal. In 2026, sustainable packaging acts as a low-cost, high-impact acquisition channel.</p>
@@ -233,7 +233,7 @@ export const BLOG_POSTS = [
         </table>
       </div>
 
-      <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=1600" alt="High-Precision Thermal Testing" class="rounded-2xl md:rounded-3xl my-8 object-cover shadow-lg mx-auto" />
+      <img src="/blog/photo-1581091226825-a6a2a5aee158.avif" alt="High-Precision Thermal Testing" class="rounded-2xl md:rounded-3xl my-8 object-cover shadow-lg mx-auto" />
 
       <h2>2. Structural Integrity & Tensile Strength</h2>
       <p>One of the common complaints about early generation 'eco' plates was their lack of rigidity. At DineX, we've solved this through 'High-Density Molding' (HDM). Our bagasse plates feature a cross-hatched fiber structure that provides a higher weight-bearing capacity per gram of material than plastic.</p>
@@ -295,7 +295,7 @@ export const BLOG_POSTS = [
         </div>
       </div>
 
-      <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1600" alt="Industrial Manufacturing of Bagasse" class="rounded-2xl md:rounded-3xl my-8 object-cover shadow-lg mx-auto" />
+      <img src="/blog/photo-1581091226825-a6a2a5aee158.avif" alt="Industrial Manufacturing of Bagasse" class="rounded-2xl md:rounded-3xl my-8 object-cover shadow-lg mx-auto" />
 
       <h2>2. Scaling for Global Logistics</h2>
       <p>One of the primary barriers to sustainability adoption has been lead times. In 2025, DineX shifted to an 'Automated Supply Chain' model. By integrating AI-driven demand forecasting with our manufacturing lines, we've reduced our 'Order to Dock' time by 35% compared to other bagasse manufacturers in the region.</p>
@@ -348,7 +348,7 @@ export const BLOG_POSTS = [
         "By aligning the fibers into a cross-hatched, nested pattern during the vacuum-pressing stage, we increase the material's tensile strength by 30% compared to random-fiber paper pulps."
       </div>
 
-      <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80&w=1600" alt="Molecular Analysis of Bagasse Fibers" class="rounded-2xl md:rounded-3xl my-8 object-cover shadow-lg mx-auto" />
+      <img src="/blog/photo-1507413245164-6160d8298b31.avif" alt="Molecular Analysis of Bagasse Fibers" class="rounded-2xl md:rounded-3xl my-8 object-cover shadow-lg mx-auto" />
 
       <h2>2. The 'Chemical-Free' Barrier Science</h2>
       <p>One of the breakthrough areas of our research has been 'PFAS-Free' oil resistance. PFAS (per- and polyfluoroalkyl substances) were the traditional way manufacturers made paper resistant to grease, but they are 'forever chemicals' that don't belong near food. The DineX R&D team has developed a mechanical refining technique that closes the 'pores' of the fiber web so tightly that oil cannot penetrate, even without synthetic coatings.</p>
@@ -426,7 +426,7 @@ export const BLOG_POSTS = [
         </table>
       </div>
 
-      <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1600" alt="Compliance Standards Graphic" class="rounded-2xl md:rounded-3xl my-8 object-cover shadow-lg mx-auto" />
+      <img src="/blog/photo-1589829545856-d10d557cf95f.avif" alt="Compliance Standards Graphic" class="rounded-2xl md:rounded-3xl my-8 object-cover shadow-lg mx-auto" />
 
       <h2>2. India: Extended Producer Responsibility (EPR)</h2>
       <p>The Plastic Waste Management Rules (2022-2026) in India have shifted the cost of waste from the municipality to the brand owner. Brands are now financially responsible for the collection and processing of their packaging waste.</p>
@@ -479,7 +479,7 @@ export const BLOG_POSTS = [
         <li><strong>Thermal Performance:</strong> Bagasse maintains food temperature 20% longer than plastic or paper, ensuring that the last guest on the line gets the same experience as the first.</li>
       </ul>
 
-      <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80&w=1600" alt="High-Capacity Sustainable Catering Solution" class="rounded-2xl md:rounded-3xl my-8 object-cover shadow-lg mx-auto" />
+      <img src="/blog/photo-1555244162-803834f70033.avif" alt="High-Capacity Sustainable Catering Solution" class="rounded-2xl md:rounded-3xl my-8 object-cover shadow-lg mx-auto" />
 
       <h2>2. Operational Flow: On-Site Composting</h2>
       <p>One of the biggest breakthroughs for our large-scale partners has been the integration of on-site 'Rapid Dehydrators'. When a DineX plate is cleared from the table, it is already mixed with food scraps. This 'single-stream' clearing is much faster for waitstaff than sorting plastic and food.</p>
@@ -526,7 +526,7 @@ export const BLOG_POSTS = [
         "One DineX Ecopack plate, once composted, adds enough organic matter to enrich roughly 2 liters of depleted soil, helping it retain 15% more water for future plant growth."
       </div>
 
-      <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1600" alt="Bagasse Fiber Returning to Soil" class="rounded-2xl md:rounded-3xl my-8 object-cover shadow-lg mx-auto" />
+      <img src="/blog/photo-1542601906990-b4d3fb778b09.avif" alt="Bagasse Fiber Returning to Soil" class="rounded-2xl md:rounded-3xl my-8 object-cover shadow-lg mx-auto" />
 
       <h2>2. Preventing Microplastic Infiltration</h2>
       <p>One of the hidden dangers of the plastic era is 'Microplastic Seepage'. Even when plastic is theoretically recycled, millions of microscopic particles enter the global water and soil table. DineX bagasse is biological matter; it contains zero polymers. When it breaks down, it returns exclusively to CO2, water, and cellulostic nutrients, ensuring our food chain remains pure.</p>
@@ -543,7 +543,7 @@ export const BLOG_POSTS = [
         "In a truly circular economy, every product is just a temporary state of matter that is destined to become the foundation for the next generation of life."
       </blockquote>
 
-      <h2>4. Supporting Local Agriculture</h2>
+      <h2>4. Supporting L                                                                                                       ocal Agriculture</h2>
       <p>By using bagasse tableware, brands are supporting a decentralised nutrient loop. A restaurant in Dubai can send its used DineX plates to an organic farm in Sharjah, where it becomes soil for the same vegetables that restaurant will buy next month. This is the definition of a local 'Closed Loop' that reduces a city's total importing reliance.</p>
 
       <h2>5. Conclusion: Beyond the Bin</h2>

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { Calendar, Clock, ArrowLeft } from "lucide-react";
+import { Calendar, Clock, ArrowLeft, Twitter, Linkedin, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BLOG_POSTS } from "@/lib/blogData";
 import { BlogCard } from "./BlogCard";
@@ -14,6 +14,27 @@ export function BlogDetail({ post }) {
     0,
     3,
   );
+
+  const shareUrl = typeof window !== "undefined" ? window.location.href : "";
+  const shareTitle = post.title;
+
+  const shareLinks = [
+    {
+      name: "Twitter",
+      icon: <Twitter size={14} />,
+      url: `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareTitle)}`,
+    },
+    {
+      name: "LinkedIn",
+      icon: <Linkedin size={14} />,
+      url: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`,
+    },
+    {
+      name: "Facebook",
+      icon: <Facebook size={14} />,
+      url: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
+    },
+  ];
 
   return (
     <main className="min-h-screen bg-background">
@@ -83,12 +104,16 @@ export function BlogDetail({ post }) {
                     Share
                   </span>
                   <div className="flex gap-2">
-                    {[1, 2, 3].map((i) => (
-                      <div
-                        key={i}
-                        className="w-8 h-8 rounded-lg border border-border flex items-center justify-center text-muted-foreground hover:border-primary hover:text-primary transition-all cursor-pointer">
-                        <div className="w-3.5 h-3.5 bg-current opacity-20" />
-                      </div>
+                    {shareLinks.map((link) => (
+                      <a
+                        key={link.name}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-8 h-8 rounded-lg border border-border flex items-center justify-center text-primary hover:bg-primary hover:border-primary hover:text-white transition-all cursor-pointer"
+                        title={`Share on ${link.name}`}>
+                        {link.icon}
+                      </a>
                     ))}
                   </div>
                 </div>
