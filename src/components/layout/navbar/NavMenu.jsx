@@ -52,7 +52,7 @@ function NavDropdown({ title, items, isGrid, isActive }) {
         className={cn(
           "cursor-pointer",
           NAV_TRIGGER_STYLE,
-          isActive && "text-primary bg-white/10",
+          isActive && "text-white bg-white/10",
         )}>
         {title}
       </NavigationMenuTrigger>
@@ -126,7 +126,7 @@ export function NavMenu() {
               className={cn(
                 navigationMenuTriggerStyle(),
                 NAV_TRIGGER_STYLE,
-                isActive("/about") && "text-primary bg-white/10",
+                isActive("/about") && "text-white bg-white/10",
               )}>
               <Link href="/about">ABOUT US</Link>
             </NavigationMenuLink>
@@ -154,7 +154,7 @@ export function NavMenu() {
                 className={cn(
                   navigationMenuTriggerStyle(),
                   NAV_TRIGGER_STYLE,
-                  isActive(link.href) && "text-primary bg-white/10",
+                  isActive(link.href) && "text-white bg-white/10",
                 )}>
                 <Link href={link.href}>{link.label.toUpperCase()}</Link>
               </NavigationMenuLink>

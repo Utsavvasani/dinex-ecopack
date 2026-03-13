@@ -1,9 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { BLOG_CATEGORIES } from "@/lib/blogData";
 
-export function BlogHero({ activeCategory, setActiveCategory }) {
+export function BlogHero() {
   return (
     <section className="w-full pt-32 pb-16 bg-background relative overflow-hidden">
       {/* Background Decorative Elements */}
@@ -42,25 +41,7 @@ export function BlogHero({ activeCategory, setActiveCategory }) {
             innovations, and our journey towards a greener planet.
           </motion.p>
 
-          {/* Category Filters */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-wrap justify-center gap-3 pt-8">
-            {BLOG_CATEGORIES.map((category) => (
-              <button
-                key={category}
-                onClick={() => setActiveCategory(category)}
-                className={`px-6 py-3 rounded-2xl text-sm font-bold tracking-wide transition-all duration-300 border ${
-                  activeCategory === category
-                    ? "bg-primary text-white border-primary shadow-lg shadow-primary/20 scale-105"
-                    : "bg-background text-muted-foreground border-border hover:border-primary/30 hover:text-primary"
-                }`}>
-                {category}
-              </button>
-            ))}
-          </motion.div>
+          {/* Category Filters Removed as requested */}
         </div>
       </div>
     </section>

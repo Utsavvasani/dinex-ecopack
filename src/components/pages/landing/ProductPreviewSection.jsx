@@ -12,25 +12,25 @@ const productCategories = [
     name: "Round Plates",
     description: "Classic round biodegradable plates",
     image: "/landing/round-plates.png",
-    link: "/products?category=plates",
+    link: "/products/round-plates",
   },
   {
     name: "Bowls",
     description: "Deep biodegradable serving bowls",
     image: "/landing/food-containers.png",
-    link: "/products?category=bowls",
+    link: "/products/bowls",
   },
   {
     name: "Meal Trays",
     description: "Multi-compartment food service",
     image: "/landing/meal-trays.png",
-    link: "/products?category=trays",
+    link: "/products/meal-trays",
   },
   {
     name: "Clamshells",
     description: "Self-locking takeaway boxes",
     image: "/landing/clamshell.png",
-    link: "/products?category=clamshells",
+    link: "/products/clamshells",
   },
 ];
 
@@ -64,55 +64,45 @@ export function ProductPreviewSection() {
             </p>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}>
-            <Link
-              href="/products"
-              className="inline-flex items-center text-primary font-bold hover:text-primary/80 transition-colors group px-8 py-3 rounded-full bg-primary/5 border border-primary/20 uppercase tracking-widest text-xs">
-              View Full Range
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </motion.div>
         </div>
 
         {/* 4-Category Premium Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {productCategories.map((category, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group relative overflow-hidden rounded-3xl border border-border bg-background transition-all hover:shadow-2xl hover:-translate-y-2 cursor-pointer flex flex-col aspect-4/5">
-              {/* Product Image Area */}
-              <div className="relative grow w-full bg-primary/5 transition-colors group-hover:bg-primary/10 overflow-hidden p-6">
-                <Image
-                  src={category.image}
-                  alt={category.name}
-                  fill
-                  className="object-cover p-3 rounded-2xl group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-
-              {/* Category Info */}
-              <div className="p-5 bg-background relative z-10">
-                <h3 className="text-lg font-bold text-foreground mb-1 group-hover:text-primary transition-colors">
-                  {category.name}
-                </h3>
-                <p className="text-xs text-muted-foreground mb-3 line-clamp-2">
-                  {category.description}
-                </p>
-                <div className="flex items-center text-xs font-semibold text-primary overflow-hidden">
-                  <span className="transform translate-x-0 group-hover:translate-x-0 transition-transform duration-300">
-                    Explore Details
-                  </span>
-                  <ArrowRight className="ml-2 h-3.5 w-3.5 transform -translate-x-full opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+            <Link key={index} href={category.link}>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="group relative overflow-hidden rounded-3xl border border-border bg-background transition-all hover:shadow-2xl hover:-translate-y-2 cursor-pointer flex flex-col aspect-4/5">
+                {/* Product Image Area */}
+                <div className="relative grow w-full bg-primary/5 transition-colors group-hover:bg-primary/10 overflow-hidden p-6">
+                  <Image
+                    src={category.image}
+                    alt={category.name}
+                    fill
+                    className="object-cover p-3 rounded-2xl group-hover:scale-110 transition-transform duration-500"
+                  />
                 </div>
-              </div>
-            </motion.div>
+
+                {/* Category Info */}
+                <div className="p-5 bg-background relative z-10">
+                  <h3 className="text-lg font-bold text-foreground mb-1 group-hover:text-primary transition-colors">
+                    {category.name}
+                  </h3>
+                  <p className="text-xs text-muted-foreground mb-3 line-clamp-2">
+                    {category.description}
+                  </p>
+                  <div className="flex items-center text-xs font-semibold text-primary overflow-hidden">
+                    <span className="transform translate-x-0 group-hover:translate-x-0 transition-transform duration-300">
+                      Explore Details
+                    </span>
+                    <ArrowRight className="ml-2 h-3.5 w-3.5 transform -translate-x-full opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+                  </div>
+                </div>
+              </motion.div>
+            </Link>
           ))}
         </div>
       </div>
