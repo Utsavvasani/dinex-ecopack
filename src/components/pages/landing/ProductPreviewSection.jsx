@@ -51,7 +51,7 @@ export function ProductPreviewSection() {
             </Link>
 
             <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-foreground leading-tight">
-              Premium{" "}
+              Our Premium{" "}
               <span className="text-primary mx-3 italic font-heading">
                 Eco-Friendly
               </span>{" "}
@@ -61,11 +61,10 @@ export function ProductPreviewSection() {
             <div className="h-1.5 w-24 bg-primary/30 rounded-full mx-auto" />
 
             <p className="text-muted-foreground text-lg max-w-2xl mt-2">
-              Discover our complete range of biodegradable bagasse tableware
-              designed for modern catering, takeaways, and everyday use.
+              Explore our complete range of biodegradable bagasse tableware
+              designed for modern food service.
             </p>
           </motion.div>
-
         </div>
 
         {/* 4-Category Premium Grid */}

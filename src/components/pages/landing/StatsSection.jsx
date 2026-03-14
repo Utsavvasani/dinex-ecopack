@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 
 const stats = [
   { value: "140,000+", label: "Ton Capacity / Year" },
-  { value: "100+", label: "SKU Numbers" },
   { value: "50+", label: "Export Countries" },
   { value: "15,000+", label: "Happy Clients" },
 ];
@@ -13,7 +12,7 @@ export function StatsSection() {
   return (
     <section className="w-full py-16 bg-primary/5 border-y border-primary/10">
       <div className="container px-4 md:px-6 mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-12">
           {stats.map((stat, idx) => (
             <motion.div
               key={idx}

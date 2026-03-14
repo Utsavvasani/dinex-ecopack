@@ -8,7 +8,7 @@ import { Leaf, Factory, Settings, UtensilsCrossed } from "lucide-react";
 
 const steps = [
   {
-    label: "Sugar Cane",
+    label: "Sugarcane",
     iconPath: "/landing/sugarcane.png",
     description: "The lifecycle begins with sugarcane, a rapidly renewable crop grown in tropical regions. After reaching maturity, the sugarcane is harvested and transported for processing. Unlike wood-based materials, sugarcane regrows quickly, making it a sustainable agricultural resource that supports eco-friendly manufacturing."
   },
@@ -18,7 +18,7 @@ const steps = [
     description: "At the sugar factory, harvested sugarcane is crushed to extract juice used for sugar production. During this process, a fibrous by-product called bagasse remains. Instead of being discarded or burned, this natural residue becomes the primary raw material for producing sustainable tableware."
   },
   {
-    label: "Sugar Cane Pulp",
+    label: "Sugarcane Pulp",
     iconPath: "/landing/pulp.png",
     description: "The leftover bagasse fibers are collected, cleaned, and prepared for further processing. These fibers are rich in cellulose, making them ideal for creating durable biodegradable products. Repurposing bagasse reduces agricultural waste and minimizes the need for cutting trees."
   },

@@ -30,7 +30,7 @@ export default function PageLoader() {
               className="inline-block"
               repeat={Infinity}
               repeatDelay={2}>
-              DineX ecopack
+              Dinex Ecopack
             </TextRoll>
           </div>
         </motion.div>

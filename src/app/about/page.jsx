@@ -4,16 +4,26 @@ import { VisionMission } from "@/components/pages/about/VisionMission";
 import { OurGoals } from "@/components/pages/about/OurGoals";
 import { OurCommitment } from "@/components/pages/about/OurCommitment";
 import { ClosingQuote } from "@/components/pages/about/ClosingQuote";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
-  title: "About Us | Dinex Ecopack",
+  title: "About Us | Dinex Ecopack's Mission for a Sustainable Planet",
   description:
-    "Learn about Dinex Ecopack — our mission to replace plastic with sustainable, biodegradable sugarcane bagasse tableware for a cleaner planet.",
+    "Learn about Dinex Ecopack's journey, our commitment to zero-waste manufacturing, and how we're leading the shift to sugarcane bagasse tableware globally.",
 };
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-background">
+      <JsonLd 
+        type="breadcrumb" 
+        data={{
+          links: [
+            { name: "Home", url: "/" },
+            { name: "About Us", url: "/about" }
+          ]
+        }} 
+      />
       <AboutHero />
       <OurStory />
       <VisionMission />

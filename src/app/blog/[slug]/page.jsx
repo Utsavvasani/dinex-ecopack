@@ -1,6 +1,7 @@
 import { BlogDetail } from "@/components/pages/blog/BlogDetail";
 import { BLOG_POSTS } from "@/lib/blogData";
 import { notFound } from "next/navigation";
+import JsonLd from "@/components/JsonLd";
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
@@ -8,7 +9,7 @@ export async function generateMetadata({ params }) {
   if (!post) return { title: "Post Not Found" };
 
   return {
-    title: `${post.title} | DineX Ecopack Blog`,
+    title: `${post.title} | Dinex Ecopack Blog`,
     description: post.excerpt,
   };
 }
@@ -21,5 +22,20 @@ export default async function Page({ params }) {
     notFound();
   }
 
-  return <BlogDetail post={post} />;
+  return (
+    <>
+      <JsonLd type="article" data={post} />
+      <JsonLd 
+        type="breadcrumb" 
+        data={{
+          links: [
+            { name: "Home", url: "/" },
+            { name: "Blog", url: "/blog" },
+            { name: post.title, url: `/blog/${post.slug}` }
+          ]
+        }} 
+      />
+      <BlogDetail post={post} />
+    </>
+  );
 }

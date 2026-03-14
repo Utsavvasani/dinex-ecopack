@@ -30,7 +30,7 @@ export function AboutHero() {
           className="text-5xl md:text-7xl font-black tracking-tighter text-foreground leading-none">
           About{" "}
           <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-primary/60 italic font-heading pr-2 leading-none">
-            DineX Ecopack
+            Dinex Ecopack
           </span>
         </motion.h1>
 

@@ -11,13 +11,13 @@ export function Navbar() {
     <div className="fixed top-0 z-50 w-full pointer-events-none">
       <header className="pointer-events-auto flex items-center justify-between bg-primary/85 backdrop-blur-md px-6 xl:px-12 py-3 w-full">
         {/* Logo */}
-        <Link href="/" className="flex items-center shrink-0">
+        <Link href="/" className="flex items-center shrink-0 group perspective-1000">
           <Image
             src="/logo.png"
             alt="Dinex Logo"
             width={90}
             height={10}
-            className="object-contain brightness-0 invert"
+            className="object-contain brightness-0 invert transition-all duration-300 ease-out group-hover:scale-105 group-hover:-translate-y-0.5 group-hover:drop-shadow-[0_8px_16px_rgba(255,255,255,0.4)]"
             priority
           />
         </Link>

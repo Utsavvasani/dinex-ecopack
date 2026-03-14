@@ -32,9 +32,9 @@ export function FloatingSection() {
               <p className="text-muted-foreground text-lg leading-relaxed">
                 We transform agricultural by-products into premium tableware,
                 upcycling plant fibers to significantly reduce the global carbon
-                footprint. By choosing Dinex Eco-Pack, you&apos;re not just
+                footprint. By choosing Dinex Ecopack, you&apos;re not just
                 selecting a product; you&apos;re adopting a solution that
-                nurtures the planet by returning to it—creating a seamless cycle
+                nurtures the planet by returning to it creating a seamless cycle
                 of renewal from earth to table and back again.
               </p>
             </div>
@@ -50,7 +50,7 @@ export function FloatingSection() {
             {/* The circles represent the concentric green design from catalog Page 2 */}
             <div className="absolute w-[80%] h-[80%] rounded-full bg-background flex flex-col items-center justify-center text-center p-8 shadow-inner">
               <span className="text-primary font-bold text-xl md:text-2xl uppercase tracking-wider">
-                Partner with us
+                Partner with us in
               </span>
               <span className="text-accent-foreground font-extrabold text-2xl md:text-4xl mt-2 leading-tight">
                 Driving <span className="text-primary">Circular Economy</span>{" "}
@@ -78,7 +78,7 @@ export function FloatingSection() {
                 ease: "easeInOut",
                 delay: 1,
               }}
-              className="absolute -bottom-8 -right-8 w-48 h-48 md:w-64 md:h-64 rotate-15 drop-shadow-2xl">
+              className="absolute -bottom-8 md:-bottom-15 -right-8 w-48 h-48 md:w-64 md:h-64 rotate-15 drop-shadow-2xl">
               <Image
                 src="/landing/rectangle.png"
                 alt="Biodegradable Plate"

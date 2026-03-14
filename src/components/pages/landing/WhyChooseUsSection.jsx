@@ -43,7 +43,7 @@ export function WhyChooseUsSection() {
           <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-foreground">
             Why <br className="md:hidden" />
             <span className="text-primary italic font-heading">
-              DineX Ecopack
+              Dinex Ecopack
             </span>{" "}
             ?
           </h2>

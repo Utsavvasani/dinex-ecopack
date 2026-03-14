@@ -23,7 +23,7 @@ export function Footer() {
           </Link>
           <p className="max-w-xs text-primary-foreground/80 leading-relaxed">
             Manufacturer of biodegradable bagasse tableware products. Living
-            green is a must. Eco-living style is a choice.
+            green is a must. Choosing eco-friendly living makes a difference.
           </p>
         </div>
 
@@ -35,10 +35,22 @@ export function Footer() {
             <div className="flex items-start space-x-3 text-primary-foreground/90">
               <MapPin className="w-5 h-5 shrink-0 mt-0.5" />
               <div className="text-sm text-primary-foreground/70">
+                <span className="font-semibold block mb-1 text-primary-foreground/90">India Office</span>
                 6 / 456, 3rd Floor, Kharadi Sheri,<br />
                 Manchharpura, SURAT-395003
                 <p className="mt-1 font-medium text-xs text-primary-foreground/50 italic">
                   GST: 24DJOPG2992B1Z8
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-3 text-primary-foreground/90">
+              <MapPin className="w-5 h-5 shrink-0 mt-0.5" />
+              <div className="text-sm text-primary-foreground/70">
+                <span className="font-semibold block mb-1 text-primary-foreground/90">UK Office</span>
+                114, Belmont rise,<br />
+                Cheam, London. SM26EE
+                <p className="mt-1 font-medium text-xs text-primary-foreground/50 italic">
+                  +44 7879905973
                 </p>
               </div>
             </div>

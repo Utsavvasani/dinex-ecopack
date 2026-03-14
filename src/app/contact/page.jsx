@@ -188,9 +188,9 @@ function ErrorModal({ message, onClose }) {
   );
 }
 
-const MAP_EMBED = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.713291122765!2d72.833502575263!3d21.203530580492476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f8de674963f%3A0xbbda33d533e40fc6!2sRose%20Impex!5e0!3m2!1sen!2sin!4v1741933458728!5m2!1sen!2sin";
-const MAP_LINK = "https://maps.app.goo.gl/LzfY6PFeFJ7bBFr68";
-const FULL_ADDRESS = "6 / 456, 3rd Floor, Kharadi Sheri, Manchharpura, SURAT-395003";
+const MAP_EMBED = "https://maps.google.com/maps?q=114,Belmont%20Rise,Cheam,London,SM26EE&t=&z=15&ie=UTF8&iwloc=&output=embed";
+const MAP_LINK = "https://maps.google.com/?q=114,Belmont+Rise,Cheam,London,SM2+6EE";
+const FULL_ADDRESS = "114, Belmont rise, Cheam, London. SM26EE";
 
 function MapModal({ onClose }) {
   const [tab, setTab] = useState('map');
@@ -269,7 +269,7 @@ function MapModal({ onClose }) {
             </div>
             <div>
               <h3 className="font-bold text-gray-900 text-base">Our Location</h3>
-              <p className="text-xs text-gray-500">Dinex Ecopack</p>
+              <p className="text-xs text-gray-500">Dinex Ecopack (UK)</p>
             </div>
           </div>
           <button
@@ -379,8 +379,8 @@ function MapModal({ onClose }) {
               {/* Info cards */}
               {[
                 { icon: MapPin, label: 'Address', value: FULL_ADDRESS },
-                { icon: CheckCircle, label: 'GST Number', value: '24DJOPG2992B1Z8' },
-                { icon: Phone, label: 'Phone', value: '+91 96245 48030' },
+                { icon: CheckCircle, label: 'VAT/Registration', value: 'Pending' }, // Changed from GST
+                { icon: Phone, label: 'Phone', value: '+44 7879905973' },
                 { icon: Mail, label: 'Email', value: 'dinexecopack@gmail.com' },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 ring-1 ring-gray-100">
@@ -438,6 +438,12 @@ function MapModal({ onClose }) {
 
 const inputClass = "w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-gray-50/50 focus:bg-white hover:bg-white placeholder:text-gray-400 text-sm";
 const errorInputClass = "w-full px-4 py-3.5 rounded-xl border border-red-300 focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-400 transition-all bg-red-50/30 focus:bg-white placeholder:text-gray-400 text-sm";
+
+export const metadata = {
+  title: "Contact Us | Get in Touch with Dinex Ecopack for Sustainable Solutions",
+  description:
+    "Have questions about our eco-friendly products? Contact the Dinex Ecopack team for inquiries, bulk orders, and custom sustainable packaging solutions.",
+};
 
 export default function ContactPage() {
   const [selected, setSelected] = useState(countryDialCodes[0]);
@@ -508,6 +514,15 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-gray-50/30 pt-32 pb-24">
+      <JsonLd 
+        type="breadcrumb" 
+        data={{
+          links: [
+            { name: "Home", url: "/" },
+            { name: "Contact Us", url: "/contact" }
+          ]
+        }} 
+      />
       <div className="w-full max-w-7xl mx-auto px-6 lg:px-8">
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-stretch">
@@ -644,9 +659,9 @@ export default function ContactPage() {
                     <MapPin className="size-5 text-primary" strokeWidth={1.5} />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 text-sm">Our Office</h3>
+                    <h3 className="font-semibold text-gray-900 text-sm">UK Office</h3>
                     <p className="text-gray-600 mt-1 leading-relaxed text-sm">
-                      6 / 456, 3rd Floor, Kharadi Sheri,<br />Manchharpura, SURAT-395003
+                      114, Belmont rise,<br />Cheam, London. SM26EE
                     </p>
                   </div>
                 </div>
@@ -658,8 +673,8 @@ export default function ContactPage() {
                     <CheckCircle className="size-5 text-primary" strokeWidth={1.5} />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 text-sm">GST Number</h3>
-                    <p className="text-gray-600 mt-1 text-sm font-medium">24DJOPG2992B1Z8</p>
+                    <h3 className="font-semibold text-gray-900 text-sm">VAT/Registration</h3>
+                    <p className="text-gray-600 mt-1 text-sm font-medium">Pending</p>
                   </div>
                 </div>
 
@@ -671,7 +686,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 text-sm">Phone</h3>
-                    <p className="text-gray-600 mt-1 text-sm">+91 96245 48030</p>
+                    <p className="text-gray-600 mt-1 text-sm">+44 7879905973</p>
                     <p className="text-xs text-gray-500 mt-0.5">Mon-Sat 9am to 6pm</p>
                   </div>
                 </div>

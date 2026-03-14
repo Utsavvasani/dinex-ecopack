@@ -13,7 +13,7 @@ export const products = [
     ],
     specs: {
       size: 'Ø6" x H 0.4" Inch \nØ152 x H 10 MM',
-      weight: "6 GMS",
+      weight: "6 gm",
       pcsInPack: "50 PC",
       packInCarton: "20 Pack",
       totalPcsInCarton: "1000 PCS",
@@ -34,7 +34,7 @@ export const products = [
     ],
     specs: {
       size: 'Ø7" x H 0.8" Inch \nØ175 x H 19.5 MM',
-      weight: "8 GMS",
+      weight: "8 gm",
       pcsInPack: "50 PC",
       packInCarton: "20 Pack",
       totalPcsInCarton: "1000 PCS",
@@ -55,7 +55,7 @@ export const products = [
     ],
     specs: {
       size: 'Ø9" x H 0.7" Inch \nØ225 x H 18 MM',
-      weight: "14 GMS",
+      weight: "14 gm",
       pcsInPack: "50 PC",
       packInCarton: "10 Pack",
       totalPcsInCarton: "500 PCS",
@@ -77,7 +77,7 @@ export const products = [
     ],
     specs: {
       size: 'Ø10" x H 0.7" Inch \nØ250 x H 18 MM',
-      weight: "18 GMS",
+      weight: "18 gm",
       pcsInPack: "50 PC",
       packInCarton: "10 Pack",
       totalPcsInCarton: "500 PCS",
@@ -98,7 +98,7 @@ export const products = [
     ],
     specs: {
       size: 'Ø12" x H 0.9" Inch \nØ302 x H 24 MM',
-      weight: "25 GMS",
+      weight: "25 gm",
       pcsInPack: "50 PC",
       packInCarton: "8 Pack",
       totalPcsInCarton: "400 PCS",
@@ -121,7 +121,7 @@ export const products = [
     ],
     specs: {
       size: '9" x ?" x H 0.8" Inch \n225 x ? x H 20 MM',
-      weight: "14 GMS",
+      weight: "14 gm",
       pcsInPack: "50 PC",
       packInCarton: "10 Pack",
       totalPcsInCarton: "500 PCS",
@@ -141,7 +141,7 @@ export const products = [
     ],
     specs: {
       size: '10" x ?" x H 0.7" Inch \n250 x ? x H 19 MM',
-      weight: "20 GMS",
+      weight: "20 gm",
       pcsInPack: "50 PC",
       packInCarton: "10 Pack",
       totalPcsInCarton: "500 PCS",
@@ -162,7 +162,7 @@ export const products = [
     ],
     specs: {
       size: '8.5" x 8.5" x H 0.9" Inch \n215 x 215 x H 24 MM',
-      weight: "19 GMS",
+      weight: "19 gm",
       pcsInPack: "50 PC",
       packInCarton: "10 Pack",
       totalPcsInCarton: "500 PCS",
@@ -183,7 +183,7 @@ export const products = [
     ],
     specs: {
       size: '11.1" x 8.7" x H 1.2" Inch \n282 x 220 x H 30 MM',
-      weight: "32 GMS",
+      weight: "32 gm",
       pcsInPack: "50 PC",
       packInCarton: "8 Pack",
       totalPcsInCarton: "400 PCS",
@@ -204,7 +204,7 @@ export const products = [
     ],
     specs: {
       size: '12.0" x 9.0" x H 1.3" Inch \n304 x 228 x H 33 MM',
-      weight: "38 GMS",
+      weight: "38 gm",
       pcsInPack: "50 PC",
       packInCarton: "6 Pack",
       totalPcsInCarton: "300 PCS",
@@ -227,7 +227,7 @@ export const products = [
     ],
     specs: {
       size: 'Ø4.3" x H 1.5" Inch \nØ108 x H 37 MM',
-      weight: "5 GMS",
+      weight: "5 gm",
       pcsInPack: "50 PC",
       packInCarton: "20 Pack",
       totalPcsInCarton: "1000 PCS",
@@ -248,7 +248,7 @@ export const products = [
     ],
     specs: {
       size: 'Ø4.6" x H 1.5" Inch \nØ118 x H 38 MM',
-      weight: "7 GMS",
+      weight: "7 gm",
       pcsInPack: "50 PC",
       packInCarton: "20 Pack",
       totalPcsInCarton: "1000 PCS",
@@ -269,7 +269,7 @@ export const products = [
     ],
     specs: {
       size: 'Ø5.9" x H 1.6" Inch \nØ150 x H 40 MM',
-      weight: "9 GMS",
+      weight: "9 gm",
       pcsInPack: "50 PC",
       packInCarton: "20 Pack",
       totalPcsInCarton: "1000 PCS",
@@ -286,13 +286,13 @@ export const products = [
     description: "6 x 6 Inch Clamshell Box Made from 100% biodegradable and compostable sugarcane fibers. Perfect for sandwiches, burgers, and takeaway meals. Secure locking mechanism, microwave safe.",
     material: "Sugarcane Bagasse",
     images: [
-      "/landing/clamshell.png",
-      "/landing/clamshell.png",
-      "/landing/clamshell.png",
+      "/products/clamshell/6_6/1.jpg",
+      "/products/clamshell/6_6/2.jpg",
+      "/products/clamshell/6_6/3.jpg",
     ],
     specs: {
       size: '6" x 6" x H 1.7" Inch \n153 x 153 x H 42 MM',
-      weight: "21 GMS",
+      weight: "21 gm",
       pcsInPack: "50 PC",
       packInCarton: "10 Pack",
       totalPcsInCarton: "500 PCS",
@@ -307,13 +307,13 @@ export const products = [
     description: "9 x 6 Inch Plain Clamshell Box Made from 100% biodegradable and compostable sugarcane fibers. Ideal for larger sandwiches and meals. Secure locking mechanism, microwave safe.",
     material: "Sugarcane Bagasse",
     images: [
-      "/landing/clamshell.png",
-      "/landing/clamshell.png",
-      "/landing/clamshell.png",
+      "/products/clamshell/9_6/1.jpg",
+      "/products/clamshell/9_6/2.jpg",
+      "/products/clamshell/9_6/3.jpg",
     ],
     specs: {
       size: '9.1" x 6.0" x H 1.7" Inch \n232 x 152 x H 42 MM',
-      weight: "29 GMS",
+      weight: "29 gm",
       pcsInPack: "50 PC",
       packInCarton: "5 Pack",
       totalPcsInCarton: "250 PCS",
@@ -321,27 +321,7 @@ export const products = [
       boxCBM: "0.0316",
     },
   },
-  {
-    id: "8x8-plain-clamshell",
-    name: "8 x 8 Plain Clamshell",
-    category: "clamshells",
-    description: "8 x 8 Inch Plain Clamshell Box Made from 100% biodegradable and compostable sugarcane fibers. Square design perfect for entrees and takeaway. Secure locking mechanism, microwave safe.",
-    material: "Sugarcane Bagasse",
-    images: [
-      "/landing/clamshell.png",
-      "/landing/clamshell.png",
-      "/landing/clamshell.png",
-    ],
-    specs: {
-      size: '8.3" x 8.4" x H 2.0" Inch \n210 x 213 x H 50 MM',
-      weight: "36 GMS",
-      pcsInPack: "50 PC",
-      packInCarton: "4 Pack",
-      totalPcsInCarton: "200 PCS",
-      boxDimension: "16.54 x 8.66 x 13.78 (Inch) \n420 x 220 x 350 (MM)",
-      boxCBM: "0.0323",
-    },
-  },
+
   {
     id: "9x9-plain-clamshell",
     name: "9 x 9 Plain Clamshell",
@@ -349,13 +329,13 @@ export const products = [
     description: "9 x 9 Inch Plain Clamshell Box Made from 100% biodegradable and compostable sugarcane fibers. Large square container for generous portions. Secure locking mechanism, microwave safe.",
     material: "Sugarcane Bagasse",
     images: [
-      "/landing/clamshell.png",
-      "/landing/clamshell.png",
-      "/landing/clamshell.png",
+      "/products/clamshell/9_9/1.jpg",
+      "/products/clamshell/9_9/2.jpg",
+      "/products/clamshell/9_9/3.jpg",
     ],
     specs: {
       size: '9.3" x 9.1" x H 1.7" Inch \n235 x 230 x H 44 MM',
-      weight: "44 GMS",
+      weight: "44 gm",
       pcsInPack: "50 PC",
       packInCarton: "4 Pack",
       totalPcsInCarton: "200 PCS",
@@ -370,13 +350,13 @@ export const products = [
     description: "8 x 8 Inch 3 Compartment Clamshell Box Made from 100% biodegradable and compostable sugarcane fibers. Features separated sections for a complete meal. Secure locking mechanism, microwave safe.",
     material: "Sugarcane Bagasse",
     images: [
-      "/landing/clamshell.png",
-      "/landing/clamshell.png",
-      "/landing/clamshell.png",
+      "/products/clamshell/8_8 3cp/1.jpg",
+      "/products/clamshell/8_8 3cp/2.jpg",
+      "/products/clamshell/8_8 3cp/3.jpg",
     ],
     specs: {
       size: '8.3" x 8.4" x H 2.0" Inch \n210 x 213 x H 51 MM',
-      weight: "36 GMS",
+      weight: "36 gm",
       pcsInPack: "50 PC",
       packInCarton: "4 Pack",
       totalPcsInCarton: "200 PCS",

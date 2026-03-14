@@ -4,6 +4,13 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { products, categories } from "@/lib/productData";
 import { ProductDetails } from "@/components/pages/products/ProductDetails";
+import JsonLd from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Premium Sugarcane Bagasse Products | Dinex Ecopack Sustainable Collection",
+  description:
+    "Explore our full range of eco-responsive tableware. From clamshells and plates to bowls and meal boxes, find the perfect sustainable packaging for your business.",
+};
 
 export default function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState(categories[0].slug);
@@ -14,6 +21,15 @@ export default function ProductsPage() {
 
   return (
     <main className="min-h-screen pt-24 pb-20 bg-background">
+      <JsonLd 
+        type="breadcrumb" 
+        data={{
+          links: [
+            { name: "Home", url: "/" },
+            { name: "Products", url: "/products" }
+          ]
+        }} 
+      />
       {/* Header Section */}
       <div className="container mx-auto px-4 mb-16">
         <div className="flex flex-col items-center text-center space-y-4">

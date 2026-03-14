@@ -103,7 +103,7 @@ export function HeroSection() {
             transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
             className="text-5xl md:text-7xl font-extrabold tracking-tight text-green-900">
             Sustainable Tableware <br className="hidden md:block" /> for a{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent">
               Plastic-Free Future.
             </span>
           </motion.h1>
@@ -114,9 +114,8 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
           className="mt-6 max-w-[42rem] leading-normal text-foreground sm:text-xl sm:leading-8">
-          Eco-living style is a choice. Join us to make a big, small GREEN
-          change with our premium, eco-friendly, single-use tableware products
-          made from renewable sugarcane.
+          choosing eco-friendly living makes a difference. join us in making a
+          small change with a big impact
         </motion.p>
 
         <motion.div
