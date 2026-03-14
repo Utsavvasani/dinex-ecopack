@@ -5,8 +5,21 @@ export async function POST(request) {
     try {
         const body = await request.json();
 
-        const { firstName, lastName, email, dialCode, phone, subject, message } =
-            body;
+        const { 
+            firstName, 
+            lastName, 
+            email, 
+            dialCode, 
+            phone, 
+            subject, 
+            message,
+            companyName,
+            industry,
+            region,
+            businessYear,
+            labelingType,
+            quantity
+        } = body;
 
         // Server-side validation
         const errors = {};
@@ -17,7 +30,15 @@ export async function POST(request) {
         if (!phone?.trim() || !/^\d{7,15}$/.test(phone))
             errors.phone = "A valid phone number (7-15 digits) is required.";
         if (!subject) errors.subject = "Please select a subject.";
-        if (!message?.trim()) errors.message = "Message is required.";
+        
+        // Subject-specific validation
+        if (subject.toLowerCase().includes("distributor")) {
+            if (!region?.trim()) errors.region = "Target region is required.";
+            if (!businessYear) errors.businessYear = "Years in business is required.";
+        } else if (subject.toLowerCase().includes("brand") || subject.toLowerCase().includes("labeling")) {
+            if (!labelingType) errors.labelingType = "Service type is required.";
+            if (!quantity?.trim()) errors.quantity = "Estimated monthly quantity is required.";
+        }
 
         if (Object.keys(errors).length > 0) {
             return Response.json(
@@ -33,10 +54,16 @@ export async function POST(request) {
             firstName: firstName.trim(),
             lastName: lastName.trim(),
             email: email.trim().toLowerCase(),
-            dialCode: dialCode || "+1",
+            dialCode: dialCode || "+91",
             phone: phone.trim(),
             subject,
-            message: message.trim(),
+            message: message?.trim() || `Inquiry for ${subject}`,
+            companyName: companyName?.trim(),
+            industry: industry?.trim(),
+            region: region?.trim(),
+            businessYear,
+            labelingType,
+            quantity: quantity?.trim(),
         });
 
         return Response.json(

@@ -10,33 +10,33 @@ const steps = [
   {
     label: "Sugar Cane",
     iconPath: "/landing/sugarcane.png",
-    description: "Harvesting renewable sugarcane bagasse",
+    description: "The lifecycle begins with sugarcane, a rapidly renewable crop grown in tropical regions. After reaching maturity, the sugarcane is harvested and transported for processing. Unlike wood-based materials, sugarcane regrows quickly, making it a sustainable agricultural resource that supports eco-friendly manufacturing."
   },
   {
     label: "Sugar Factory",
     iconComponent: Factory,
-    description: "Processing sugar from harvested cane",
+    description: "At the sugar factory, harvested sugarcane is crushed to extract juice used for sugar production. During this process, a fibrous by-product called bagasse remains. Instead of being discarded or burned, this natural residue becomes the primary raw material for producing sustainable tableware."
   },
   {
     label: "Sugar Cane Pulp",
     iconPath: "/landing/pulp.png",
-    description: "Collecting residual bagasse fibers",
+    description: "The leftover bagasse fibers are collected, cleaned, and prepared for further processing. These fibers are rich in cellulose, making them ideal for creating durable biodegradable products. Repurposing bagasse reduces agricultural waste and minimizes the need for cutting trees."
   },
   {
     label: "Pulp Process",
     icon: "⚙️",
-    description: "Transforming fibers into eco-pulp",
+    description: "The bagasse fibers are processed into a smooth natural pulp using water and eco-friendly techniques. This step transforms raw agricultural residue into a moldable material while maintaining strength, durability, and sustainability throughout the manufacturing process."
   },
   {
     label: "Biodegradable Product",
     icon: "🍽️",
-    description: "Pressing pulp into premium tableware",
+    description: "The eco-friendly pulp is molded under heat and pressure to form strong, lightweight, and compostable tableware products. These items are designed to replace plastic and foam disposables while remaining safe for food use and sturdy enough for everyday meals."
   },
   {
     label: "Compost & Farming",
     iconPath: "/landing/compost.png",
-    description: "Composting back to soil in 90 days",
-  },
+    description: "After use, bagasse tableware naturally decomposes within about 90 days in composting conditions. It returns nutrients back to the soil, supporting farming and plant growth. This closes the loop of a circular lifecycle where waste becomes a resource again."
+  }
 ];
 
 import { useMotionValue, useTransform, animate } from "framer-motion";

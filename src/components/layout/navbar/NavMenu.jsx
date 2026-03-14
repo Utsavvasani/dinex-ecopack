@@ -12,6 +12,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { useRouter, usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { navDropdowns, navLinks } from "@/lib/navConstants";
 
@@ -45,10 +46,13 @@ const NavListItem = React.forwardRef(
 NavListItem.displayName = "NavListItem";
 
 // ─── NavDropdown ──────────────────────────────────────────────────────────────
-function NavDropdown({ title, items, isGrid, isActive }) {
+function NavDropdown({ title, items, isGrid, isActive, href }) {
+  const router = useRouter();
+  
   return (
     <NavigationMenuItem className="cursor-pointer">
       <NavigationMenuTrigger
+        onClick={() => href && router.push(href)}
         className={cn(
           "cursor-pointer",
           NAV_TRIGGER_STYLE,
@@ -104,9 +108,6 @@ function NavDropdown({ title, items, isGrid, isActive }) {
   );
 }
 
-import { usePathname } from "next/navigation";
-
-// ─── NavMenu ──────────────────────────────────────────────────────────────────
 export function NavMenu() {
   const pathname = usePathname();
 
@@ -143,6 +144,7 @@ export function NavMenu() {
                 items={dropdown.items}
                 isGrid={dropdown.isGrid}
                 isActive={isAnyActive}
+                href={dropdown.href}
               />
             );
           })}

@@ -15,6 +15,7 @@ export const navDropdowns = [
   {
     title: "PRODUCTS",
     key: "products",
+    href: "/products",
     isGrid: true,
     items: [
       {
@@ -45,15 +46,20 @@ export const navDropdowns = [
     key: "inquiry",
     items: [
       {
-        title: "Partnerships",
-        href: "/inquiry/partnerships",
-        description: "Partner with us for a greener future.",
+        title: "Download Catalog",
+        href: "/inquiry/download-catalog",
+        description: "Get our latest product catalog.",
       },
       {
         title: "Distributorship",
         href: "/inquiry/distributorship",
         description: "Become an official distributor.",
       },
+      {
+        title: "Brand Labeling",
+        href: "/inquiry/brand-labeling",
+        description: "Private labeling solutions for your brand.",
+      }
     ],
   },
 ];

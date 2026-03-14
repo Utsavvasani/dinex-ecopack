@@ -27,6 +27,9 @@ const SUBJECT_COLORS = {
     "Product Inquiry": "bg-violet-100 text-violet-700",
     "Request a Quote": "bg-orange-100 text-orange-700",
     "Technical Support": "bg-cyan-100 text-cyan-700",
+    "Distributorship Inquiry": "bg-blue-100 text-blue-700",
+    "Brand Labeling Inquiry": "bg-purple-100 text-purple-700",
+    "Catalog Download": "bg-emerald-100 text-emerald-700",
     Other: "bg-gray-100 text-gray-600",
 };
 
@@ -86,25 +89,59 @@ function DetailModal({ contact, onClose }) {
                         <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">Phone</p>
                         <p className="text-sm font-medium text-gray-900">{contact.dialCode} {contact.phone}</p>
                     </div>
+                    {contact.companyName && (
+                        <div>
+                            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">Company</p>
+                            <p className="text-sm font-medium text-gray-900">{contact.companyName}</p>
+                        </div>
+                    )}
+                    <div className="grid grid-cols-2 gap-4 text-xs">
+                        {contact.industry && (
+                            <div>
+                                <p className="font-semibold text-gray-400 uppercase tracking-wide mb-1">Industry</p>
+                                <p className="font-medium text-gray-900">{contact.industry}</p>
+                            </div>
+                        )}
+                        {contact.region && (
+                            <div>
+                                <p className="font-semibold text-gray-400 uppercase tracking-wide mb-1">Target Region</p>
+                                <p className="font-medium text-gray-900">{contact.region}</p>
+                            </div>
+                        )}
+                        {contact.businessYear && (
+                            <div>
+                                <p className="font-semibold text-gray-400 uppercase tracking-wide mb-1">Years in Business</p>
+                                <p className="font-medium text-gray-900">{contact.businessYear}</p>
+                            </div>
+                        )}
+                        {contact.labelingType && (
+                            <div>
+                                <p className="font-semibold text-gray-400 uppercase tracking-wide mb-1">Labeling Type</p>
+                                <p className="font-medium text-gray-900">{contact.labelingType}</p>
+                            </div>
+                        )}
+                        {contact.quantity && (
+                            <div>
+                                <p className="font-semibold text-gray-400 uppercase tracking-wide mb-1">Est. Quantity</p>
+                                <p className="font-medium text-gray-900">{contact.quantity}</p>
+                            </div>
+                        )}
+                    </div>
                     <div>
                         <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">Subject</p>
                         <span className={`inline-block text-xs font-semibold px-2.5 py-1 rounded-full ${SUBJECT_COLORS[contact.subject] ?? "bg-gray-100 text-gray-600"}`}>
                             {contact.subject}
                         </span>
                     </div>
-                    <div>
-                        <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">Message</p>
-                        <p className="text-sm text-gray-700 bg-gray-50 rounded-xl p-4 leading-relaxed">{contact.message}</p>
-                    </div>
-                    <div>
-                        <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">Received At</p>
-                        <p className="text-sm text-gray-700">{formatDate(contact.createdAt)}</p>
-                    </div>
-                    <div>
-                        <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">Status</p>
-                        <span className={`inline-block text-xs font-semibold px-2.5 py-1 rounded-full capitalize ${STATUS_COLORS[contact.status] ?? "bg-gray-100 text-gray-600"}`}>
-                            {contact.status}
-                        </span>
+                    {contact.message && (
+                        <div>
+                            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">Message / Requirements</p>
+                            <p className="text-sm text-gray-700 bg-gray-50 rounded-xl p-4 leading-relaxed whitespace-pre-wrap">{contact.message}</p>
+                        </div>
+                    )}
+                    <div className="flex items-center justify-between text-[11px] text-gray-400 pt-2 border-t border-gray-50">
+                        <span>Received: {formatDate(contact.createdAt)}</span>
+                        <span className="capitalize font-medium text-gray-500">Status: {contact.status}</span>
                     </div>
                 </div>
             </div>
@@ -148,7 +185,10 @@ export default function DashboardClient({ contacts, adminEmail }) {
                     c.email.toLowerCase().includes(q) ||
                     c.phone.includes(q) ||
                     c.subject.toLowerCase().includes(q) ||
-                    c.message.toLowerCase().includes(q)
+                    c.message?.toLowerCase().includes(q) ||
+                    c.companyName?.toLowerCase().includes(q) ||
+                    c.industry?.toLowerCase().includes(q) ||
+                    c.region?.toLowerCase().includes(q)
             );
         }
         if (filterSubject !== "All") {

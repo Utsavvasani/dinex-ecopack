@@ -188,9 +188,9 @@ function ErrorModal({ message, onClose }) {
   );
 }
 
-const MAP_EMBED = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.073232625992!2d72.8847834!3d21.2444018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f00517829c3%3A0x9f370bf85fa7925a!2sDEC17%20IMPEX%20LLP!5e0!3m2!1sen!2sin!4v1690456789000!5m2!1sen!2sin";
-const MAP_LINK = "https://maps.google.com/?q=DEC17+IMPEX+LLP+Surat";
-const FULL_ADDRESS = "123 Eco Packaging St., Green City, NY 10001, United States";
+const MAP_EMBED = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.713291122765!2d72.833502575263!3d21.203530580492476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f8de674963f%3A0xbbda33d533e40fc6!2sRose%20Impex!5e0!3m2!1sen!2sin!4v1741933458728!5m2!1sen!2sin";
+const MAP_LINK = "https://maps.app.goo.gl/LzfY6PFeFJ7bBFr68";
+const FULL_ADDRESS = "6 / 456, 3rd Floor, Kharadi Sheri, Manchharpura, SURAT-395003";
 
 function MapModal({ onClose }) {
   const [tab, setTab] = useState('map');
@@ -269,7 +269,7 @@ function MapModal({ onClose }) {
             </div>
             <div>
               <h3 className="font-bold text-gray-900 text-base">Our Location</h3>
-              <p className="text-xs text-gray-500">DEC17 IMPEX LLP</p>
+              <p className="text-xs text-gray-500">Dinex Ecopack</p>
             </div>
           </div>
           <button
@@ -379,8 +379,9 @@ function MapModal({ onClose }) {
               {/* Info cards */}
               {[
                 { icon: MapPin, label: 'Address', value: FULL_ADDRESS },
-                { icon: Phone, label: 'Phone', value: '+1 (555) 123-4567' },
-                { icon: Mail, label: 'Email', value: 'hello@dinex-ecopack.com' },
+                { icon: CheckCircle, label: 'GST Number', value: '24DJOPG2992B1Z8' },
+                { icon: Phone, label: 'Phone', value: '+91 96245 48030' },
+                { icon: Mail, label: 'Email', value: 'dinexecopack@gmail.com' },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 ring-1 ring-gray-100">
                   <div className="bg-primary/10 p-2.5 rounded-xl shrink-0">
@@ -618,7 +619,7 @@ export default function ContactPage() {
               >
                 <iframe
                   title="Map Preview"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.073232625992!2d72.8847834!3d21.2444018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f00517829c3%3A0x9f370bf85fa7925a!2sDEC17%20IMPEX%20LLP!5e0!3m2!1sen!2sin!4v1690456789000!5m2!1sen!2sin"
+                  src={MAP_EMBED}
                   width="100%"
                   height="100%"
                   style={{ border: 0, display: 'block', pointerEvents: 'none', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
@@ -645,8 +646,20 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-gray-900 text-sm">Our Office</h3>
                     <p className="text-gray-600 mt-1 leading-relaxed text-sm">
-                      123 Eco Packaging St.<br />Green City, NY 10001
+                      6 / 456, 3rd Floor, Kharadi Sheri,<br />Manchharpura, SURAT-395003
                     </p>
+                  </div>
+                </div>
+
+                <div className="h-px bg-gray-100 my-4" />
+
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 p-3 rounded-2xl shrink-0 hover:bg-primary/20 transition-colors">
+                    <CheckCircle className="size-5 text-primary" strokeWidth={1.5} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 text-sm">GST Number</h3>
+                    <p className="text-gray-600 mt-1 text-sm font-medium">24DJOPG2992B1Z8</p>
                   </div>
                 </div>
 
@@ -658,8 +671,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 text-sm">Phone</h3>
-                    <p className="text-gray-600 mt-1 text-sm">+1 (555) 123-4567</p>
-                    <p className="text-xs text-gray-500 mt-0.5">Mon-Fri 9am to 6pm</p>
+                    <p className="text-gray-600 mt-1 text-sm">+91 96245 48030</p>
+                    <p className="text-xs text-gray-500 mt-0.5">Mon-Sat 9am to 6pm</p>
                   </div>
                 </div>
 
@@ -671,7 +684,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 text-sm">Email</h3>
-                    <p className="text-gray-600 mt-1 text-sm">hello@dinex-ecopack.com</p>
+                    <p className="text-gray-600 mt-1 text-sm">dinexecopack@gmail.com</p>
                     <p className="text-xs text-gray-500 mt-0.5">We'll reply within 24 hours</p>
                   </div>
                 </div>

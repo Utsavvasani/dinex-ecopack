@@ -44,9 +44,11 @@ export function ProductPreviewSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="flex flex-col items-center gap-4">
-            <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-primary/5 border border-primary/20 text-primary text-sm font-bold uppercase tracking-widest">
-              Our Products
-            </div>
+            <Link href="/products" className="group/badge">
+              <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-primary/5 border border-primary/20 text-primary text-sm font-bold uppercase tracking-widest group-hover/badge:bg-primary group-hover/badge:text-primary-foreground transition-all">
+                Our Products
+              </div>
+            </Link>
 
             <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-foreground leading-tight">
               Premium{" "}

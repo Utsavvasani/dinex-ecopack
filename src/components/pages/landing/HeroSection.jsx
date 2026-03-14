@@ -130,9 +130,9 @@ export function HeroSection() {
             Explore Our Products
           </Link>
           <Link
-            href="/contact"
+            href="/inquiry/download-catalog"
             className="inline-flex h-12 items-center justify-center rounded-full border border-input bg-background/50 backdrop-blur-sm px-8 text-base font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
-            Request Bulk Quote
+            Download Catalog
           </Link>
         </motion.div>
       </div>

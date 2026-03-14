@@ -22,7 +22,7 @@ import { navDropdowns } from "@/lib/navConstants";
 function NavSidebarAccordion() {
   return (
     <Accordion type="single" collapsible className="w-full">
-      {navDropdowns.map(({ key, title, items }) => (
+      {navDropdowns.map(({ key, title, items, href }) => (
         <AccordionItem
           key={key}
           value={key}
@@ -31,6 +31,15 @@ function NavSidebarAccordion() {
             {title.charAt(0) + title.slice(1).toLowerCase()}
           </AccordionTrigger>
           <AccordionContent className="flex flex-col space-y-2 pb-4">
+            {href && (
+              <SheetClose asChild>
+                <Link
+                  href={href}
+                  className="text-sm font-bold text-primary hover:underline transition-colors pl-4 py-1 mb-2">
+                  View All {title.charAt(0) + title.slice(1).toLowerCase()}
+                </Link>
+              </SheetClose>
+            )}
             {items.map((item) => (
               <SheetClose asChild key={item.title}>
                 <Link

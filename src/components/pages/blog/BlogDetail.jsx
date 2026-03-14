@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,13 +10,18 @@ import { BLOG_POSTS } from "@/lib/blogData";
 import { BlogCard } from "./BlogCard";
 
 export function BlogDetail({ post }) {
+  const [shareUrl, setShareUrl] = useState("");
+
+  useEffect(() => {
+    setShareUrl(window.location.href);
+  }, []);
+
   // Get related posts (excluding current)
   const relatedPosts = BLOG_POSTS.filter((p) => p.slug !== post.slug).slice(
     0,
     3,
   );
 
-  const shareUrl = typeof window !== "undefined" ? window.location.href : "";
   const shareTitle = post.title;
 
   const shareLinks = [
