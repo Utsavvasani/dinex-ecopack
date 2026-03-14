@@ -259,7 +259,7 @@ export default function BrandLabelingPage() {
         
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-50 text-purple-600 text-xs font-bold uppercase tracking-widest mb-6 border border-purple-100">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 text-emerald-600 text-xs font-bold uppercase tracking-widest mb-6 border border-primary/20">
             <Tag className="size-4" /> Brand Labeling
           </div>
           <h1 className="text-4xl md:text-6xl font-black tracking-tight text-gray-900 mb-6">
@@ -295,8 +295,8 @@ export default function BrandLabelingPage() {
               </div>
             </div>
 
-            <div className="p-8 rounded-3xl bg-purple-50/50 border border-purple-100">
-              <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2 text-purple-700">
+            <div className="p-8 rounded-3xl bg-emerald-50/50 border border-primary/20">
+              <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2 text-emerald-700">
                 <CheckCircle className="size-5" /> Retail Ready
               </h3>
               <p className="text-sm text-gray-600 leading-relaxed">
@@ -381,8 +381,8 @@ export default function BrandLabelingPage() {
               </>
             ) : (
               <div className="text-center animate-in fade-in zoom-in duration-500">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-purple-100 rounded-full mb-6">
-                  <CheckCircle className="size-10 text-purple-500" />
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-emerald-100 rounded-full mb-6">
+                  <CheckCircle className="size-10 text-emerald-500" />
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">Request Sent!</h2>
                 <p className="text-gray-500 mb-8 max-w-sm mx-auto leading-relaxed">
