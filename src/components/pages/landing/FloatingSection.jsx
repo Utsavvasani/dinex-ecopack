@@ -32,7 +32,7 @@ export function FloatingSection() {
               <p className="text-muted-foreground text-lg leading-relaxed">
                 We transform agricultural by-products into premium tableware,
                 upcycling plant fibers to significantly reduce the global carbon
-                footprint. By choosing Dinex Ecopack, you&apos;re not just
+                footprint. By choosing DineX Ecopack, you&apos;re not just
                 selecting a product; you&apos;re adopting a solution that
                 nurtures the planet by returning to it creating a seamless cycle
                 of renewal from earth to table and back again.

@@ -55,7 +55,7 @@ export function ProductPreviewSection() {
               <span className="text-primary mx-3 italic font-heading">
                 Eco-Friendly
               </span>{" "}
-              Selection
+              Product Range
             </h2>
 
             <div className="h-1.5 w-24 bg-primary/30 rounded-full mx-auto" />

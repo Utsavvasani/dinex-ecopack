@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Award } from "lucide-react";
 
 const QUOTE =
-  "Dinex Ecopack is more than a packaging company — we are part of a global movement toward sustainable living and responsible manufacturing.";
+  "DineX Ecopack is more than a packaging company — we are part of a global movement toward sustainable living and responsible manufacturing.";
 
 export function ClosingQuote() {
   return (
@@ -27,7 +27,7 @@ export function ClosingQuote() {
             </blockquote>
             <div className="h-1 w-16 bg-linear-to-r from-primary to-primary/30 rounded-full" />
             <cite className="text-sm text-muted-foreground font-semibold uppercase tracking-widest not-italic">
-              — The Dinex Ecopack Promise
+              — The DineX Ecopack Promise
             </cite>
           </div>
         </motion.div>

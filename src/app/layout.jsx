@@ -18,7 +18,7 @@ export const metadata = {
   description:
     "Premium eco-friendly packaging solutions. High-quality sugarcane bagasse tableware, compostable plates, bowls, and meal boxes for a sustainable future.",
   keywords: [
-    "Dinex Ecopack",
+    "DineX Ecopack",
     "Sugarcane Bagasse",
     "Eco-friendly Tableware",
     "Compostable Packaging",
@@ -27,7 +27,7 @@ export const metadata = {
     "Zero Waste Packaging",
     "Sugarcane Fiber Products",
     "Environmental Friendly Tableware",
-    "Dinex Ecopack UAE",
+    "DineX Ecopack UAE",
   ],
   alternates: {
     canonical: "https://dinexecopack.com",
@@ -44,16 +44,16 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Dinex Ecopack",
+    title: "DineX Ecopack",
     description: "Premium eco-friendly packaging solutions",
     url: "https://dinexecopack.com",
-    siteName: "Dinex Ecopack",
+    siteName: "DineX Ecopack",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Dinex Ecopack Logo",
+        alt: "DineX Ecopack Logo",
       },
     ],
     locale: "en_US",

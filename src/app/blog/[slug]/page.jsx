@@ -9,7 +9,7 @@ export async function generateMetadata({ params }) {
   if (!post) return { title: "Post Not Found" };
 
   return {
-    title: `${post.title} | Dinex Ecopack Blog`,
+    title: `${post.title} | DineX Ecopack Blog`,
     description: post.excerpt,
   };
 }

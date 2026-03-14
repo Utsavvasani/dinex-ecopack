@@ -7,7 +7,7 @@ export default function JsonLd({ type, data }) {
     schema = {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Dinex Ecopack",
+      "name": "DineX Ecopack",
       "url": "https://dinexecopack.com",
       "logo": "https://dinexecopack.com/logo.png",
       "description": "Premium eco-friendly packaging solutions specializing in sugarcane bagasse tableware.",
@@ -28,7 +28,7 @@ export default function JsonLd({ type, data }) {
     schema = {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Dinex Ecopack",
+      "name": "DineX Ecopack",
       "url": "https://dinexecopack.com",
       "potentialAction": {
         "@type": "SearchAction",
@@ -47,11 +47,11 @@ export default function JsonLd({ type, data }) {
       "image": data.image || "https://dinexecopack.com/logo.png",
       "author": {
         "@type": "Organization",
-        "name": "Dinex Ecopack Team"
+        "name": "DineX Ecopack Team"
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Dinex Ecopack",
+        "name": "DineX Ecopack",
         "logo": {
           "@type": "ImageObject",
           "url": "https://dinexecopack.com/logo.png"
@@ -78,7 +78,7 @@ export default function JsonLd({ type, data }) {
           "image": product.images ? `https://dinexecopack.com${product.images[0]}` : "https://dinexecopack.com/logo.png",
           "brand": {
             "@type": "Brand",
-            "name": "Dinex Ecopack"
+            "name": "DineX Ecopack"
           },
           "material": product.material,
           "url": `https://dinexecopack.com/products/${product.category}`

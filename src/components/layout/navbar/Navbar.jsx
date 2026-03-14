@@ -14,7 +14,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center shrink-0 group perspective-1000">
           <Image
             src="/logo.png"
-            alt="Dinex Logo"
+            alt="DineX Logo"
             width={90}
             height={10}
             className="object-contain brightness-0 invert transition-all duration-300 ease-out group-hover:scale-105 group-hover:-translate-y-0.5 group-hover:drop-shadow-[0_8px_16px_rgba(255,255,255,0.4)]"
@@ -24,11 +24,11 @@ export function Navbar() {
 
         {/* Mobile Controls */}
         <div className="flex items-center gap-1 lg:hidden">
-          <Link
-            href="/contact"
+          <a
+            href="tel:+447879905973"
             className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white text-black hover:bg-white/80 transition-colors">
             <Phone className="size-4" />
-          </Link>
+          </a>
           <NavSidebar />
         </div>
 

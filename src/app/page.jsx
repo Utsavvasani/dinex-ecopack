@@ -8,9 +8,9 @@ import { FloatingSection } from "@/components/pages/landing/FloatingSection";
 import { BagasseVsPlasticSection } from "@/components/pages/landing/BagasseVsPlasticSection";
 
 export const metadata = {
-  title: "Dinex Ecopack | Premium Sugarcane Bagasse Tableware & Packaging",
+  title: "DineX Ecopack | Premium Sugarcane Bagasse Tableware & Packaging",
   description:
-    "Explore the widest range of high-quality sugarcane bagasse plates, bowls, and meal boxes. 100% compostable and sustainable packaging solutions by Dinex Ecopack.",
+    "Explore the widest range of high-quality sugarcane bagasse plates, bowls, and meal boxes. 100% compostable and sustainable packaging solutions by DineX Ecopack.",
 };
 
 export default function Home() {

@@ -270,7 +270,7 @@ function MapModal({ onClose }) {
             </div>
             <div>
               <h3 className="font-bold text-gray-900 text-base">Our Location</h3>
-              <p className="text-xs text-gray-500">Dinex Ecopack (UK)</p>
+              <p className="text-xs text-gray-500">DineX Ecopack (UK)</p>
             </div>
           </div>
           <button
@@ -681,7 +681,7 @@ export default function ContactClient() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 text-sm">Phone</h3>
-                    <p className="text-gray-600 mt-1 text-sm">+44 7879905973</p>
+                    <a href="tel:+447879905973" className="text-gray-600 mt-1 text-sm hover:text-primary transition-colors block">+44 7879905973</a>
                     <p className="text-xs text-gray-500 mt-0.5">Mon-Sat 9am to 6pm</p>
                   </div>
                 </div>
@@ -694,7 +694,7 @@ export default function ContactClient() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 text-sm">Email</h3>
-                    <p className="text-gray-600 mt-1 text-sm">dinexecopack@gmail.com</p>
+                    <a href="mailto:dinexecopack@gmail.com" className="text-gray-600 mt-1 text-sm hover:text-primary transition-colors block">dinexecopack@gmail.com</a>
                     <p className="text-xs text-gray-500 mt-0.5">We'll reply within 24 hours</p>
                   </div>
                 </div>

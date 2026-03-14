@@ -264,7 +264,7 @@ export default function DistributorshipPage() {
             Join Our Global <span className="text-primary">Network</span>
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Become an authorized distributor of Dinex Ecopack and bring premium, sustainable sugarcane bagasse tableware to your region.
+            Become an authorized distributor of DineX Ecopack and bring premium, sustainable sugarcane bagasse tableware to your region.
           </p>
         </div>
 

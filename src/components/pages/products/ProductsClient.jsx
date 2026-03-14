@@ -31,7 +31,7 @@ export default function ProductsClient() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-primary/5 border border-primary/20 text-primary text-sm font-bold uppercase tracking-widest">
-            Dinex Ecopack
+            DineX Ecopack
           </motion.div>
           
           <motion.h1
@@ -69,7 +69,7 @@ export default function ProductsClient() {
                 {selectedCategory === category.slug && (
                   <motion.div
                     layoutId="activeTab"
-                    className="absolute inset-0 bg-primary rounded-[inherit] -z-0"
+                    className="absolute inset-0 bg-primary rounded-[inherit] z-0"
                     transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                   />
                 )}

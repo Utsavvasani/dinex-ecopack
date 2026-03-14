@@ -10,7 +10,7 @@ const CHAPTERS = [
     number: "01",
     icon: <Leaf className="w-5 h-5" />,
     title: "Why We Exist",
-    body: "At Dinex Ecopack, we believe that packaging should serve people without harming the planet. With the growing global concern over plastic pollution, we are committed to creating sustainable alternatives that support both businesses and the environment.",
+    body: "At DineX Ecopack, we believe that packaging should serve people without harming the planet. With the growing global concern over plastic pollution, we are committed to creating sustainable alternatives that support both businesses and the environment.",
   },
   {
     number: "02",
@@ -88,7 +88,7 @@ export function OurStory() {
             className="flex-1 pb-2">
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed font-medium border-l-4 border-primary/30 pl-6">
               Packaging that serves people without harming the planet —
-              that&apos;s the promise every Dinex Ecopack product carries.
+              that&apos;s the promise every DineX Ecopack product carries.
             </p>
           </motion.div>
         </div>

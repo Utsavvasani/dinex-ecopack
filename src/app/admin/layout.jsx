@@ -3,8 +3,8 @@
 // instead of the root layout's Navbar/Footer.
 
 export const metadata = {
-    title: "Admin — Dinex Ecopack",
-    description: "Admin portal for Dinex Ecopack",
+    title: "Admin — DineX Ecopack",
+    description: "Admin portal for DineX Ecopack",
 };
 
 export default function AdminLayout({ children }) {

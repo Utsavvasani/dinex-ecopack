@@ -225,7 +225,7 @@ export default function DashboardClient({ contacts, adminEmail }) {
                         </div>
                         <div>
                             <p className="text-sm font-bold text-gray-900 leading-none">Admin Dashboard</p>
-                            <p className="text-xs text-gray-400 mt-0.5">Dinex Ecopack</p>
+                            <p className="text-xs text-gray-400 mt-0.5">DineX Ecopack</p>
                         </div>
                     </div>
                     <div className="flex items-center gap-3">

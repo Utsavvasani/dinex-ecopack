@@ -110,7 +110,7 @@ export function FeatureSection() {
               duration={2}
               as="div">
               <Leaf className="w-4 h-4" />
-              <span className="text-sm font-medium">Why Choose Dinex?</span>
+              <span className="text-sm font-medium">Why Choose DineX?</span>
             </HoverBorderGradient>
           </motion.div>
           <motion.h2

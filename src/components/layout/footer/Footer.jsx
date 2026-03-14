@@ -14,7 +14,7 @@ export function Footer() {
             className="inline-block">
             <Image
               src="/logo.png"
-              alt="Dinex Logo"
+              alt="DineX Logo"
               width={120}
               height={40}
               className="object-contain brightness-0 invert"
@@ -49,9 +49,9 @@ export function Footer() {
                 <span className="font-semibold block mb-1 text-primary-foreground/90">UK Office</span>
                 114, Belmont rise,<br />
                 Cheam, London. SM26EE
-                <p className="mt-1 font-medium text-xs text-primary-foreground/50 italic">
+                <a href="tel:+447879905973" className="hover:text-white transition-colors">
                   +44 7879905973
-                </p>
+                </a>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ export function Footer() {
         {/* Social Media Icons */}
         <div className="flex flex-wrap items-center justify-center gap-3 md:gap-6">
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/profile.php?id=61586414277893"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2.5 md:p-3 rounded-full bg-primary-foreground/5 text-primary-foreground/80 hover:bg-white hover:text-primary transition-all duration-300 hover:-translate-y-1 shadow-sm"
@@ -90,7 +90,7 @@ export function Footer() {
             <Facebook className="w-5 h-5" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/dinex-ecopack-0810563b1"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2.5 md:p-3 rounded-full bg-primary-foreground/5 text-primary-foreground/80 hover:bg-white hover:text-primary transition-all duration-300 hover:-translate-y-1 shadow-sm"
@@ -98,7 +98,7 @@ export function Footer() {
             <Linkedin className="w-5 h-5" />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/dinexecopack?igsh=MWlmMHlwYXUyZDJndQ%3D%3D&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2.5 md:p-3 rounded-full bg-primary-foreground/5 text-primary-foreground/80 hover:bg-white hover:text-primary transition-all duration-300 hover:-translate-y-1 shadow-sm"
@@ -106,7 +106,7 @@ export function Footer() {
             <Instagram className="w-5 h-5" />
           </a>
           <a
-            href="https://x.com"
+            href="https://x.com/DineXecopack"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2.5 md:p-3 rounded-full bg-primary-foreground/5 text-primary-foreground/80 hover:bg-white hover:text-primary transition-all duration-300 hover:-translate-y-1 shadow-sm"
@@ -134,7 +134,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between w-full text-sm text-primary-foreground/60 border-t border-primary-foreground/10 pt-8">
-          <p>© {new Date().getFullYear()} Dinex Ecopack. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} DineX Ecopack. All rights reserved.</p>
         </div>
       </div>
     </footer>

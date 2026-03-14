@@ -24,13 +24,13 @@ export default function PageLoader() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, y: -50 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-background pointer-events-none">
+          className="fixed inset-0 z-100 flex flex-col items-center justify-center bg-background pointer-events-none">
           <div className="text-2xl md:text-5xl font-black tracking-tighter text-primary">
             <TextRoll
               className="inline-block"
               repeat={Infinity}
               repeatDelay={2}>
-              Dinex Ecopack
+              DineX Ecopack
             </TextRoll>
           </div>
         </motion.div>

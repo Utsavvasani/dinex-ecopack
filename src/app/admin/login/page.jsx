@@ -57,7 +57,7 @@ export default function AdminLoginPage() {
                             <Lock className="size-7 text-primary" strokeWidth={1.5} />
                         </div>
                         <h1 className="text-2xl font-bold text-white">Admin Portal</h1>
-                        <p className="text-slate-400 text-sm mt-1">Dinex Ecopack — Super Admin</p>
+                        <p className="text-slate-400 text-sm mt-1">DineX Ecopack — Super Admin</p>
                     </div>
 
                     {/* Error */}

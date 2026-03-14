@@ -7,9 +7,9 @@ import { ClosingQuote } from "@/components/pages/about/ClosingQuote";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
-  title: "About Us | Dinex Ecopack's Mission for a Sustainable Planet",
+  title: "About Us | DineX Ecopack's Mission for a Sustainable Planet",
   description:
-    "Learn about Dinex Ecopack's journey, our commitment to zero-waste manufacturing, and how we're leading the shift to sugarcane bagasse tableware globally.",
+    "Learn about DineX Ecopack's journey, our commitment to zero-waste manufacturing, and how we're leading the shift to sugarcane bagasse tableware globally.",
 };
 
 export default function AboutPage() {

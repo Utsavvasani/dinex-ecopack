@@ -14,7 +14,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `${currentCategory.name} | Premium Sugarcane Bagasse Sustainable Solutions`,
-    description: `Browse our high-quality collection of ${currentCategory.name}. Sustainable, compostable, and eco-friendly tableware by Dinex Ecopack.`,
+    description: `Browse our high-quality collection of ${currentCategory.name}. Sustainable, compostable, and eco-friendly tableware by DineX Ecopack.`,
   };
 }
 

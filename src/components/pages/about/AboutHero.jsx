@@ -27,10 +27,10 @@ export function AboutHero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-5xl md:text-7xl font-black tracking-tighter text-foreground leading-none">
+          className="text-5xl md:text-7xl font-black tracking-tighter text-foreground leading-tight">
           About{" "}
-          <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-primary/60 italic font-heading pr-2 leading-none">
-            Dinex Ecopack
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-primary/60 italic font-heading pr-4 md:pr-6 leading-tight inline-block">
+            DineX Ecopack
           </span>
         </motion.h1>
 
@@ -40,8 +40,7 @@ export function AboutHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
-          Building the Future of Sustainable Food Packaging — one biodegradable
-          plate at a time.
+          Building the Future of Sustainable Food Packaging.
         </motion.p>
 
         {/* Stats */}

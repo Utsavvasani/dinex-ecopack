@@ -43,7 +43,7 @@ export function WhyChooseUsSection() {
           <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-foreground">
             Why <br className="md:hidden" />
             <span className="text-primary italic font-heading">
-              Dinex Ecopack
+              DineX Ecopack
             </span>{" "}
             ?
           </h2>
@@ -65,7 +65,7 @@ export function WhyChooseUsSection() {
                 idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
               }`}>
               {/* Number/Step */}
-              <div className="flex-1 hidden md:block flex justify-center md:justify-end items-center">
+              <div className="flex-1 hidden md:flex justify-center md:justify-end items-center">
                 <div
                   className={`text-4xl md:text-7xl font-black text-primary/10 transition-colors group-hover:text-primary/20 ${idx % 2 === 0 ? "md:text-right" : "md:text-left md:flex-1 md:justify-start"}`}>
                   {reason.number}

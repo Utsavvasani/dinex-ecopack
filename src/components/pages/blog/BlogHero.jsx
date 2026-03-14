@@ -26,7 +26,7 @@ export function BlogHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-5xl md:text-7xl font-black tracking-tighter text-foreground leading-[0.95]">
-            Dinex{" "}
+            DineX{" "}
             <span className="text-primary italic font-heading text-6xl md:text-8xl">
               Eco-Journal
             </span>
