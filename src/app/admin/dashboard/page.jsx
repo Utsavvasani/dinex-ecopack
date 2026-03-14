@@ -17,19 +17,28 @@ export default async function AdminDashboardPage() {
     if (!payload) redirect("/admin/login");
 
     // Fetch contacts
-    await connectToDatabase();
-    const contacts = await Contact.find({})
-        .sort({ createdAt: -1 })
-        .select("-__v")
-        .lean();
+    let serialized = [];
+    try {
+        if (!process.env.MONGODB_URI) {
+            console.warn("Skipping DB fetch in AdminDashboard: MONGODB_URI missing");
+        } else {
+            await connectToDatabase();
+            const contacts = await Contact.find({})
+                .sort({ createdAt: -1 })
+                .select("-__v")
+                .lean();
 
-    // Serialize for client (convert ObjectId + Date to strings)
-    const serialized = contacts.map((c) => ({
-        ...c,
-        _id: c._id.toString(),
-        createdAt: c.createdAt?.toISOString() ?? null,
-        updatedAt: c.updatedAt?.toISOString() ?? null,
-    }));
+            // Serialize for client (convert ObjectId + Date to strings)
+            serialized = contacts.map((c) => ({
+                ...c,
+                _id: c._id.toString(),
+                createdAt: c.createdAt?.toISOString() ?? null,
+                updatedAt: c.updatedAt?.toISOString() ?? null,
+            }));
+        }
+    } catch (err) {
+        console.error("Database error in AdminDashboard:", err.message);
+    }
 
     return (
         <DashboardClient

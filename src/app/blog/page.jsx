@@ -1,4 +1,5 @@
 import { BlogPage } from "@/components/pages/blog/BlogPage";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "Sustainability Insights & Industry News | Dinex Ecopack Blog",
