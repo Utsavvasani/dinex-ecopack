@@ -380,7 +380,6 @@ function MapModal({ onClose }) {
               {/* Info cards */}
               {[
                 { icon: MapPin, label: 'Address', value: FULL_ADDRESS },
-                { icon: CheckCircle, label: 'VAT/Registration', value: 'Pending' }, 
                 { icon: Phone, label: 'Phone', value: '+44 7879905973' },
                 { icon: Mail, label: 'Email', value: 'dinexecopack@gmail.com' },
               ].map(({ icon: Icon, label, value }) => (
@@ -665,23 +664,14 @@ export default function ContactClient() {
 
                 <div className="flex items-start gap-4">
                   <div className="bg-primary/10 p-3 rounded-2xl shrink-0 hover:bg-primary/20 transition-colors">
-                    <CheckCircle className="size-5 text-primary" strokeWidth={1.5} />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 text-sm">VAT/Registration</h3>
-                    <p className="text-gray-600 mt-1 text-sm font-medium">Pending</p>
-                  </div>
-                </div>
-
-                <div className="h-px bg-gray-100 my-4" />
-
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3 rounded-2xl shrink-0 hover:bg-primary/20 transition-colors">
                     <Phone className="size-5 text-primary" strokeWidth={1.5} />
                   </div>
-                  <div>
+                  <div className="flex flex-col gap-2">
                     <h3 className="font-semibold text-gray-900 text-sm">Phone</h3>
-                    <a href="tel:+447879905973" className="text-gray-600 mt-1 text-sm hover:text-primary transition-colors block">+44 7879905973</a>
+                     <div className="space-y-1">
+                       <a href="tel:+919274748030" className="text-gray-600 text-sm hover:text-primary transition-colors block">+91 9274748030</a>
+                       <a href="tel:+447879905973" className="text-gray-600 text-sm hover:text-primary transition-colors block">+44 7879905973</a>
+                     </div>
                     <p className="text-xs text-gray-500 mt-0.5">Mon-Sat 9am to 6pm</p>
                   </div>
                 </div>

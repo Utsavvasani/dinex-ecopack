@@ -60,7 +60,7 @@ function NavSidebarAccordion() {
 export function NavSidebar() {
   return (
     <Sheet>
-      <SheetTrigger className="lg:hidden p-2 text-foreground/80 hover:text-primary transition-colors">
+      <SheetTrigger className="lg:hidden p-2 text-white hover:text-white/80 transition-colors">
         <Menu className="size-6" />
       </SheetTrigger>
       <SheetContent className="w-full sm:max-w-sm bg-white border-l border-gray-100 p-0 overflow-y-auto">
