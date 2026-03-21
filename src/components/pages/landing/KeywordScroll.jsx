@@ -3,14 +3,18 @@
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 
 const keywords = [
-  "Sustainable",
+  "Bagasse Tableware",
+  "Sugarcane Bagasse",
+  "Compostable",
   "Biodegradable",
-  "Plastic-Free",
-  "Export Ready",
   "Eco-Friendly",
-  "Premium Quality",
-  "Carbon Neutral",
-  "Earth First",
+  "Bulk Manufacturer",
+  "Private Label",
+  "UK Supplier",
+  "Indian Manufacturer",
+  "Export Quality",
+  "FDA Approved",
+  "ISO Certified",
 ];
 
 export function KeywordScroll() {

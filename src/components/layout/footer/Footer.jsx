@@ -139,6 +139,22 @@ export function Footer() {
         </div>
       </div>
 
+      {/* SEO Keywords */}
+      <div className="container px-4 md:px-6 mx-auto mb-8">
+        <div className="flex flex-wrap gap-x-6 gap-y-2 text-[10px] md:text-xs text-primary-foreground/40 uppercase tracking-wider border-t border-primary-foreground/10 pt-8">
+          <span>bagasse tableware manufacturer</span>
+          <span>sugarcane bagasse manufacturer</span>
+          <span>compostable tableware manufacturer</span>
+          <span>biodegradable packaging manufacturer</span>
+          <span>eco friendly packaging manufacturer</span>
+          <span>bagasse products manufacturer</span>
+          <span>bagasse plates manufacturer</span>
+          <span>bulk bagasse manufacturer</span>
+          <span>private label bagasse manufacturer</span>
+          <span>UK bagasse tableware manufacturer</span>
+        </div>
+      </div>
+
       {/* Copyright */}
       <div className="container px-4 md:px-6 mx-auto pt-4">
         <div className="flex flex-col md:flex-row items-center justify-between w-full text-sm text-primary-foreground/60 border-t border-primary-foreground/10 pt-8">
