@@ -266,7 +266,7 @@ export const BLOG_POSTS = [
       image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Science",
     },
     readTime: "15 min read",
-    image: "/blog/blog-technical.jpg",
+    image: "/blog/blog-technical.png",
   },
   {
     id: 4,
