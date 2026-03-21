@@ -288,8 +288,8 @@ function MapModal({ onClose }) {
               key={t.id}
               onClick={() => setTab(t.id)}
               className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all ${tab === t.id
-                  ? 'bg-primary text-white shadow-sm shadow-primary/20'
-                  : 'text-gray-500 hover:bg-gray-100'
+                ? 'bg-primary text-white shadow-sm shadow-primary/20'
+                : 'text-gray-500 hover:bg-gray-100'
                 }`}
             >
               {t.label}
@@ -381,7 +381,7 @@ function MapModal({ onClose }) {
               {[
                 { icon: MapPin, label: 'Address', value: FULL_ADDRESS },
                 { icon: Phone, label: 'Phone', value: '+44 7879905973' },
-                { icon: Mail, label: 'Email', value: 'dinexecopack@gmail.com' },
+                { icon: Mail, label: 'Email', value: 'info@dinexecopack.com' },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 ring-1 ring-gray-100">
                   <div className="bg-primary/10 p-2.5 rounded-xl shrink-0">
@@ -508,14 +508,14 @@ export default function ContactClient() {
 
   return (
     <div className="min-h-screen bg-gray-50/30 pt-32 pb-24">
-      <JsonLd 
-        type="breadcrumb" 
+      <JsonLd
+        type="breadcrumb"
         data={{
           links: [
             { name: "Home", url: "/" },
             { name: "Contact Us", url: "/contact" }
           ]
-        }} 
+        }}
       />
       <div className="w-full max-w-7xl mx-auto px-6 lg:px-8">
 
@@ -668,10 +668,10 @@ export default function ContactClient() {
                   </div>
                   <div className="flex flex-col gap-2">
                     <h3 className="font-semibold text-gray-900 text-sm">Phone</h3>
-                     <div className="space-y-1">
-                       <a href="tel:+919274748030" className="text-gray-600 text-sm hover:text-primary transition-colors block">+91 9274748030</a>
-                       <a href="tel:+447879905973" className="text-gray-600 text-sm hover:text-primary transition-colors block">+44 7879905973</a>
-                     </div>
+                    <div className="space-y-1">
+                      <a href="tel:+919274748030" className="text-gray-600 text-sm hover:text-primary transition-colors block">+91 9274748030</a>
+                      <a href="tel:+447879905973" className="text-gray-600 text-sm hover:text-primary transition-colors block">+44 7879905973</a>
+                    </div>
                     <p className="text-xs text-gray-500 mt-0.5">Mon-Sat 9am to 6pm</p>
                   </div>
                 </div>
@@ -684,7 +684,7 @@ export default function ContactClient() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 text-sm">Email</h3>
-                    <a href="mailto:dinexecopack@gmail.com" className="text-gray-600 mt-1 text-sm hover:text-primary transition-colors block">dinexecopack@gmail.com</a>
+                    <a href="mailto:info@dinexecopack.com" className="text-gray-600 mt-1 text-sm hover:text-primary transition-colors block">info@dinexecopack.com</a>
                     <p className="text-xs text-gray-500 mt-0.5">We'll reply within 24 hours</p>
                   </div>
                 </div>

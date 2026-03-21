@@ -73,7 +73,6 @@ export const products = [
       "/products/round_plate/common.jpg",
       "/products/round_plate/10_rp/1.jpg",
       "/products/round_plate/10_rp/2.jpg",
-      "/products/round_plate/10_rp/3.jpg",
     ],
     specs: {
       size: 'Ø10" x H 0.7" Inch \nØ250 x H 18 MM',

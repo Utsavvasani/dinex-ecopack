@@ -70,10 +70,16 @@ export function Footer() {
               <span>+91 9274748030</span>
             </a>
             <a
-              href="mailto:dinexecopack@gmail.com"
+              href="tel:+447879905973"
+              className="flex items-center space-x-3 text-primary-foreground/90 hover:text-white transition-colors group">
+              <Phone className="w-5 h-5 shrink-0 group-hover:scale-110 transition-transform" />
+              <span>+44 7879905973</span>
+            </a>
+            <a
+              href="mailto:info@dinexecopack.com"
               className="flex items-center space-x-3 text-primary-foreground/90 hover:text-white transition-colors group">
               <Mail className="w-5 h-5 shrink-0 group-hover:scale-110 transition-transform" />
-              <span className="hover:underline">dinexecopack@gmail.com</span>
+              <span className="hover:underline">info@dinexecopack.com</span>
             </a>
 
             {/* Social Media Icons */}
@@ -116,7 +122,7 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="https://wa.me/919274748030"
+                href="https://wa.me/+447879905973"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-primary-foreground/5 text-primary-foreground/80 hover:bg-white hover:text-primary transition-all duration-300 hover:-translate-y-1 shadow-sm"
