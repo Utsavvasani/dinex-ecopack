@@ -363,6 +363,71 @@ export const products = [
       boxCBM: "0.0919",
     },
   },
+
+  // Kraft Paper Salad Bowls
+  {
+    id: "500ml-kraft-paper-salad-bowl",
+    name: "500 ml Kraft Paper Salad Bowl",
+    category: "kraft-paper-salad-bowls",
+    description: "500 ml Kraft Paper Salad Bowl made from premium food-grade kraft paper. Sturdy and grease-resistant, perfect for salads, snacks, and light meals. Eco-friendly and biodegradable, suitable for both hot and cold foods.",
+    material: "Kraft Paper",
+    images: [
+      "/products/kraft _paper_salad_bowl/500ml/1.png",
+      "/products/kraft _paper_salad_bowl/500ml/2.png",
+      "/products/kraft _paper_salad_bowl/500ml/3.png",
+    ],
+    specs: {
+      size: 'Ø5.5" x H 2.0" Inch \nØ140 x H 50 MM',
+      weight: "12 gm",
+      pcsInPack: "50 PC",
+      packInCarton: "20 Pack",
+      totalPcsInCarton: "1000 PCS",
+      boxDimension: "14.96 x 14.96 x 11.81 (Inch) \n380 x 380 x 300 (MM)",
+      boxCBM: "0.0433",
+    },
+  },
+  {
+    id: "750ml-kraft-paper-salad-bowl",
+    name: "750 ml Kraft Paper Salad Bowl",
+    category: "kraft-paper-salad-bowls",
+    description: "750 ml Kraft Paper Salad Bowl made from premium food-grade kraft paper. Ideal for generous portions of salads, grain bowls, and mixed meals. Eco-friendly and biodegradable, suitable for both hot and cold foods.",
+    material: "Kraft Paper",
+    images: [
+      "/products/kraft _paper_salad_bowl/750 ml/Gemini_Generated_Image_gxvi47gxvi47gxvi.png",
+      "/products/kraft _paper_salad_bowl/750 ml/Gemini_Generated_Image_scixrsscixrsscix.png",
+      "/products/kraft _paper_salad_bowl/750 ml/Gemini_Generated_Image_vli40hvli40hvli4.png",
+    ],
+    specs: {
+      size: 'Ø6.3" x H 2.2" Inch \nØ160 x H 56 MM',
+      weight: "16 gm",
+      pcsInPack: "50 PC",
+      packInCarton: "16 Pack",
+      totalPcsInCarton: "800 PCS",
+      boxDimension: "16.93 x 16.93 x 12.20 (Inch) \n430 x 430 x 310 (MM)",
+      boxCBM: "0.0573",
+    },
+  },
+  {
+    id: "1000ml-kraft-paper-salad-bowl",
+    name: "1000 ml Kraft Paper Salad Bowl",
+    category: "kraft-paper-salad-bowls",
+    description: "1000 ml Kraft Paper Salad Bowl made from premium food-grade kraft paper. Extra large capacity for family-size salads and hearty meal bowls. Eco-friendly and biodegradable, suitable for both hot and cold foods.",
+    material: "Kraft Paper",
+    images: [
+      "/products/kraft _paper_salad_bowl/1000ml/Gemini_Generated_Image_kohhphkohhphkohh.png",
+      "/products/kraft _paper_salad_bowl/1000ml/Gemini_Generated_Image_s08p9ss08p9ss08p.png",
+      "/products/kraft _paper_salad_bowl/1000ml/Gemini_Generated_Image_sck8gzsck8gzsck8.png",
+    ],
+    specs: {
+      size: 'Ø7.1" x H 2.5" Inch \nØ180 x H 63 MM',
+      weight: "20 gm",
+      pcsInPack: "50 PC",
+      packInCarton: "12 Pack",
+      totalPcsInCarton: "600 PCS",
+      boxDimension: "18.11 x 18.11 x 13.39 (Inch) \n460 x 460 x 340 (MM)",
+      boxCBM: "0.0719",
+    },
+  },
 ];
 
 export const categories = [
@@ -370,4 +435,5 @@ export const categories = [
   { name: "Bowls", slug: "bowls" },
   { name: "Meal Trays", slug: "meal-trays" },
   { name: "Clamshells", slug: "clamshells" },
+  { name: "Kraft Paper Salad Bowls", slug: "kraft-paper-salad-bowls" },
 ];

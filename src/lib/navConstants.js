@@ -38,6 +38,11 @@ export const navDropdowns = [
         href: "/products/clamshells",
         image: "/landing/clamshell.png",
       },
+      {
+        title: "Kraft Paper Salad Bowls",
+        href: "/products/kraft-paper-salad-bowls",
+        image: "/products/kraft _paper_salad_bowl/500ml/1.png",
+      },
     ],
   },
 

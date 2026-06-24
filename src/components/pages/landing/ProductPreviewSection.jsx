@@ -61,8 +61,8 @@ export function ProductPreviewSection() {
             <div className="h-1.5 w-24 bg-primary/30 rounded-full mx-auto" />
 
             <p className="text-muted-foreground text-lg max-w-2xl mt-2">
-              Explore our complete range of biodegradable bagasse tableware
-              designed for modern food service.
+              Explore our complete range of biodegradable bagasse tableware and
+              paper products designed for modern food service.
             </p>
           </motion.div>
         </div>
