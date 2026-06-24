@@ -9,6 +9,12 @@ import { ArrowRight } from "lucide-react";
 // 4 main product categories as per catalog
 const productCategories = [
   {
+    name: "Kraft Paper Salad Bowls",
+    description: "Premium food-grade kraft paper salad bowls",
+    image: "/products/kraft _paper_salad_bowl/500ml/1.png",
+    link: "/products/kraft-paper-salad-bowls",
+  },
+  {
     name: "Round Plates",
     description: "Classic round biodegradable plates",
     image: "/landing/round-plates.png",
@@ -67,8 +73,8 @@ export function ProductPreviewSection() {
           </motion.div>
         </div>
 
-        {/* 4-Category Premium Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* 5-Category Premium Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {productCategories.map((category, index) => (
             <Link key={index} href={category.link}>
               <motion.div
