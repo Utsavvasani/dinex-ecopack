@@ -372,9 +372,9 @@ export const products = [
     description: "500 ml Kraft Paper Salad Bowl made from premium food-grade kraft paper. Sturdy and grease-resistant, perfect for salads, snacks, and light meals. Eco-friendly and biodegradable, suitable for both hot and cold foods.",
     material: "Kraft Paper",
     images: [
-      "/products/kraft _paper_salad_bowl/500ml/1.png",
-      "/products/kraft _paper_salad_bowl/500ml/2.png",
-      "/products/kraft _paper_salad_bowl/500ml/3.png",
+      "/products/kraft_paper_salad_bowls/500ml/1.jpg",
+      "/products/kraft_paper_salad_bowls/500ml/2.jpg",
+      "/products/kraft_paper_salad_bowls/500ml/3.jpg",
     ],
     specs: {
       size: 'Ø5.5" x H 2.0" Inch \nØ140 x H 50 MM',
@@ -393,9 +393,9 @@ export const products = [
     description: "750 ml Kraft Paper Salad Bowl made from premium food-grade kraft paper. Ideal for generous portions of salads, grain bowls, and mixed meals. Eco-friendly and biodegradable, suitable for both hot and cold foods.",
     material: "Kraft Paper",
     images: [
-      "/products/kraft _paper_salad_bowl/750 ml/Gemini_Generated_Image_gxvi47gxvi47gxvi.png",
-      "/products/kraft _paper_salad_bowl/750 ml/Gemini_Generated_Image_scixrsscixrsscix.png",
-      "/products/kraft _paper_salad_bowl/750 ml/Gemini_Generated_Image_vli40hvli40hvli4.png",
+      "/products/kraft_paper_salad_bowls/750ml/Gemini_Generated_Image_gxvi47gxvi47gxvi.jpg",
+      "/products/kraft_paper_salad_bowls/750ml/Gemini_Generated_Image_scixrsscixrsscix.jpg",
+      "/products/kraft_paper_salad_bowls/750ml/Gemini_Generated_Image_vli40hvli40hvli4.jpg",
     ],
     specs: {
       size: 'Ø6.3" x H 2.2" Inch \nØ160 x H 56 MM',
@@ -414,9 +414,9 @@ export const products = [
     description: "1000 ml Kraft Paper Salad Bowl made from premium food-grade kraft paper. Extra large capacity for family-size salads and hearty meal bowls. Eco-friendly and biodegradable, suitable for both hot and cold foods.",
     material: "Kraft Paper",
     images: [
-      "/products/kraft _paper_salad_bowl/1000ml/Gemini_Generated_Image_kohhphkohhphkohh.png",
-      "/products/kraft _paper_salad_bowl/1000ml/Gemini_Generated_Image_s08p9ss08p9ss08p.png",
-      "/products/kraft _paper_salad_bowl/1000ml/Gemini_Generated_Image_sck8gzsck8gzsck8.png",
+      "/products/kraft_paper_salad_bowls/1000ml/Gemini_Generated_Image_kohhphkohhphkohh.jpg",
+      "/products/kraft_paper_salad_bowls/1000ml/Gemini_Generated_Image_s08p9ss08p9ss08p.jpg",
+      "/products/kraft_paper_salad_bowls/1000ml/Gemini_Generated_Image_sck8gzsck8gzsck8.jpg",
     ],
     specs: {
       size: 'Ø7.1" x H 2.5" Inch \nØ180 x H 63 MM',

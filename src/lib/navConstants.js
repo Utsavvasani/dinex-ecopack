@@ -41,7 +41,7 @@ export const navDropdowns = [
       {
         title: "Kraft Paper Salad Bowls",
         href: "/products/kraft-paper-salad-bowls",
-        image: "/products/kraft _paper_salad_bowl/500ml/1.png",
+        image: "/products/kraft_paper_salad_bowls/500ml/1.jpg",
       },
     ],
   },
