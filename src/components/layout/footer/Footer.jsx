@@ -37,8 +37,16 @@ export function Footer() {
               <MapPin className="w-5 h-5 shrink-0 mt-0.5" />
               <div className="text-sm text-primary-foreground/70">
                 <span className="font-semibold block mb-1 text-primary-foreground/90">India Office</span>
-                6 / 456, 3rd Floor, Kharadi Sheri,<br />
-                Manchharpura, SURAT-395003<br />
+                <a
+                  href="https://maps.app.goo.gl/wu4mgugqksAMz7FcA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors block"
+                >
+                  Plot No-03, Laxmiba Warehouse,<br />
+                  Near Valthan Chowkdi, Valthan-Punagam Road,<br />
+                  Valthan, Surat-394325
+                </a>
                 <a href="tel:+919274748030" className="hover:text-white transition-colors block mt-1">
                   +91 9274748030
                 </a>

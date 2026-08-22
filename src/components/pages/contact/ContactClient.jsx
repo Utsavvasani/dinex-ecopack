@@ -189,15 +189,62 @@ function ErrorModal({ message, onClose }) {
   );
 }
 
-const MAP_EMBED = "https://maps.google.com/maps?q=114,Belmont%20Rise,Cheam,London,SM26EE&t=&z=15&ie=UTF8&iwloc=&output=embed";
-const MAP_LINK = "https://maps.google.com/?q=114,Belmont+Rise,Cheam,London,SM2+6EE";
-const FULL_ADDRESS = "114, Belmont rise, Cheam, London. SM26EE";
+const OFFICES = [
+  {
+    id: 'india',
+    name: 'India Office',
+    location: 'Surat, Gujarat',
+    badge: 'HQ & Plant',
+    flag: 'in',
+    phone: '+91 9274748030',
+    phoneHref: 'tel:+919274748030',
+    email: 'info@dinexecopack.com',
+    address: 'PLOT NO-03, LAXMIBA WAREHOUSE, NEAR VALTHAN CHOWKDI, VALTHAN-PUNAGAM ROAD, VALTHAN, SURAT-394325',
+    addressLines: [
+      'PLOT NO-03, LAXMIBA WAREHOUSE,',
+      'NEAR VALTHAN CHOWKDI, VALTHAN-PUNAGAM ROAD,',
+      'VALTHAN, SURAT-394325'
+    ],
+    mapEmbed: 'https://maps.google.com/maps?q=PLOT%20NO-03,%20LAXMIBA%20WAREHOUSE,NEAR%20VALTHAN%20CHOWKDI,%20VALTHAN-PUNAGAM%20ROAD,%20VALTHAN,%20SURAT-394325&t=&z=15&ie=UTF8&iwloc=&output=embed',
+    mapLink: 'https://maps.app.goo.gl/wu4mgugqksAMz7FcA',
+    hours: [
+      { day: 'Monday – Friday', hours: '9:00 AM – 7:00 PM' },
+      { day: 'Saturday', hours: '9:00 AM – 6:00 PM' },
+      { day: 'Sunday', hours: 'Closed' },
+    ],
+  },
+  {
+    id: 'uk',
+    name: 'UK Office',
+    location: 'London, England',
+    badge: 'International Sales',
+    flag: 'gb',
+    phone: '+44 7879905973',
+    phoneHref: 'tel:+447879905973',
+    email: 'info@dinexecopack.com',
+    address: '114, Belmont rise, Cheam, London. SM26EE',
+    addressLines: [
+      '114, Belmont rise,',
+      'Cheam, London. SM26EE'
+    ],
+    mapEmbed: 'https://maps.google.com/maps?q=114,Belmont%20Rise,Cheam,London,SM26EE&t=&z=15&ie=UTF8&iwloc=&output=embed',
+    mapLink: 'https://maps.google.com/?q=114,Belmont+Rise,Cheam,London,SM2+6EE',
+    hours: [
+      { day: 'Monday – Friday', hours: '9:00 AM – 6:00 PM' },
+      { day: 'Saturday', hours: '10:00 AM – 4:00 PM' },
+      { day: 'Sunday', hours: 'Closed' },
+    ],
+  }
+];
 
-function MapModal({ onClose }) {
+function MapModal({ initialOfficeId = 'india', onClose }) {
+  const [officeId, setOfficeId] = useState(initialOfficeId);
   const [tab, setTab] = useState('map');
   const [copied, setCopied] = useState(false);
   const [from, setFrom] = useState('');
   const modalRef = useRef(null);
+
+  const currentOffice = OFFICES.find(o => o.id === officeId) || OFFICES[0];
 
   // Close on backdrop click
   useEffect(() => {
@@ -233,18 +280,18 @@ function MapModal({ onClose }) {
     }
   };
 
-  const handleCopy = () => copyToClipboard(FULL_ADDRESS);
+  const handleCopy = () => copyToClipboard(currentOffice.address);
 
   const handleShare = () => {
     if (navigator.share) {
-      navigator.share({ title: 'Our Office Location', text: FULL_ADDRESS, url: MAP_LINK })
-        .catch(() => copyToClipboard(MAP_LINK));
+      navigator.share({ title: `DineX Ecopack - ${currentOffice.name}`, text: currentOffice.address, url: currentOffice.mapLink })
+        .catch(() => copyToClipboard(currentOffice.mapLink));
     } else {
-      copyToClipboard(MAP_LINK);
+      copyToClipboard(currentOffice.mapLink);
     }
   };
 
-  const getDirectionsUrl = `https://www.google.com/maps/dir/${encodeURIComponent(from)}/${encodeURIComponent(FULL_ADDRESS)}`;
+  const getDirectionsUrl = `https://www.google.com/maps/dir/${encodeURIComponent(from)}/${encodeURIComponent(currentOffice.address)}`;
 
   const tabs = [
     { id: 'map', label: 'Map' },
@@ -269,8 +316,8 @@ function MapModal({ onClose }) {
               <MapPin className="size-5 text-primary" strokeWidth={1.5} />
             </div>
             <div>
-              <h3 className="font-bold text-gray-900 text-base">Our Location</h3>
-              <p className="text-xs text-gray-500">DineX Ecopack (UK)</p>
+              <h3 className="font-bold text-gray-900 text-base">{currentOffice.name}</h3>
+              <p className="text-xs text-gray-500">DineX Ecopack • {currentOffice.location}</p>
             </div>
           </div>
           <button
@@ -281,20 +328,41 @@ function MapModal({ onClose }) {
           </button>
         </div>
 
-        {/* Tabs */}
-        <div className="flex gap-1 px-6 pt-4 pb-0 shrink-0">
-          {tabs.map(t => (
-            <button
-              key={t.id}
-              onClick={() => setTab(t.id)}
-              className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all ${tab === t.id
-                ? 'bg-primary text-white shadow-sm shadow-primary/20'
-                : 'text-gray-500 hover:bg-gray-100'
+        {/* Office Switcher Bar */}
+        <div className="px-6 pt-4 pb-2 border-b border-gray-100/80 bg-gray-50/50 flex flex-wrap items-center justify-between gap-3 shrink-0">
+          <div className="flex bg-gray-200/70 p-1 rounded-xl gap-1">
+            {OFFICES.map(o => (
+              <button
+                key={o.id}
+                type="button"
+                onClick={() => { setOfficeId(o.id); setFrom(''); }}
+                className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
+                  officeId === o.id
+                    ? 'bg-white text-gray-900 shadow-sm'
+                    : 'text-gray-600 hover:text-gray-900'
                 }`}
-            >
-              {t.label}
-            </button>
-          ))}
+              >
+                <FlagImg code={o.flag} size={16} />
+                <span>{o.name}</span>
+              </button>
+            ))}
+          </div>
+
+          {/* Sub tabs (Map, Directions, Info) */}
+          <div className="flex gap-1">
+            {tabs.map(t => (
+              <button
+                key={t.id}
+                onClick={() => setTab(t.id)}
+                className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${tab === t.id
+                  ? 'bg-primary text-white shadow-sm shadow-primary/20'
+                  : 'text-gray-500 hover:bg-gray-200/50'
+                  }`}
+              >
+                {t.label}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Tab Content */}
@@ -305,8 +373,9 @@ function MapModal({ onClose }) {
             <div className="space-y-3">
               <div className="rounded-2xl overflow-hidden ring-1 ring-gray-100 shadow-sm" style={{ height: 380 }}>
                 <iframe
-                  title="Full Map"
-                  src={MAP_EMBED}
+                  key={currentOffice.id}
+                  title={`${currentOffice.name} Map`}
+                  src={currentOffice.mapEmbed}
                   width="100%"
                   height="100%"
                   style={{ border: 0, display: 'block' }}
@@ -316,13 +385,13 @@ function MapModal({ onClose }) {
                 />
               </div>
               <a
-                href={MAP_LINK}
+                href={currentOffice.mapLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-3 bg-primary text-white rounded-xl text-sm font-semibold hover:opacity-90 transition-opacity shadow-md shadow-primary/20"
               >
                 <MapPin className="size-4" strokeWidth={2} />
-                Open in Google Maps
+                Open {currentOffice.name} in Google Maps
               </a>
             </div>
           )}
@@ -332,8 +401,9 @@ function MapModal({ onClose }) {
             <div className="space-y-4">
               <div className="rounded-2xl overflow-hidden ring-1 ring-gray-100 shadow-sm" style={{ height: 260 }}>
                 <iframe
-                  title="Directions Map"
-                  src={MAP_EMBED}
+                  key={currentOffice.id}
+                  title={`${currentOffice.name} Directions Map`}
+                  src={currentOffice.mapEmbed}
                   width="100%"
                   height="100%"
                   style={{ border: 0, display: 'block' }}
@@ -356,14 +426,14 @@ function MapModal({ onClose }) {
                   </div>
                 </div>
                 <div className="space-y-1.5">
-                  <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">To</label>
+                  <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">To ({currentOffice.name})</label>
                   <div className="flex items-center gap-3 px-4 py-3 rounded-xl border border-gray-200 bg-gray-50">
                     <MapPin className="size-4 text-primary shrink-0" strokeWidth={1.5} />
-                    <span className="text-sm text-gray-700 truncate">{FULL_ADDRESS}</span>
+                    <span className="text-sm text-gray-700 truncate">{currentOffice.address}</span>
                   </div>
                 </div>
                 <a
-                  href={from ? getDirectionsUrl : MAP_LINK}
+                  href={from ? getDirectionsUrl : currentOffice.mapLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full py-3 bg-primary text-white rounded-xl text-sm font-semibold hover:opacity-90 transition-opacity shadow-md shadow-primary/20"
@@ -379,30 +449,32 @@ function MapModal({ onClose }) {
             <div className="space-y-4">
               {/* Info cards */}
               {[
-                { icon: MapPin, label: 'Address', value: FULL_ADDRESS },
-                { icon: Phone, label: 'Phone', value: '+44 7879905973' },
-                { icon: Mail, label: 'Email', value: 'info@dinexecopack.com' },
-              ].map(({ icon: Icon, label, value }) => (
+                { icon: MapPin, label: 'Address', value: currentOffice.address },
+                { icon: Phone, label: 'Phone', value: currentOffice.phone, href: currentOffice.phoneHref },
+                { icon: Mail, label: 'Email', value: currentOffice.email, href: `mailto:${currentOffice.email}` },
+              ].map(({ icon: Icon, label, value, href }) => (
                 <div key={label} className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 ring-1 ring-gray-100">
                   <div className="bg-primary/10 p-2.5 rounded-xl shrink-0">
                     <Icon className="size-4 text-primary" strokeWidth={1.5} />
                   </div>
                   <div>
                     <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-0.5">{label}</p>
-                    <p className="text-sm text-gray-800 font-medium">{value}</p>
+                    {href ? (
+                      <a href={href} className="text-sm text-gray-800 font-medium hover:text-primary transition-colors">
+                        {value}
+                      </a>
+                    ) : (
+                      <p className="text-sm text-gray-800 font-medium">{value}</p>
+                    )}
                   </div>
                 </div>
               ))}
 
               {/* Hours */}
               <div className="p-4 rounded-2xl bg-gray-50 ring-1 ring-gray-100">
-                <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Business Hours</p>
+                <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Business Hours ({currentOffice.name})</p>
                 <div className="space-y-1">
-                  {[
-                    { day: 'Monday – Friday', hours: '9:00 AM – 6:00 PM' },
-                    { day: 'Saturday', hours: '10:00 AM – 4:00 PM' },
-                    { day: 'Sunday', hours: 'Closed' },
-                  ].map(({ day, hours }) => (
+                  {currentOffice.hours.map(({ day, hours }) => (
                     <div key={day} className="flex justify-between text-sm">
                       <span className="text-gray-600">{day}</span>
                       <span className={`font-medium ${hours === 'Closed' ? 'text-red-400' : 'text-gray-900'}`}>{hours}</span>
@@ -448,58 +520,100 @@ export default function ContactClient() {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
+
+  const [activePreviewOffice, setActivePreviewOffice] = useState('india');
+  const [modalOfficeId, setModalOfficeId] = useState('india');
+  const [showMapModal, setShowMapModal] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
   const [showError, setShowError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+
   const [errors, setErrors] = useState({});
-  const [showMapModal, setShowMapModal] = useState(false);
 
-  const handleSubmit = async () => {
+  const previewOffice = OFFICES.find(o => o.id === activePreviewOffice) || OFFICES[0];
+
+  const handleOpenMap = (officeId = 'india') => {
+    setModalOfficeId(officeId);
+    setShowMapModal(true);
+  };
+
+  const validateForm = () => {
     const newErrors = {};
-    if (!firstName.trim()) newErrors.firstName = 'Please enter your first name.';
-    if (!lastName.trim()) newErrors.lastName = 'Please enter your last name.';
-    if (!email.trim() || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email))
-      newErrors.email = 'Please enter a valid email address.';
-    if (!phone.trim() || !/^\d{7,15}$/.test(phone))
-      newErrors.phone = 'Please enter a valid phone number (digits only).';
-    if (!subject) newErrors.subject = 'Please select a subject.';
-    if (!message.trim()) newErrors.message = 'Please enter your message.';
 
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
+    if (!firstName.trim()) {
+      newErrors.firstName = 'First name is required.';
+    }
+
+    if (!lastName.trim()) {
+      newErrors.lastName = 'Last name is required.';
+    }
+
+    if (!email.trim()) {
+      newErrors.email = 'Email address is required.';
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      newErrors.email = 'Please enter a valid email address.';
+    }
+
+    if (!phone.trim()) {
+      newErrors.phone = 'Phone number is required.';
+    } else if (!/^\d{6,15}$/.test(phone.replace(/[\s\-()]/g, ''))) {
+      newErrors.phone = 'Please enter a valid phone number.';
+    }
+
+    if (!subject) {
+      newErrors.subject = 'Please select a subject.';
+    }
+
+    if (!message.trim()) {
+      newErrors.message = 'Message is required.';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!validateForm()) {
       return;
     }
 
-    setErrors({});
     setLoading(true);
+    setErrorMessage('');
 
     try {
-      const res = await fetch('/api/contact', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+        },
         body: JSON.stringify({
-          firstName: firstName.trim(),
-          lastName: lastName.trim(),
-          email: email.trim(),
-          dialCode: selected?.dialCode || '+91',
-          phone: phone.trim(),
+          firstName,
+          lastName,
+          email,
+          phone: `${selected.dialCode} ${phone}`,
           subject,
-          message: message.trim(),
+          message,
         }),
       });
 
-      const data = await res.json();
+      const data = await response.json();
 
-      if (data.success) {
-        setShowSuccess(true);
-        setFirstName(''); setLastName(''); setEmail('');
-        setPhone(''); setSubject(''); setMessage('');
-      } else {
-        setErrorMessage(data.message || 'Something went wrong. Please try again.');
-        setShowError(true);
+      if (!response.ok) {
+        throw new Error(data.message || 'Failed to submit form.');
       }
-    } catch {
-      setErrorMessage('Network error. Please check your connection and try again.');
+
+      setShowSuccess(true);
+      setFirstName('');
+      setLastName('');
+      setEmail('');
+      setPhone('');
+      setSubject('');
+      setMessage('');
+      setErrors({});
+    } catch (err) {
+      setErrorMessage(err.message || 'An unexpected error occurred. Please try again.');
       setShowError(true);
     } finally {
       setLoading(false);
@@ -507,84 +621,113 @@ export default function ContactClient() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50/30 pt-32 pb-24">
-      <JsonLd
-        type="breadcrumb"
-        data={{
-          links: [
-            { name: "Home", url: "/" },
-            { name: "Contact Us", url: "/contact" }
-          ]
-        }}
-      />
-      <div className="w-full max-w-7xl mx-auto px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-50/50 py-16 px-4 sm:px-6 lg:px-8 mt-16 font-sans">
+      <JsonLd type="organization" />
+      <div className="max-w-7xl mx-auto space-y-12">
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-stretch">
+        {/* ── HEADER ── */}
+        <div className="text-center max-w-3xl mx-auto space-y-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-semibold uppercase tracking-wider">
+            <span>Contact Us</span>
+          </div>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
+            We'd Love to Hear From You
+          </h1>
+          <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+            Have questions about our sustainable packaging solutions, custom branding, or distributorship? Reach out to our global team today.
+          </p>
+        </div>
+
+        {/* ── MAIN CONTENT ── */}
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
 
           {/* ── FORM ── */}
-          <div className="lg:col-span-3 flex flex-col order-1 lg:order-2">
-            <div className="bg-white rounded-3xl p-8 xl:p-12 shadow-sm ring-1 ring-gray-100 flex flex-col flex-1">
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">Send us a Message</h2>
-              <p className="text-gray-500 text-sm mb-8">Have questions? Fill out the form and we'll get back to you soon.</p>
+          <div className="lg:col-span-3 order-1 lg:order-2">
+            <div className="bg-white rounded-3xl shadow-sm ring-1 ring-gray-100 p-8 sm:p-10">
+              <div className="mb-8">
+                <h2 className="text-xl font-bold text-gray-900">Send us a Message</h2>
+                <p className="text-sm text-gray-500 mt-1">Fill in the details below and we'll respond within 24 hours.</p>
+              </div>
 
-              <div className="space-y-6">
-                {/* Name Row */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
+              <div className="space-y-5">
+                {/* Name */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="space-y-1.5">
                     <label className="text-sm font-semibold text-gray-700">First Name <span className="text-red-400">*</span></label>
-                    <input type="text" value={firstName} onChange={e => setFirstName(e.target.value)}
-                      className={errors.firstName ? errorInputClass : inputClass} placeholder="John" />
-                    {errors.firstName && <p className="text-xs text-red-500 mt-1">{errors.firstName}</p>}
+                    <input
+                      type="text"
+                      value={firstName}
+                      onChange={e => { setFirstName(e.target.value); if (errors.firstName) setErrors(prev => ({ ...prev, firstName: '' })); }}
+                      placeholder="John"
+                      className={errors.firstName ? errorInputClass : inputClass}
+                    />
+                    {errors.firstName && <p className="text-xs text-red-500">{errors.firstName}</p>}
                   </div>
-                  <div className="space-y-2">
+
+                  <div className="space-y-1.5">
                     <label className="text-sm font-semibold text-gray-700">Last Name <span className="text-red-400">*</span></label>
-                    <input type="text" value={lastName} onChange={e => setLastName(e.target.value)}
-                      className={errors.lastName ? errorInputClass : inputClass} placeholder="Doe" />
-                    {errors.lastName && <p className="text-xs text-red-500 mt-1">{errors.lastName}</p>}
+                    <input
+                      type="text"
+                      value={lastName}
+                      onChange={e => { setLastName(e.target.value); if (errors.lastName) setErrors(prev => ({ ...prev, lastName: '' })); }}
+                      placeholder="Doe"
+                      className={errors.lastName ? errorInputClass : inputClass}
+                    />
+                    {errors.lastName && <p className="text-xs text-red-500">{errors.lastName}</p>}
                   </div>
                 </div>
 
                 {/* Email */}
-                <div className="space-y-2">
+                <div className="space-y-1.5">
                   <label className="text-sm font-semibold text-gray-700">Email Address <span className="text-red-400">*</span></label>
-                  <input type="email" value={email} onChange={e => setEmail(e.target.value)}
-                    className={errors.email ? errorInputClass : inputClass} placeholder="john@example.com" />
-                  {errors.email
-                    ? <p className="text-xs text-red-500 mt-1">{errors.email}</p>
-                    : <p className="text-xs text-gray-400 mt-1">We'll never share your email.</p>
-                  }
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={e => { setEmail(e.target.value); if (errors.email) setErrors(prev => ({ ...prev, email: '' })); }}
+                    placeholder="john@example.com"
+                    className={errors.email ? errorInputClass : inputClass}
+                  />
+                  {errors.email && <p className="text-xs text-red-500">{errors.email}</p>}
                 </div>
 
                 {/* Phone */}
-                <div className="space-y-2">
+                <div className="space-y-1.5">
                   <label className="text-sm font-semibold text-gray-700">Phone Number <span className="text-red-400">*</span></label>
-                  <div className="flex gap-2 items-start">
+                  <div className="flex gap-2">
                     <DialCodeSelector selected={selected} setSelected={setSelected} />
-                    <div className="flex-1">
-                      <input type="tel" value={phone} onChange={e => setPhone(e.target.value)}
-                        className={errors.phone ? errorInputClass : inputClass} placeholder="Enter mobile number" />
-                    </div>
+                    <input
+                      type="tel"
+                      value={phone}
+                      onChange={e => { setPhone(e.target.value); if (errors.phone) setErrors(prev => ({ ...prev, phone: '' })); }}
+                      placeholder="98765 43210"
+                      className={errors.phone ? errorInputClass : inputClass}
+                    />
                   </div>
-                  {errors.phone
-                    ? <p className="text-xs text-red-500 mt-1">{errors.phone}</p>
-                    : <p className="text-xs text-gray-400 mt-1">Digits only, no spaces or dashes.</p>
-                  }
+                  {errors.phone && <p className="text-xs text-red-500">{errors.phone}</p>}
                 </div>
 
                 {/* Subject */}
-                <div className="space-y-2">
+                <div className="space-y-1.5">
                   <label className="text-sm font-semibold text-gray-700">Subject <span className="text-red-400">*</span></label>
-                  <SubjectSelector value={subject} onChange={setSubject} error={errors.subject} />
-                  {errors.subject && <p className="text-xs text-red-500 mt-1">{errors.subject}</p>}
+                  <SubjectSelector
+                    value={subject}
+                    onChange={val => { setSubject(val); if (errors.subject) setErrors(prev => ({ ...prev, subject: '' })); }}
+                    error={errors.subject}
+                  />
+                  {errors.subject && <p className="text-xs text-red-500">{errors.subject}</p>}
                 </div>
 
                 {/* Message */}
-                <div className="space-y-2">
+                <div className="space-y-1.5">
                   <label className="text-sm font-semibold text-gray-700">Message <span className="text-red-400">*</span></label>
-                  <textarea rows={5} value={message} onChange={e => setMessage(e.target.value)}
-                    className={`resize-y ${errors.message ? errorInputClass : inputClass}`}
-                    placeholder="Tell us more about your inquiry..." />
-                  {errors.message && <p className="text-xs text-red-500 mt-1">{errors.message}</p>}
+                  <textarea
+                    rows={4}
+                    value={message}
+                    onChange={e => { setMessage(e.target.value); if (errors.message) setErrors(prev => ({ ...prev, message: '' })); }}
+                    placeholder="Tell us about your requirements..."
+                    className={`${errors.message ? errorInputClass : inputClass} resize-none`}
+                  />
+                  {errors.message && <p className="text-xs text-red-500">{errors.message}</p>}
                 </div>
 
                 {/* Submit */}
@@ -593,7 +736,7 @@ export default function ContactClient() {
                     type="button"
                     onClick={handleSubmit}
                     disabled={loading}
-                    className="w-full sm:w-auto px-10 py-4 bg-primary text-white rounded-xl font-semibold shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/30 hover:opacity-95 transition-all flex items-center gap-2.5 disabled:opacity-60 disabled:cursor-not-allowed text-sm"
+                    className="w-full py-4 px-6 bg-primary text-white rounded-xl font-semibold hover:opacity-90 transition-all shadow-md shadow-primary/20 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {loading ? (
                       <>
@@ -618,76 +761,173 @@ export default function ContactClient() {
           <div className="lg:col-span-2 flex flex-col order-2 lg:order-1">
             <div className="bg-white rounded-3xl shadow-sm ring-1 ring-gray-100 overflow-hidden flex flex-col flex-1">
 
-              {/* Map */}
-              <button
-                type="button"
-                onClick={() => setShowMapModal(true)}
-                className="w-full group relative overflow-hidden shrink-0"
-                style={{ height: 220 }}
-                aria-label="View location on map"
-              >
-                <iframe
-                  title="Map Preview"
-                  src={MAP_EMBED}
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0, display: 'block', pointerEvents: 'none', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-200 flex flex-col items-center justify-center gap-2">
-                  <div className="bg-white/95 backdrop-blur-sm rounded-2xl px-5 py-3 flex items-center gap-2.5 shadow-lg group-hover:scale-105 transition-transform duration-200">
-                    <MapPin className="size-4 text-primary shrink-0" strokeWidth={2} />
-                    <span className="text-sm font-semibold text-gray-800">View Full Map</span>
+              {/* Map Preview & Office Selector */}
+              <div className="p-4 pb-0 bg-gray-50/60 border-b border-gray-100">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-xs font-bold text-gray-400 uppercase tracking-wider">Office Map</span>
+                  <div className="flex bg-gray-200/80 p-1 rounded-xl gap-1">
+                    {OFFICES.map(o => (
+                      <button
+                        key={o.id}
+                        type="button"
+                        onClick={() => setActivePreviewOffice(o.id)}
+                        className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-semibold transition-all ${
+                          activePreviewOffice === o.id
+                            ? 'bg-white text-gray-900 shadow-sm'
+                            : 'text-gray-500 hover:text-gray-900'
+                        }`}
+                      >
+                        <FlagImg code={o.flag} size={14} />
+                        <span>{o.name.replace(' Office', '')}</span>
+                      </button>
+                    ))}
                   </div>
-                  <p className="text-white/90 text-xs font-medium drop-shadow">Click to explore & get directions</p>
                 </div>
-              </button>
+
+                {/* Map Preview Frame */}
+                <button
+                  type="button"
+                  onClick={() => handleOpenMap(activePreviewOffice)}
+                  className="w-full group relative overflow-hidden rounded-2xl ring-1 ring-gray-200/70 mb-4 block text-left"
+                  style={{ height: 210 }}
+                  aria-label={`View ${previewOffice.name} on map`}
+                >
+                  <iframe
+                    key={previewOffice.id}
+                    title={`${previewOffice.name} Preview`}
+                    src={previewOffice.mapEmbed}
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0, display: 'block', pointerEvents: 'none', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                  <div className="absolute inset-0 bg-black/25 group-hover:bg-black/35 transition-colors duration-200 flex flex-col items-center justify-center gap-2">
+                    <div className="bg-white/95 backdrop-blur-sm rounded-2xl px-4 py-2.5 flex items-center gap-2 shadow-lg group-hover:scale-105 transition-transform duration-200">
+                      <MapPin className="size-4 text-primary shrink-0" strokeWidth={2} />
+                      <span className="text-xs font-bold text-gray-800">View {previewOffice.name} Map</span>
+                    </div>
+                    <p className="text-white/95 text-[11px] font-medium drop-shadow">Click for interactive map & directions</p>
+                  </div>
+                </button>
+              </div>
 
               {/* Contact info */}
-              <div className="flex flex-col border-t border-gray-100 px-8 pt-7 pb-8 xl:px-10 gap-0">
-                <h2 className="text-xl font-bold text-gray-900 mb-5">Get in Touch</h2>
-
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3 rounded-2xl shrink-0 hover:bg-primary/20 transition-colors">
-                    <MapPin className="size-5 text-primary" strokeWidth={1.5} />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 text-sm">UK Office</h3>
-                    <p className="text-gray-600 mt-1 leading-relaxed text-sm">
-                      114, Belmont rise,<br />Cheam, London. SM26EE
-                    </p>
-                  </div>
+              <div className="flex flex-col px-6 sm:px-8 py-7 gap-6">
+                <div>
+                  <h2 className="text-xl font-bold text-gray-900">Our Locations</h2>
+                  <p className="text-xs text-gray-500 mt-0.5">Visit or contact our global offices</p>
                 </div>
 
-                <div className="h-px bg-gray-100 my-4" />
-
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3 rounded-2xl shrink-0 hover:bg-primary/20 transition-colors">
-                    <Phone className="size-5 text-primary" strokeWidth={1.5} />
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <h3 className="font-semibold text-gray-900 text-sm">Phone</h3>
-                    <div className="space-y-1">
-                      <a href="tel:+919274748030" className="text-gray-600 text-sm hover:text-primary transition-colors block">+91 9274748030</a>
-                      <a href="tel:+447879905973" className="text-gray-600 text-sm hover:text-primary transition-colors block">+44 7879905973</a>
+                {/* Office 1: India Office */}
+                <div className="rounded-2xl p-4 bg-gray-50/80 ring-1 ring-gray-100 transition-all hover:bg-gray-50">
+                  <div className="flex items-start justify-between gap-2 mb-2.5">
+                    <div className="flex items-center gap-2">
+                      <FlagImg code="in" size={18} />
+                      <h3 className="font-bold text-gray-900 text-sm">India Office</h3>
                     </div>
-                    <p className="text-xs text-gray-500 mt-0.5">Mon-Sat 9am to 6pm</p>
+                    <span className="text-[10px] font-bold text-primary bg-primary/10 px-2 py-0.5 rounded-full">
+                      HQ / Plant
+                    </span>
+                  </div>
+
+                  <p className="text-gray-600 text-xs leading-relaxed mb-3">
+                    PLOT NO-03, LAXMIBA WAREHOUSE,<br />
+                    NEAR VALTHAN CHOWKDI, VALTHAN-PUNAGAM ROAD,<br />
+                    VALTHAN, SURAT-394325
+                  </p>
+
+                  <div className="flex flex-wrap items-center gap-3 pt-1 border-t border-gray-200/60 text-xs">
+                    <a
+                      href="tel:+919274748030"
+                      className="inline-flex items-center gap-1.5 font-medium text-gray-700 hover:text-primary transition-colors"
+                    >
+                      <Phone className="size-3 text-primary" />
+                      <span>+91 9274748030</span>
+                    </a>
+                    <span className="text-gray-300">•</span>
+                    <button
+                      type="button"
+                      onClick={() => handleOpenMap('india')}
+                      className="inline-flex items-center gap-1 font-semibold text-primary hover:underline"
+                    >
+                      <MapPin className="size-3" />
+                      <span>Map & Directions</span>
+                    </button>
                   </div>
                 </div>
 
-                <div className="h-px bg-gray-100 my-4" />
-
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3 rounded-2xl shrink-0 hover:bg-primary/20 transition-colors">
-                    <Mail className="size-5 text-primary" strokeWidth={1.5} />
+                {/* Office 2: UK Office */}
+                <div className="rounded-2xl p-4 bg-gray-50/80 ring-1 ring-gray-100 transition-all hover:bg-gray-50">
+                  <div className="flex items-start justify-between gap-2 mb-2.5">
+                    <div className="flex items-center gap-2">
+                      <FlagImg code="gb" size={18} />
+                      <h3 className="font-bold text-gray-900 text-sm">UK Office</h3>
+                    </div>
+                    <span className="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">
+                      UK & Europe
+                    </span>
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 text-sm">Email</h3>
-                    <a href="mailto:info@dinexecopack.com" className="text-gray-600 mt-1 text-sm hover:text-primary transition-colors block">info@dinexecopack.com</a>
-                    <p className="text-xs text-gray-500 mt-0.5">We'll reply within 24 hours</p>
+
+                  <p className="text-gray-600 text-xs leading-relaxed mb-3">
+                    114, Belmont rise,<br />
+                    Cheam, London. SM26EE
+                  </p>
+
+                  <div className="flex flex-wrap items-center gap-3 pt-1 border-t border-gray-200/60 text-xs">
+                    <a
+                      href="tel:+447879905973"
+                      className="inline-flex items-center gap-1.5 font-medium text-gray-700 hover:text-primary transition-colors"
+                    >
+                      <Phone className="size-3 text-primary" />
+                      <span>+44 7879905973</span>
+                    </a>
+                    <span className="text-gray-300">•</span>
+                    <button
+                      type="button"
+                      onClick={() => handleOpenMap('uk')}
+                      className="inline-flex items-center gap-1 font-semibold text-primary hover:underline"
+                    >
+                      <MapPin className="size-3" />
+                      <span>Map & Directions</span>
+                    </button>
                   </div>
                 </div>
+
+                {/* Direct Communications */}
+                <div className="border-t border-gray-100 pt-5 space-y-4">
+                  <div className="flex items-start gap-3.5">
+                    <div className="bg-primary/10 p-2.5 rounded-xl shrink-0">
+                      <Phone className="size-4 text-primary" strokeWidth={1.5} />
+                    </div>
+                    <div className="flex flex-col">
+                      <span className="text-xs font-semibold text-gray-400 uppercase tracking-wide">Customer Support</span>
+                      <div className="flex flex-col gap-1 mt-1">
+                        <a href="tel:+919274748030" className="text-sm font-medium text-gray-800 hover:text-primary transition-colors">
+                          +91 9274748030 <span className="text-xs text-gray-400 font-normal">(India)</span>
+                        </a>
+                        <a href="tel:+447879905973" className="text-sm font-medium text-gray-800 hover:text-primary transition-colors">
+                          +44 7879905973 <span className="text-xs text-gray-400 font-normal">(UK)</span>
+                        </a>
+                      </div>
+                      <span className="text-[11px] text-gray-400 mt-1">Mon–Sat 9:00 AM to 6:00 PM</span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3.5">
+                    <div className="bg-primary/10 p-2.5 rounded-xl shrink-0">
+                      <Mail className="size-4 text-primary" strokeWidth={1.5} />
+                    </div>
+                    <div className="flex flex-col">
+                      <span className="text-xs font-semibold text-gray-400 uppercase tracking-wide">Email Inquiries</span>
+                      <a href="mailto:info@dinexecopack.com" className="text-sm font-medium text-gray-800 hover:text-primary transition-colors mt-0.5">
+                        info@dinexecopack.com
+                      </a>
+                      <span className="text-[11px] text-gray-400 mt-1">We respond within 24 hours</span>
+                    </div>
+                  </div>
+                </div>
+
               </div>
 
             </div>
@@ -698,7 +938,7 @@ export default function ContactClient() {
 
       {showSuccess && <SuccessModal onClose={() => setShowSuccess(false)} />}
       {showError && <ErrorModal message={errorMessage} onClose={() => setShowError(false)} />}
-      {showMapModal && <MapModal onClose={() => setShowMapModal(false)} />}
+      {showMapModal && <MapModal initialOfficeId={modalOfficeId} onClose={() => setShowMapModal(false)} />}
     </div>
   );
 }
