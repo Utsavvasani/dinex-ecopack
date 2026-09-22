@@ -79,11 +79,18 @@ export function NavSidebar() {
           </SheetClose>
 
           <NavSidebarAccordion />
+          <SheetClose asChild>
+            <Link
+              href="/business"
+              className="text-base font-semibold text-foreground hover:text-primary transition-colors py-4 border-t border-b border-gray-100">
+              Business
+            </Link>
+          </SheetClose>
 
           <SheetClose asChild>
             <Link
               href="/blog"
-              className="text-base font-semibold text-foreground hover:text-primary transition-colors py-4 border-t border-b border-gray-100">
+              className="text-base font-semibold text-foreground hover:text-primary transition-colors py-4 border-b border-gray-100">
               Blog
             </Link>
           </SheetClose>

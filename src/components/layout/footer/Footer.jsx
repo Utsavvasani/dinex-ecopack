@@ -25,6 +25,15 @@ export function Footer() {
             Living green is a must. Choosing eco-friendly living makes a
             difference.
           </p>
+          <div>
+            <Link
+              href="/business"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all hover:scale-105"
+            >
+              <span>Digital Business Card</span>
+              <span className="text-[10px] opacity-75">→</span>
+            </Link>
+          </div>
         </div>
 
         {/* Column 2: Contact Us (Offices) */}
@@ -150,8 +159,19 @@ export function Footer() {
 
       {/* Copyright */}
       <div className="container px-4 md:px-6 mx-auto pt-4">
-        <div className="flex flex-col md:flex-row items-center justify-between w-full text-sm text-primary-foreground/60 border-t border-primary-foreground/10 pt-8">
+        <div className="flex flex-col md:flex-row items-center justify-between w-full text-sm text-primary-foreground/60 border-t border-primary-foreground/10 pt-8 gap-4">
           <p>© {new Date().getFullYear()} DineX Ecopack. All rights reserved.</p>
+          <div className="flex items-center gap-6 text-xs text-primary-foreground/75">
+            <Link href="/business" className="hover:text-white transition-colors">
+              Business Profile
+            </Link>
+            <Link href="/about" className="hover:text-white transition-colors">
+              About
+            </Link>
+            <Link href="/contact" className="hover:text-white transition-colors">
+              Contact
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

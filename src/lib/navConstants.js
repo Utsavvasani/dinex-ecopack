@@ -8,6 +8,7 @@ export const NAV_TRIGGER_STYLE =
 
 export const navLinks = [
   { label: "About Us", href: "/about" },
+  { label: "Business", href: "/business" },
   { label: "Blog", href: "/blog" },
 ];
 
@@ -64,6 +65,11 @@ export const navDropdowns = [
         title: "Brand Labeling",
         href: "/inquiry/brand-labeling",
         description: "Private labeling solutions for your brand.",
+      },
+      {
+        title: "Digital Business Card",
+        href: "/business",
+        description: "Founder profile & direct business card.",
       }
     ],
   },
