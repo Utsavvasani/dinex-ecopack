@@ -266,7 +266,7 @@ export default function BrandLabelingPage() {
             Your Brand, Our <span className="text-primary">Quality</span>
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Elevate your brand with customized, eco-friendly tableware solutions. We provide end-to-end private labeling and custom packaging services.
+            Elevate your brand with customized, eco-friendly paper bowls and salad bowls. We provide end-to-end private labeling and custom packaging services designed specifically for global food service brands and distributors.
           </p>
         </div>
 
@@ -278,7 +278,7 @@ export default function BrandLabelingPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-8">Custom Solutions</h2>
               <div className="grid gap-6">
                 {[
-                  { icon: Palette, title: "Custom Branding", desc: "Integrate your logo and brand elements seamlessly onto our sustainable tableware products." },
+                  { icon: Palette, title: "Custom Branding", desc: "Integrate your logo and brand elements seamlessly onto our sustainable paper bowls and salad bowls." },
                   { icon: Box, title: "Tailored Packaging", desc: "Create bespoke packaging designs that reflect your brand identity and meet retail requirements." },
                   { icon: Layers, title: "Flexible Quantities", desc: "Benefit from our scalable production capacity, catering to both emerging brands and large retailers." }
                 ].map((item, i) => (

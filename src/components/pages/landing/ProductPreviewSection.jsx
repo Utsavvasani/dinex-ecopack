@@ -5,8 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
-// Showcase a variety of real products from public/products using the infinite slider
-// 4 main product categories as per catalog
+// 4 main product categories
 const productCategories = [
   {
     name: "Kraft Paper Salad Bowls",
@@ -15,28 +14,22 @@ const productCategories = [
     link: "/products/kraft-paper-salad-bowls",
   },
   {
-    name: "Round Plates",
-    description: "Classic round biodegradable plates",
-    image: "/landing/round-plates.png",
-    link: "/products/round-plates",
+    name: "White Paper Bowls",
+    description: "Crisp, clean food-grade white paper bowls",
+    image: "/assets/paper_cup_bowl.PNG",
+    link: "/products/white-paper-bowls",
   },
   {
-    name: "Bowls",
-    description: "Deep biodegradable serving bowls",
-    image: "/landing/food-containers.png",
-    link: "/products/bowls",
+    name: "Printed Bowls",
+    description: "Custom printed & branded paper salad bowls",
+    image: "/products/kraft_paper_salad_bowls/750ml/Gemini_Generated_Image_gxvi47gxvi47gxvi.jpg",
+    link: "/products/printed-bowls",
   },
   {
-    name: "Meal Trays",
-    description: "Multi-compartment food service",
-    image: "/landing/meal-trays.png",
-    link: "/products/meal-trays",
-  },
-  {
-    name: "Clamshells",
-    description: "Self-locking takeaway boxes",
-    image: "/landing/clamshell.png",
-    link: "/products/clamshells",
+    name: "PET Lids",
+    description: "High-clarity, leak-proof matching PET lids",
+    image: "/products/kraft_paper_salad_bowls/1000ml/Gemini_Generated_Image_sck8gzsck8gzsck8.jpg",
+    link: "/products/pet-lids",
   },
 ];
 
@@ -59,22 +52,22 @@ export function ProductPreviewSection() {
             <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-foreground leading-tight">
               Our Premium{" "}
               <span className="text-primary mx-3 italic font-heading">
-                Eco-Friendly
+                Paper Bowl
               </span>{" "}
-              Product Range
+              Range
             </h2>
 
             <div className="h-1.5 w-24 bg-primary/30 rounded-full mx-auto" />
 
             <p className="text-muted-foreground text-lg max-w-2xl mt-2">
-              Explore our complete range of biodegradable bagasse tableware and
-              paper products designed for modern food service.
+              Explore our complete collection of sustainable Paper bowls product
+              range designed for modern food service.
             </p>
           </motion.div>
         </div>
 
-        {/* 5-Category Premium Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        {/* 4-Category Premium Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {productCategories.map((category, index) => (
             <Link key={index} href={category.link}>
               <motion.div

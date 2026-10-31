@@ -279,11 +279,10 @@ export default function DownloadCatalogPage() {
             <FileText className="size-4" /> Product Catalog
           </div>
           <h1 className="text-4xl md:text-6xl font-black tracking-tight text-gray-900 mb-6">
-            Get Our <span className="text-primary">2026 Catalog</span>
+            Get Our  <span className="text-primary">Paper Bowl Catalog</span>
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Discover our full range of eco-friendly sugarcane bagasse tableware.
-            Fill out the form below to access the complete digital catalog.
+            Discover our complete collection of sustainable, biodegradable paper bowls and salad bowls designed for the modern food service industry. Fill out the form below to instantly download our digital catalog.
           </p>
         </div>
 
@@ -299,17 +298,17 @@ export default function DownloadCatalogPage() {
                   {
                     icon: Leaf,
                     title: "Product Specifications",
-                    desc: "Detailed dimensions and capacities for our 17 eco-friendly products.",
+                    desc: "Detailed dimensions and capacities for our complete range of eco-friendly paper bowls and salad bowls.",
                   },
                   {
                     icon: ShieldCheck,
                     title: "Certifications",
-                    desc: "Overview of our compostability and food safety certifications.",
+                    desc: "Overview of our biodegradability and food safety certifications (FDA, FSC, etc.).",
                   },
                   {
                     icon: Zap,
                     title: "Customization Options",
-                    desc: "Information on private labeling and custom packaging services.",
+                    desc: "Information on private labeling and custom printing services for international branding.",
                   },
                 ].map((item, i) => (
                   <div
@@ -350,7 +349,7 @@ export default function DownloadCatalogPage() {
                   </div>
 
                   <h3 className="text-xl font-black text-gray-900 mb-2">
-                    2026 Digital Catalog
+                    Digital Catalog
                   </h3>
                   <p className="text-xs text-gray-400 font-medium uppercase tracking-widest mb-8">
                     Premium Collection
@@ -358,7 +357,7 @@ export default function DownloadCatalogPage() {
 
                   <div className="grid grid-cols-2 gap-4 w-full">
                     {[
-                      { icon: Grid, label: "15+", sub: "Products" },
+                      { icon: Grid, label: "5+", sub: "Products" },
                       { icon: Layout, label: "4", sub: "Categories" },
                     ].map((stat, i) => (
                       <div
@@ -511,15 +510,15 @@ export default function DownloadCatalogPage() {
                 </p>
 
                 <a
-                  href="/products/dinex_ecopack_catalog.pdf"
-                  download
+                  href="/assets/salad_bowl.pdf"
+                  download="DineX_Ecopack_Salad_Bowl_Catalog.pdf"
                   className="inline-flex items-center gap-3 px-10 py-5 bg-primary text-white rounded-2xl font-bold text-lg shadow-xl shadow-primary/30 hover:shadow-primary/40 hover:scale-[1.02] transition-all">
                   <Download className="size-6" />
                   Download Catalog PDF
                 </a>
 
                 <p className="mt-8 text-xs text-gray-400">
-                  File Size: 8.4 MB | Format: PDF
+                  File Size: 10.3 MB | Format: PDF
                 </p>
               </div>
             )}

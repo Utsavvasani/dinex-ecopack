@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "140,000+", label: "Ton Capacity / Year" },
+  { value: "1200+", label: "Ton Capacity / Year" },
   { value: "50+", label: "Export Countries" },
   { value: "15,000+", label: "Happy Clients" },
 ];

@@ -25,28 +25,28 @@ import Link from "next/link";
 const comparisonData = [
   {
     feature: "Material",
-    bagasse: "Sugarcane byproduct (renewable)",
+    bagasse: "Sustainably sourced wood/plant pulp (renewable)",
     plastic: "Petroleum-based (non-renewable)",
     bagasseIcon: "✔",
     plasticIcon: "✘",
   },
   {
     feature: "Durability",
-    bagasse: "Sturdy but less moisture-resistant",
+    bagasse: "Sturdy, moisture-resistant, and food-safe",
     plastic: "Highly durable and moisture-resistant",
     bagasseIcon: "✔",
     plasticIcon: "✔",
   },
   {
     feature: "Biodegradability",
-    bagasse: "100% biodegradable (60-90 days)",
+    bagasse: "100% biodegradable and recyclable",
     plastic: "Takes hundreds of years to decompose",
     bagasseIcon: "✔",
     plasticIcon: "✘",
   },
   {
     feature: "Compostability",
-    bagasse: "Industrial and home compostable",
+    bagasse: "Home and industrially compostable",
     plastic: "Not compostable",
     bagasseIcon: "✔",
     plasticIcon: "✘",
@@ -67,14 +67,14 @@ const comparisonData = [
   },
   {
     feature: "Cost",
-    bagasse: "Higher than plastic",
+    bagasse: "Competitive and eco-friendly",
     plastic: "Low production cost",
-    bagasseIcon: "⚠",
+    bagasseIcon: "✔",
     plasticIcon: "✔",
   },
   {
     feature: "Environmental Impact",
-    bagasse: "Low carbon footprint, reduces waste",
+    bagasse: "Low carbon footprint, reduces plastic waste",
     plastic: "High pollution contributes to microplastics",
     bagasseIcon: "✔",
     plasticIcon: "✘",
@@ -112,7 +112,7 @@ export function BagasseVsPlasticSection() {
               <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-foreground">
                 Why Choose <br className="md:hidden" />
                 <span className="text-primary italic font-heading">
-                  Bagasse
+                  Paper
                 </span>{" "}
                 Instead of Plastic?
               </h2>
@@ -141,9 +141,10 @@ export function BagasseVsPlasticSection() {
             <motion.p
               variants={itemVariants}
               className="text-muted-foreground leading-relaxed text-lg max-w-2xl mx-auto border-t border-primary/10 pt-8 italic">
-              Bagasse is the natural fiber left after extracting juice from
-              sugarcane. Instead of burning this waste, it is transformed into
-              strong biodegradable tableware.
+              Paper is made from renewable, sustainably sourced wood fibers and
+              natural materials. Instead of harmful single-use plastics, it is
+              transformed into durable, premium paper bowls designed for modern
+              food packaging.
             </motion.p>
 
             <motion.div
@@ -175,7 +176,7 @@ export function BagasseVsPlasticSection() {
                     <div className="flex flex-col items-center gap-1">
                       <CheckCircle2 className="size-6" />
                       <span className="text-lg font-black italic tracking-tight uppercase">
-                        Bagasse
+                        Paper Bowls
                       </span>
                     </div>
                   </th>
@@ -216,7 +217,7 @@ export function BagasseVsPlasticSection() {
               <div className="bg-primary p-4 rounded-3xl text-white flex flex-col items-center gap-1 shadow-lg shadow-primary/20">
                 <CheckCircle2 className="size-5" />
                 <span className="text-xs font-black uppercase tracking-tighter">
-                  Bagasse
+                  Paper Bowls
                 </span>
               </div>
               <div className="bg-primary/40 p-4 rounded-3xl text-white flex flex-col items-center gap-1">
@@ -267,7 +268,7 @@ export function BagasseVsPlasticSection() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             className="text-white text-lg md:text-3xl font-black mb-6 md:mb-10 relative z-10">
-            1 Ton Bagasse Tableware Saves:
+            1 Ton Paper Bowls Saves...
           </motion.h3>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 relative z-10">

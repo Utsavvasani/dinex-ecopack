@@ -21,9 +21,7 @@ export function Footer() {
             />
           </Link>
           <p className="max-w-xs text-primary-foreground/80 leading-relaxed">
-            Manufacturer of biodegradable bagasse tableware and paper products.
-            Living green is a must. Choosing eco-friendly living makes a
-            difference.
+            Manufacturer of biodegradable paper bowls. Living green is a must. Choosing eco-friendly living makes a difference.
           </p>
           <div>
             <Link

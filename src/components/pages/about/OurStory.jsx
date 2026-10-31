@@ -10,19 +10,19 @@ const CHAPTERS = [
     number: "01",
     icon: <Leaf className="w-5 h-5" />,
     title: "Why We Exist",
-    body: "At DineX Ecopack, we believe that packaging should serve people without harming the planet. With the growing global concern over plastic pollution, we are committed to creating sustainable alternatives that support both businesses and the environment.",
+    body: "At DineX Ecopack, we believe that packaging should serve people without harming the planet. With the growing global concern over plastic pollution, we are committed to creating sustainable paper bowl alternatives that support both businesses and the environment.",
   },
   {
     number: "02",
     icon: <Recycle className="w-5 h-5" />,
     title: "How We Do It",
-    body: "Our biodegradable tableware is crafted from natural sugarcane bagasse — a renewable agricultural by-product transformed into strong, durable, eco-friendly packaging. By converting agricultural waste into valuable products, we create a sustainable cycle that reduces environmental impact.",
+    body: "Our paper bowls are crafted from sustainably sourced, renewable plant fibers — transforming raw natural materials into strong, durable, and eco-friendly packaging. By eliminating single-use plastics, we create a sustainable cycle that reduces environmental impact.",
   },
   {
     number: "03",
     icon: <Package className="w-5 h-5" />,
     title: "What We Deliver",
-    body: "We deliver high-quality biodegradable plates, bowls, clamshell containers, and meal trays for restaurants, catering, food delivery, and global distributors — combining functionality, durability, and sustainability in every product.",
+    body: "We deliver high-quality biodegradable paper bowls for restaurants, catering, food delivery, and global distributors — combining functionality, durability, and sustainability in every product.",
   },
 ];
 

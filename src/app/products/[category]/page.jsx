@@ -13,8 +13,8 @@ export async function generateMetadata({ params }) {
   if (!currentCategory) return { title: "Category Not Found" };
 
   return {
-    title: `${currentCategory.name} | Premium Sugarcane Bagasse Sustainable Solutions`,
-    description: `Browse our high-quality collection of ${currentCategory.name}. Sustainable, compostable, and eco-friendly tableware by DineX Ecopack.`,
+    title: `${currentCategory.name} | Premium Paper Bowls & Sustainable Packaging Solutions`,
+    description: `Browse our high-quality collection of ${currentCategory.name}. Sustainable, biodegradable, and eco-friendly paper bowls by DineX Ecopack.`,
   };
 }
 

@@ -47,8 +47,8 @@ export default function ProductsClient() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
-            Discover our premium range of 100% biodegradable and compostable bagasse tableware. 
-            Sustainable solutions for every dining occasion.
+            Discover our premium collection of 100% biodegradable and compostable paper bowls and salad bowls. 
+            Sustainable packaging solutions designed for the modern food service industry.
           </motion.p>
         </div>
       </div>

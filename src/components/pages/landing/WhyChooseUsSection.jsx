@@ -7,31 +7,31 @@ const reasons = [
     number: "One",
     title: "Sustainable by Nature",
     description:
-      "Our products are made from renewable sugarcane bagasse, turning agricultural waste into eco-friendly packaging solutions.",
+      "Our paper bowls are made from renewable materials, turning agricultural fibers into eco-friendly packaging solutions.",
   },
   {
     number: "Two",
     title: "Designed for Modern Food Service",
     description:
-      "Strong, durable, and heat-resistant tableware designed for restaurants, catering, and takeaway businesses.",
+      "Strong, durable, and leak-resistant containers specifically designed for restaurants, cafes, salad bars, and delivery businesses.",
   },
   {
     number: "Three",
     title: "Plastic-Free Alternative",
     description:
-      "Replace harmful plastic and Styrofoam with biodegradable packaging that protects the environment.",
+      "Replace harmful plastic and Styrofoam with biodegradable paper bowls that protect the environment.",
   },
   {
     number: "Four",
     title: "Reliable Manufacturing",
     description:
-      "Consistent quality and scalable production to support bulk orders and global distribution.",
+      "Consistent quality and scalable production of paper bowls to support bulk orders.",
   },
   {
     number: "Five",
     title: "Global Supply Ready",
     description:
-      "We support distributors and businesses worldwide with export-ready packaging and efficient logistics.",
+      "We support distributors and food brands worldwide with export-ready packaging and efficient logistics.",
   },
 ];
 

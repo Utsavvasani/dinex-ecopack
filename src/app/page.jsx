@@ -6,6 +6,7 @@ import { WhyChooseUsSection } from "@/components/pages/landing/WhyChooseUsSectio
 import { ProcessLifecycleSection } from "@/components/pages/landing/ProcessLifecycleSection";
 import { FloatingSection } from "@/components/pages/landing/FloatingSection";
 import { BagasseVsPlasticSection } from "@/components/pages/landing/BagasseVsPlasticSection";
+import { ExportBenefitsSection } from "@/components/pages/landing/ExportBenefitsSection";
 
 export const metadata = {
   title: "DineX Ecopack | Bagasse Tableware & Sugarcane Bagasse Manufacturer",
@@ -70,6 +71,7 @@ export default function Home() {
       <KeywordScroll />
       <FloatingSection />
       <StatsSection />
+      <ExportBenefitsSection />
       <ProductPreviewSection />
       <WhyChooseUsSection />
       <BagasseVsPlasticSection />

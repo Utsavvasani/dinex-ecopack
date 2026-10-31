@@ -1,5 +1,6 @@
 import { AboutHero } from "@/components/pages/about/AboutHero";
 import { OurStory } from "@/components/pages/about/OurStory";
+import { FounderMessage } from "@/components/pages/about/FounderMessage";
 import { VisionMission } from "@/components/pages/about/VisionMission";
 import { OurGoals } from "@/components/pages/about/OurGoals";
 import { OurCommitment } from "@/components/pages/about/OurCommitment";
@@ -9,7 +10,7 @@ import JsonLd from "@/components/JsonLd";
 export const metadata = {
   title: "About Us | DineX Ecopack's Mission for a Sustainable Planet",
   description:
-    "Learn about DineX Ecopack's journey, our commitment to zero-waste manufacturing, and how we're leading the shift to sugarcane bagasse tableware globally.",
+    "Learn about DineX Ecopack's journey, our commitment to zero-waste manufacturing, and how we're leading the shift to sustainable paper bowl packaging globally.",
 };
 
 export default function AboutPage() {
@@ -26,6 +27,7 @@ export default function AboutPage() {
       />
       <AboutHero />
       <OurStory />
+      <FounderMessage />
       <VisionMission />
       <OurGoals />
       <OurCommitment />

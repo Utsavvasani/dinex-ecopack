@@ -264,7 +264,7 @@ export default function DistributorshipPage() {
             Join Our Global <span className="text-primary">Network</span>
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Become an authorized distributor of DineX Ecopack and bring premium, sustainable sugarcane bagasse tableware to your region.
+            Become an authorized distributor of DineX Ecopack and bring premium, sustainable paper bowls and salad bowls to your region. Partner with us to meet the growing global demand for high-quality eco-friendly food service packaging.
           </p>
         </div>
 
@@ -298,7 +298,7 @@ export default function DistributorshipPage() {
                 <CheckCircle className="size-5" /> Comprehensive Catalog
               </h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                As a distributor, you'll have access to our full range of round plates, bowls, meal trays, and clamshells, ensuring you can meet various customer needs in your territory.
+                As a distributor, you&apos;ll have access to our complete collection of premium paper bowls and salad bowls, providing sustainable packaging solutions that meet the specific demands of food service businesses worldwide.
               </p>
             </div>
           </div>

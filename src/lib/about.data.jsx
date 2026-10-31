@@ -19,13 +19,13 @@ export const ABOUT_STATS = [
 /** Vision & Mission content */
 export const VISION = {
   headline:
-    "To become a globally trusted manufacturer of sustainable food packaging solutions by replacing single-use plastic with environmentally responsible biodegradable products.",
+    "To become a globally trusted manufacturer of sustainable paper bowl packaging solutions by replacing single-use plastic with environmentally responsible biodegradable products.",
   body: "Our vision is to contribute to a cleaner planet by promoting eco-friendly alternatives that support a circular economy and reduce plastic pollution worldwide.",
 };
 
 export const MISSION = {
   headline:
-    "To manufacture high-quality biodegradable tableware from renewable sugarcane bagasse and provide sustainable packaging solutions for restaurants, food service businesses, and global distributors.",
+    "To manufacture high-quality biodegradable paper bowls from renewable materials and provide sustainable packaging solutions for restaurants, food service businesses, and global distributors.",
   body: "We aim to deliver products that combine environmental responsibility, durability, and modern design, helping businesses transition toward sustainable operations.",
 };
 
@@ -33,27 +33,27 @@ export const MISSION = {
 export const GOALS = [
   {
     title: "Environmental Responsibility",
-    desc: "Promote eco-friendly alternatives to plastic and reduce environmental impact.",
+    desc: "Promote eco-friendly paper bowl alternatives to plastic and reduce environmental impact.",
     icon: <Earth className="w-5 h-5" />,
   },
   {
     title: "Product Innovation",
-    desc: "Continuously develop high-quality sustainable tableware for modern food service.",
+    desc: "Continuously develop high-quality, durable, and sustainable paper bowl solutions for modern food service.",
     icon: <Recycle className="w-5 h-5" />,
   },
   {
     title: "Global Market Expansion",
-    desc: "Build strong partnerships with international distributors globally.",
+    desc: "Build strong partnerships with international distributors and food service brands to make paper bowls accessible globally.",
     icon: <Globe className="w-5 h-5" />,
   },
   {
     title: "Customer Satisfaction",
-    desc: "Provide reliable supply, consistent product quality, and excellent service.",
+    desc: "Provide reliable supply, consistent product quality, and excellent service for our paper bowl clients worldwide.",
     icon: <Users className="w-5 h-5" />,
   },
   {
     title: "Sustainable Growth",
-    desc: "Grow manufacturing capacity while maintaining responsible production practices.",
+    desc: "Grow manufacturing capacity for paper bowls while maintaining responsible production practices.",
     icon: <TrendingUp className="w-5 h-5" />,
   },
 ];
@@ -62,17 +62,17 @@ export const GOALS = [
 export const COMMITMENTS = [
   {
     title: "Sustainable Materials",
-    desc: "We utilize renewable sugarcane bagasse to produce biodegradable tableware that supports environmental sustainability.",
+    desc: "We utilize responsibly sourced paper and plant fibers to produce biodegradable paper bowls that support environmental sustainability.",
     icon: <Leaf className="w-6 h-6" />,
   },
   {
     title: "Responsible Manufacturing",
-    desc: "Our production processes focus on efficiency, quality, and minimizing environmental impact.",
+    desc: "Our paper bowl production processes focus on efficiency, superior quality, and minimizing environmental impact.",
     icon: <ShieldCheck className="w-6 h-6" />,
   },
   {
     title: "Global Vision",
-    desc: "We strive to become a trusted supplier of eco-friendly packaging solutions for businesses around the world.",
+    desc: "We strive to become a trusted global supplier of sustainable paper bowl packaging solutions for businesses around the world.",
     icon: <Globe className="w-6 h-6" />,
   },
 ];

@@ -4,39 +4,31 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-import { Leaf, Factory, Settings, UtensilsCrossed } from "lucide-react";
+import Link from "next/link";
+import { Trees, Factory, Globe2, Leaf } from "lucide-react";
 
 const steps = [
   {
-    label: "Sugarcane",
-    iconPath: "/landing/sugarcane.png",
-    description: "The lifecycle begins with sugarcane, a rapidly renewable crop grown in tropical regions. After reaching maturity, the sugarcane is harvested and transported for processing. Unlike wood-based materials, sugarcane regrows quickly, making it a sustainable agricultural resource that supports eco-friendly manufacturing."
+    stepNumber: "Step 1",
+    label: "Certified Sustainable Sourcing",
+    iconComponent: Trees,
+    description:
+      "We source raw materials exclusively from responsibly managed, certified forests. Every batch meets rigorous international traceability standards, guaranteeing that your paper bowls comply with global eco-regulations from origin to destination.",
   },
   {
-    label: "Sugar Factory",
+    stepNumber: "Step 2",
+    label: "Precision Manufacturing & QC",
     iconComponent: Factory,
-    description: "At the sugar factory, harvested sugarcane is crushed to extract juice used for sugar production. During this process, a fibrous by-product called bagasse remains. Instead of being discarded or burned, this natural residue becomes the primary raw material for producing sustainable tableware."
+    description:
+      "Utilizing state-of-the-art automated machinery, we produce high-strength, leak-proof paper bowls designed to withstand rigorous delivery conditions. Every production run undergoes strict quality control inspections tailored to international market requirements.",
   },
   {
-    label: "Sugarcane Pulp",
-    iconPath: "/landing/pulp.png",
-    description: "The leftover bagasse fibers are collected, cleaned, and prepared for further processing. These fibers are rich in cellulose, making them ideal for creating durable biodegradable products. Repurposing bagasse reduces agricultural waste and minimizes the need for cutting trees."
+    stepNumber: "Step 3",
+    label: "Export Logistics & Global Supply",
+    iconComponent: Globe2,
+    description:
+      "Strategically structured for seamless international trade. We offer robust export packaging, palletized shipping, and reliable lead times to support large-scale distributors and wholesalers worldwide without supply chain interruptions.",
   },
-  {
-    label: "Pulp Process",
-    icon: "⚙️",
-    description: "The bagasse fibers are processed into a smooth natural pulp using water and eco-friendly techniques. This step transforms raw agricultural residue into a moldable material while maintaining strength, durability, and sustainability throughout the manufacturing process."
-  },
-  {
-    label: "Biodegradable Product",
-    icon: "🍽️",
-    description: "The eco-friendly pulp is molded under heat and pressure to form strong, lightweight, and compostable tableware products. These items are designed to replace plastic and foam disposables while remaining safe for food use and sturdy enough for everyday meals."
-  },
-  {
-    label: "Compost & Farming",
-    iconPath: "/landing/compost.png",
-    description: "After use, bagasse tableware naturally decomposes within about 90 days in composting conditions. It returns nutrients back to the soil, supporting farming and plant growth. This closes the loop of a circular lifecycle where waste becomes a resource again."
-  }
 ];
 
 import { useMotionValue, useTransform, animate } from "framer-motion";
@@ -97,11 +89,13 @@ export function ProcessLifecycleSection() {
         {/* Section Header - Restored */}
         <div className="text-center mb-16 md:mb-24">
           <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-primary/5 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6">
-            Sustainability Loop
+            Global Compliance & Supply
           </div>
           <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-foreground leading-tight">
-            Product{" "}
-            <span className="text-primary italic font-heading">Life Cycle</span>
+            Export-Oriented{" "}
+            <span className="text-primary italic font-heading">
+              Manufacturing Process
+            </span>
           </h2>
           <div className="h-1.5 w-24 bg-primary/30 rounded-full mx-auto mt-6" />
         </div>
@@ -212,9 +206,14 @@ export function ProcessLifecycleSection() {
                   )}
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-xl md:text-2xl font-medium tracking-tight text-foreground/50">
-                    The Process
-                  </span>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-2.5 py-0.5 rounded-full">
+                      {activeStep.stepNumber}
+                    </span>
+                    <span className="text-lg md:text-xl font-medium tracking-tight text-foreground/50">
+                      The Process
+                    </span>
+                  </div>
                   <h2 className="text-3xl md:text-5xl font-black tracking-tight leading-none mt-1 text-foreground">
                     {activeStep.label}
                   </h2>
@@ -227,9 +226,22 @@ export function ProcessLifecycleSection() {
                 </p>
                 <div className="h-1.5 w-20 bg-primary/20 rounded-full" />
                 <p className="text-sm md:text-base text-foreground/80 leading-relaxed italic border-l-2 border-primary/20 pl-4">
-                  Ensuring high quality and 100% biodegradable standards
-                  throughout the entire cycle.
+                  Ensuring high quality and 100% recyclable or biodegradable
+                  standards throughout the entire cycle.
                 </p>
+
+                <div className="pt-2 flex flex-wrap gap-4">
+                  <Link
+                    href="/inquiry/distributorship"
+                    className="inline-flex h-11 items-center justify-center rounded-xl bg-primary px-6 text-sm font-semibold text-white shadow-md hover:bg-primary/90 transition-all">
+                    Become a Global Distributor
+                  </Link>
+                  <Link
+                    href="/inquiry/download-catalog"
+                    className="inline-flex h-11 items-center justify-center rounded-xl border border-primary/20 bg-background px-6 text-sm font-semibold text-foreground hover:bg-primary/5 transition-all">
+                    Request Export Catalog
+                  </Link>
+                </div>
               </div>
             </motion.div>
           </div>

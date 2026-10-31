@@ -30,12 +30,12 @@ export function FloatingSection() {
                 Harnessing Earth&apos;s Most Renewable Resources
               </h3>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                We transform agricultural by-products into premium tableware,
-                upcycling plant fibers to significantly reduce the global carbon
+                We transform agricultural by-products into premium salad bowls
+                and paper bowls to significantly reduce the global carbon
                 footprint. By choosing DineX Ecopack, you&apos;re not just
                 selecting a product; you&apos;re adopting a solution that
-                nurtures the planet by returning to it creating a seamless cycle
-                of renewal from earth to table and back again.
+                nurtures the planet by returning to it, creating a seamless
+                cycle of renewal from earth to table and back again.
               </p>
             </div>
           </motion.div>
@@ -49,12 +49,12 @@ export function FloatingSection() {
             className="relative h-[400px] rounded-full bg-primary/10 flex items-center justify-center border-8 border-primary/20">
             {/* The circles represent the concentric green design from catalog Page 2 */}
             <div className="absolute w-[80%] h-[80%] rounded-full bg-background flex flex-col items-center justify-center text-center p-8 shadow-inner">
-              <span className="text-primary font-bold text-xl md:text-2xl uppercase tracking-wider">
-                Partner with us in
+              <span className="text-primary font-bold text-lg md:text-xl uppercase tracking-wider">
+                PARTNER WITH US IN
               </span>
-              <span className="text-accent-foreground font-extrabold text-2xl md:text-4xl mt-2 leading-tight">
+              <span className="text-accent-foreground font-extrabold text-xl md:text-3xl mt-2 leading-tight">
                 Driving <span className="text-primary">Circular Economy</span>{" "}
-                Growth.
+                Growth with Premium Paper Bowls.
               </span>
             </div>
             {/* Floating Transparent Product Images */}
@@ -64,7 +64,7 @@ export function FloatingSection() {
               className="absolute -top-12 -left-12 w-40 h-40 md:w-56 md:h-56 -rotate-12 drop-shadow-2xl">
               <Image
                 src="/landing/round.png"
-                alt="Biodegradable Foam Tray"
+                alt="Premium Paper Bowls"
                 fill
                 className="object-contain"
               />

@@ -428,12 +428,157 @@ export const products = [
       boxCBM: "0.0719",
     },
   },
+
+  // White Paper Bowls
+  {
+    id: "500ml-white-paper-bowl",
+    name: "500 ml White Paper Bowl",
+    category: "white-paper-bowls",
+    description: "500 ml White Paper Bowl crafted from high-grade virgin food paper. Crisp, clean appearance perfect for soups, ice cream, salads, and modern takeaway service. Moisture-resistant and grease-proof.",
+    material: "Food Grade White Paper",
+    images: [
+      "/assets/paper_cup_bowl.PNG",
+      "/products/kraft_paper_salad_bowls/500ml/1.jpg",
+    ],
+    specs: {
+      size: 'Ø5.5" x H 2.0" Inch \nØ140 x H 50 MM',
+      weight: "12 gm",
+      pcsInPack: "50 PC",
+      packInCarton: "20 Pack",
+      totalPcsInCarton: "1000 PCS",
+      boxDimension: "14.96 x 14.96 x 11.81 (Inch) \n380 x 380 x 300 (MM)",
+      boxCBM: "0.0433",
+    },
+  },
+  {
+    id: "750ml-white-paper-bowl",
+    name: "750 ml White Paper Bowl",
+    category: "white-paper-bowls",
+    description: "750 ml White Paper Bowl with smooth finish and reinforced rim. Ideal for fresh poke bowls, warm entrees, and salads. Fully biodegradable and recyclable.",
+    material: "Food Grade White Paper",
+    images: [
+      "/assets/paper_cup_bowl.PNG",
+      "/products/kraft_paper_salad_bowls/750ml/Gemini_Generated_Image_gxvi47gxvi47gxvi.jpg",
+    ],
+    specs: {
+      size: 'Ø6.3" x H 2.2" Inch \nØ160 x H 56 MM',
+      weight: "16 gm",
+      pcsInPack: "50 PC",
+      packInCarton: "16 Pack",
+      totalPcsInCarton: "800 PCS",
+      boxDimension: "16.93 x 16.93 x 12.20 (Inch) \n430 x 430 x 310 (MM)",
+      boxCBM: "0.0573",
+    },
+  },
+  {
+    id: "1000ml-white-paper-bowl",
+    name: "1000 ml White Paper Bowl",
+    category: "white-paper-bowls",
+    description: "1000 ml White Paper Bowl for hearty servings, family salads, and signature meals. Leak-resistant engineering with strong structural integrity.",
+    material: "Food Grade White Paper",
+    images: [
+      "/assets/paper_cup_bowl.PNG",
+      "/products/kraft_paper_salad_bowls/1000ml/Gemini_Generated_Image_kohhphkohhphkohh.jpg",
+    ],
+    specs: {
+      size: 'Ø7.1" x H 2.5" Inch \nØ180 x H 63 MM',
+      weight: "20 gm",
+      pcsInPack: "50 PC",
+      packInCarton: "12 Pack",
+      totalPcsInCarton: "600 PCS",
+      boxDimension: "18.11 x 18.11 x 13.39 (Inch) \n460 x 460 x 340 (MM)",
+      boxCBM: "0.0719",
+    },
+  },
+
+  // Printed Bowls
+  {
+    id: "custom-printed-kraft-salad-bowl",
+    name: "Custom Printed Kraft Salad Bowl",
+    category: "printed-bowls",
+    description: "Bespoke custom-printed kraft paper salad bowls. Elevate your restaurant chain or delivery franchise with high-definition, food-safe soy ink branding and custom logos.",
+    material: "Kraft Paper + Food-Safe Inks",
+    images: [
+      "/products/kraft_paper_salad_bowls/750ml/Gemini_Generated_Image_gxvi47gxvi47gxvi.jpg",
+      "/products/kraft_paper_salad_bowls/500ml/2.jpg",
+    ],
+    specs: {
+      size: 'Available in 500ml, 750ml, 1000ml, 1300ml',
+      weight: "12 - 24 gm",
+      pcsInPack: "50 PC",
+      packInCarton: "10 - 20 Pack",
+      totalPcsInCarton: "500 - 1000 PCS",
+      boxDimension: "Custom Export Palletized",
+      boxCBM: "Export Optimized",
+    },
+  },
+  {
+    id: "custom-printed-white-paper-bowl",
+    name: "Custom Printed White Paper Bowl",
+    category: "printed-bowls",
+    description: "Full-color custom printed white paper bowls. Vibrant color reproduction and sharp lines to highlight your brand's commitment to quality and sustainability.",
+    material: "White Paper + Food-Safe Inks",
+    images: [
+      "/assets/paper_cup_bowl.PNG",
+      "/products/kraft_paper_salad_bowls/1000ml/Gemini_Generated_Image_s08p9ss08p9ss08p.jpg",
+    ],
+    specs: {
+      size: 'Available in 500ml, 750ml, 1000ml, 1300ml',
+      weight: "12 - 24 gm",
+      pcsInPack: "50 PC",
+      packInCarton: "10 - 20 Pack",
+      totalPcsInCarton: "500 - 1000 PCS",
+      boxDimension: "Custom Export Palletized",
+      boxCBM: "Export Optimized",
+    },
+  },
+
+  // PET Lids
+  {
+    id: "150mm-clear-pet-lid",
+    name: "150 mm High-Clarity PET Lid",
+    category: "pet-lids",
+    description: "Ultra-clear, recyclable PET lid designed for a tight, leak-resistant snap fit on 500ml and 750ml paper salad bowls. Keeps food fresh and showcases beautiful salads and toppings.",
+    material: "Recyclable Food-Grade PET",
+    images: [
+      "/products/kraft_paper_salad_bowls/1000ml/Gemini_Generated_Image_sck8gzsck8gzsck8.jpg",
+      "/products/kraft_paper_salad_bowls/500ml/3.jpg",
+    ],
+    specs: {
+      size: 'Ø150 MM Snug Fit',
+      weight: "9 gm",
+      pcsInPack: "50 PC",
+      packInCarton: "16 Pack",
+      totalPcsInCarton: "800 PCS",
+      boxDimension: "16.5 x 16.5 x 11.8 (Inch)",
+      boxCBM: "0.052",
+    },
+  },
+  {
+    id: "185mm-clear-pet-lid",
+    name: "185 mm High-Clarity PET Lid",
+    category: "pet-lids",
+    description: "Heavy-duty clear PET lid for 1000ml and 1300ml paper salad bowls. Anti-fog design with secure interlocking groove for safe, stackable takeout and courier delivery.",
+    material: "Recyclable Food-Grade PET",
+    images: [
+      "/products/kraft_paper_salad_bowls/1000ml/Gemini_Generated_Image_sck8gzsck8gzsck8.jpg",
+      "/products/kraft_paper_salad_bowls/1000ml/Gemini_Generated_Image_kohhphkohhphkohh.jpg",
+    ],
+    specs: {
+      size: 'Ø185 MM Snug Fit',
+      weight: "12 gm",
+      pcsInPack: "50 PC",
+      packInCarton: "12 Pack",
+      totalPcsInCarton: "600 PCS",
+      boxDimension: "18.0 x 18.0 x 12.5 (Inch)",
+      boxCBM: "0.066",
+    },
+  },
 ];
 
 export const categories = [
-  { name: "Round Plates", slug: "round-plates" },
-  { name: "Bowls", slug: "bowls" },
-  { name: "Meal Trays", slug: "meal-trays" },
-  { name: "Clamshells", slug: "clamshells" },
   { name: "Kraft Paper Salad Bowls", slug: "kraft-paper-salad-bowls" },
+  { name: "White Paper Bowls", slug: "white-paper-bowls" },
+  { name: "Printed Bowls", slug: "printed-bowls" },
+  { name: "PET Lids", slug: "pet-lids" },
 ];

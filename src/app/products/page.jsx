@@ -1,9 +1,9 @@
 import ProductsClient from "@/components/pages/products/ProductsClient";
 
 export const metadata = {
-  title: "Premium Sugarcane Bagasse Products | DineX Ecopack Sustainable Collection",
+  title: "Premium Paper Bowls & Salad Bowls | DineX Ecopack Sustainable Collection",
   description:
-    "Explore our full range of eco-responsive tableware. From clamshells and plates to bowls and meal boxes, find the perfect sustainable packaging for your business.",
+    "Discover our premium collection of 100% biodegradable and compostable paper bowls and salad bowls. Sustainable packaging solutions designed for the modern food service industry.",
   keywords: [
     "Kraft Food Container Manufacturer",
     "Kraft Takeaway Bowl Supplier",

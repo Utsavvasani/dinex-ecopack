@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Aurora from "@/components/ui/Aurora";
 import { Tilt } from "@/components/ui/tilt";
-import { Leaf } from "lucide-react";
+import { Leaf, Globe } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -96,15 +96,24 @@ export function HeroSection() {
       </motion.div>
 
       <div className="container px-4 md:px-6 flex flex-col items-center justify-center text-center max-w-5xl relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs md:text-sm font-semibold mb-6">
+          <Globe className="w-4 h-4 text-primary" />
+          <span>Global Export Partner for Premium Paper Bowls</span>
+        </motion.div>
+
         <Tilt rotationFactor={8} isRevese>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
             className="text-5xl md:text-7xl font-extrabold tracking-tight text-green-900">
-            Sustainable Tableware <br className="hidden md:block" /> for a{" "}
+            Packaging That Elevates <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent">
-              Plastic-Free Future.
+              Every Serving.
             </span>
           </motion.h1>
         </Tilt>
@@ -114,24 +123,34 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
           className="mt-6 max-w-[42rem] leading-normal text-foreground sm:text-xl sm:leading-8">
-          choosing eco-friendly living makes a difference. join us in making a
-          small change with a big impact
+          stylish salad bowls designed to showcase your food while protecting
+          the planet. Perfect for restaurants, catering, and delivery services.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.25, ease: "easeOut" }}
+          className="mt-3 max-w-2xl text-sm md:text-base text-muted-foreground font-medium leading-relaxed">
+          Supplying international distributors, food chains, and sustainable brands
+          across 50+ countries with export-grade, certified paper bowls. Engineered
+          for global logistics and designed to meet strict international environmental standards.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
-          className="mt-10 flex flex-col sm:flex-row gap-4">
+          className="mt-8 flex flex-col sm:flex-row gap-4">
           <Link
-            href="/products"
-            className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-8 text-base font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
-            Explore Our Products
+            href="/inquiry/distributorship"
+            className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-8 text-base font-medium text-primary-foreground shadow transition-all hover:bg-primary/90 hover:scale-105 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
+            Become a Global Distributor
           </Link>
           <Link
             href="/inquiry/download-catalog"
             className="inline-flex h-12 items-center justify-center rounded-full border border-input bg-background/50 backdrop-blur-sm px-8 text-base font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
-            Download Catalog
+            Request Export Catalog
           </Link>
         </motion.div>
       </div>
