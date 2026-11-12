@@ -222,13 +222,13 @@ const OFFICES = [
     phone: '+44 7879905973',
     phoneHref: 'tel:+447879905973',
     email: 'info@dinexecopack.com',
-    address: '114, Belmont rise, Cheam, London. SM26EE',
+    address: 'Belmont rise, Cheam, London. SM26EE',
     addressLines: [
-      '114, Belmont rise,',
+      'Belmont rise,',
       'Cheam, London. SM26EE'
     ],
-    mapEmbed: 'https://maps.google.com/maps?q=114,Belmont%20Rise,Cheam,London,SM26EE&t=&z=15&ie=UTF8&iwloc=&output=embed',
-    mapLink: 'https://maps.google.com/?q=114,Belmont+Rise,Cheam,London,SM2+6EE',
+    mapEmbed: 'https://maps.google.com/maps?q=Belmont%20Rise,Cheam,London,SM26EE&t=&z=15&ie=UTF8&iwloc=&output=embed',
+    mapLink: 'https://maps.google.com/?q=Belmont+Rise,Cheam,London,SM2+6EE',
     hours: [
       { day: 'Monday – Friday', hours: '9:00 AM – 6:00 PM' },
       { day: 'Saturday', hours: '10:00 AM – 4:00 PM' },
@@ -870,7 +870,7 @@ export default function ContactClient() {
                   </div>
 
                   <p className="text-gray-600 text-xs leading-relaxed mb-3">
-                    114, Belmont rise,<br />
+                    Belmont rise,<br />
                     Cheam, London. SM26EE
                   </p>
 

@@ -2,6 +2,7 @@ import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
 import SiteShell from "@/components/SiteShell";
 import JsonLd from "@/components/JsonLd";
+import { SEO_KEYWORDS } from "@/lib/seoKeywords";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -15,59 +16,15 @@ const inter = Inter({
 });
 
 export const metadata = {
+  title: {
+    default: "DineX Ecopack | Paper Salad Bowl Manufacturer & Food Packaging Exporter",
+    template: "%s | DineX Ecopack",
+  },
   description:
-    "Premium eco-friendly packaging solutions. High-quality kraft paper salad bowls, white paper bowls, printed containers, and sustainable food packaging.",
+    "Leading paper salad bowl manufacturer in Gujarat, India. Wholesale kraft paper bowls, white paper salad bowls, custom printed bowls with PET lids for restaurants, cloud kitchens & HORECA worldwide.",
   keywords: [
     "DineX Ecopack",
-    "Kraft Paper Salad Bowls",
-    "Paper Bowl Manufacturer",
-    "Paper Food Container Exporter",
-    "Sustainable Paper Packaging",
-    "Compostable Tableware Manufacturer",
-    "Biodegradable Tableware Supplier",
-    "Eco Friendly Tableware",
-    "Sustainable Tableware Supplier",
-    "Kraft Paper Salad Bowl Manufacturer",
-    "Kraft Paper Bowl Supplier",
-    "Kraft Paper Bowl Exporter",
-    "Paper Salad Bowl Manufacturer",
-    "Food Packaging Manufacturer",
-    "Food Packaging Exporter",
-    "Sustainable Packaging Manufacturer",
-    "Eco Packaging Manufacturer",
-    "Compostable Packaging Supplier",
-    "Biodegradable Packaging Exporter",
-    "Private Label Packaging Manufacturer",
-    "OEM Packaging Manufacturer",
-    "Food Packaging Manufacturer India",
-    "Paper Salad Bowl Manufacturer India",
-    "Kraft Bowl Manufacturer India",
-    "Paper Bowl Manufacturer India",
-    "Packaging Exporter India",
-    "UK Food Packaging Supplier",
-    "Europe Food Packaging Manufacturer",
-    "Food Packaging Supplier USA",
-    "Middle East Packaging Supplier",
-    "Sustainable Packaging Company",
-    "Green Packaging Solutions",
-    "Zero Plastic Packaging",
-    "Compostable Packaging Products",
-    "Biodegradable Food Containers",
-    "Circular Economy Packaging",
-    "Plastic Free Food Packaging",
-    "Renewable Packaging Solutions",
-    "Environment Friendly Packaging",
-    "Future Of Food Packaging",
-    "Restaurant Packaging Manufacturer",
-    "Hotel Packaging Supplier",
-    "Catering Packaging Solutions",
-    "Cloud Kitchen Packaging",
-    "QSR Packaging Manufacturer",
-    "Food Delivery Packaging Supplier",
-    "UK Paper Bowl Manufacturer",
-    "Indian Paper Bowl Manufacturer Export UK",
-    "Global Packaging Manufacturer",
-    "International Packaging Supplier",
+    ...SEO_KEYWORDS,
   ],
   alternates: {
     canonical: "https://dinexecopack.com",

@@ -11,9 +11,9 @@ const reasons = [
   },
   {
     number: "Two",
-    title: "Designed for Modern Food Service",
+    title: "Designed for HORECA & Food Service",
     description:
-      "Strong, durable, and leak-resistant containers specifically designed for restaurants, cafes, salad bars, and delivery businesses.",
+      "Strong, durable, and leak-resistant containers specifically designed for restaurants, cafes, cloud kitchens, and HORECA food delivery businesses.",
   },
   {
     number: "Three",
@@ -23,9 +23,9 @@ const reasons = [
   },
   {
     number: "Four",
-    title: "Reliable Manufacturing",
+    title: "Factory-Direct Bulk Manufacturing",
     description:
-      "Consistent quality and scalable production of paper bowls to support bulk orders.",
+      "Consistent quality and high-speed automated production in Surat, Gujarat, offering factory-direct prices to support bulk orders for distributors and chains.",
   },
   {
     number: "Five",

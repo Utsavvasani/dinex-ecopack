@@ -47,8 +47,7 @@ export default function ProductsClient() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
-            Discover our premium collection of 100% biodegradable and compostable paper bowls and salad bowls. 
-            Sustainable packaging solutions designed for the modern food service industry.
+            Explore our certified range of wholesale kraft paper salad bowls, white paper bowls, custom printed containers, and matching anti-fog PET lids in 500ml, 750ml, and 1000ml. Factory-direct wholesale pricing for restaurants, cloud kitchens, and HORECA food service.
           </motion.p>
         </div>
       </div>

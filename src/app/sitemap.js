@@ -5,8 +5,17 @@ export default async function sitemap() {
   const baseUrl = "https://dinexecopack.com";
 
   // Static routes
-  const staticRoutes = ["", "about", "contact", "products", "blog", "business"].map(
-    (route) => ({
+  const staticRoutes = [
+    "",
+    "about",
+    "contact",
+    "products",
+    "blog",
+    "business",
+    "inquiry/download-catalog",
+    "inquiry/distributorship",
+    "inquiry/brand-labeling",
+  ].map((route) => ({
       url: `${baseUrl}${route ? `/${route}` : ""}`,
       lastModified: new Date(),
       changeFrequency: "monthly",

@@ -20,8 +20,8 @@ export function Footer() {
               priority
             />
           </Link>
-          <p className="max-w-xs text-primary-foreground/80 leading-relaxed">
-            Manufacturer of biodegradable paper bowls. Living green is a must. Choosing eco-friendly living makes a difference.
+          <p className="max-w-xs text-primary-foreground/80 leading-relaxed text-sm">
+            Premier paper salad bowl manufacturer & food packaging exporter in Surat, Gujarat. Supplying wholesale kraft bowls, white salad bowls, and custom printed containers for HORECA and food delivery worldwide.
           </p>
           <div>
             <Link
@@ -63,7 +63,7 @@ export function Footer() {
               <MapPin className="w-5 h-5 shrink-0 mt-0.5" />
               <div className="text-sm text-primary-foreground/70">
                 <span className="font-semibold block mb-1 text-primary-foreground/90">UK Office</span>
-                114, Belmont rise,<br />
+                Belmont rise,<br />
                 Cheam, London. SM26EE<br />
                 <a href="tel:+447879905973" className="hover:text-white transition-colors block mt-1">
                   +44 7879905973
@@ -151,6 +151,43 @@ export function Footer() {
                 </svg>
               </a>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* SEO Sourcing & Coverage Directory */}
+      <div className="container px-4 md:px-6 mx-auto mb-6">
+        <div className="border-t border-primary-foreground/15 pt-8 pb-4 text-xs text-primary-foreground/75 space-y-5">
+          <div>
+            <h5 className="font-bold text-primary-foreground/95 uppercase tracking-wider mb-2 text-[11px]">
+              Wholesale Paper Packaging Sourcing Directory
+            </h5>
+            <div className="flex flex-wrap gap-x-2.5 gap-y-1.5 leading-relaxed text-[11px] text-primary-foreground/75">
+              <Link href="/products/kraft-paper-salad-bowls" className="hover:text-white transition-colors">Paper Salad Bowl Manufacturer</Link> •
+              <Link href="/products/kraft-paper-salad-bowls" className="hover:text-white transition-colors">Kraft Paper Bowls Wholesale</Link> •
+              <Link href="/products/kraft-paper-salad-bowls" className="hover:text-white transition-colors">500ml Kraft Bowl with Lid</Link> •
+              <Link href="/products/kraft-paper-salad-bowls" className="hover:text-white transition-colors">750ml Kraft Bowl with Lid</Link> •
+              <Link href="/products/kraft-paper-salad-bowls" className="hover:text-white transition-colors">1000ml Paper Food Containers with Lids</Link> •
+              <Link href="/products/white-paper-bowls" className="hover:text-white transition-colors">White Paper Salad Bowls Wholesale</Link> •
+              <Link href="/products/printed-bowls" className="hover:text-white transition-colors">Custom Printed Paper Bowls</Link> •
+              <Link href="/products/printed-bowls" className="hover:text-white transition-colors">Logo Printed Kraft Bowls</Link> •
+              <Link href="/products/printed-bowls" className="hover:text-white transition-colors">Private Label Paper Packaging Manufacturer</Link> •
+              <Link href="/products/pet-lids" className="hover:text-white transition-colors">150mm Anti-Fog PET Lids</Link> •
+              <Link href="/inquiry/download-catalog" className="hover:text-white transition-colors">Buy Kraft Paper Bowls in Bulk (Factory Direct Price)</Link> •
+              <Link href="/inquiry/distributorship" className="hover:text-white transition-colors">Paper Food Container Exporter India</Link> •
+              <Link href="/products" className="hover:text-white transition-colors">HORECA Food Packaging Supplier</Link>
+            </div>
+          </div>
+
+          <div>
+            <h5 className="font-bold text-primary-foreground/95 uppercase tracking-wider mb-2 text-[11px]">
+              Serving HORECA, Cloud Kitchens & Hospitality Across Key Regions
+            </h5>
+            <p className="leading-relaxed text-[11px] text-primary-foreground/70">
+              <strong className="text-primary-foreground/90">Gujarat & Domestic Hubs:</strong> Paper bowl & food packaging supplier in Surat (Headquarters & Factory), Ahmedabad, Vadodara, Rajkot, Gandhinagar, Vapi, Anand, Bharuch, Mumbai, Delhi, Bengaluru & Pan-India.
+              <br />
+              <strong className="text-primary-foreground/90">International Export Markets:</strong> United Kingdom (London Sales Office), Germany, France, Netherlands, European Union, UAE (Dubai), Saudi Arabia, USA & Global Importers.
+            </p>
           </div>
         </div>
       </div>

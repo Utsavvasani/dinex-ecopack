@@ -8,9 +8,21 @@ import { ClosingQuote } from "@/components/pages/about/ClosingQuote";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
-  title: "About Us | DineX Ecopack's Mission for a Sustainable Planet",
+  title: "About DineX Ecopack | Paper Bowl Manufacturer in Surat, Gujarat",
   description:
-    "Learn about DineX Ecopack's journey, our commitment to zero-waste manufacturing, and how we're leading the shift to sustainable paper bowl packaging globally.",
+    "Learn about DineX Ecopack — premier paper bowl manufacturer based in Surat, Gujarat with an international sales office in London, UK. Supplying certified eco-friendly paper packaging to global foodservice brands.",
+  keywords: [
+    "paper bowl manufacturer Gujarat",
+    "paper bowl manufacturer Surat",
+    "paper bowl factory India",
+    "paper bowl manufacturing company India",
+    "Indian paper bowl manufacturer",
+    "food packaging exporter India",
+    "paper bowl supplier UK",
+    "kraft paper bowl manufacturer",
+    "sustainable packaging company",
+    "HORECA packaging supplier Gujarat",
+  ],
 };
 
 export default function AboutPage() {

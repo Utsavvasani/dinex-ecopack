@@ -3,18 +3,21 @@
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 
 const keywords = [
-  "Kraft Paper Bowls",
-  "Salad Bowl Manufacturer",
-  "Compostable",
-  "Biodegradable",
-  "Eco-Friendly",
-  "Bulk Manufacturer",
-  "Private Label",
-  "UK Supplier",
-  "Indian Manufacturer",
-  "Export Quality",
-  "FDA Approved",
-  "ISO Certified",
+  "Paper Salad Bowl Manufacturer",
+  "Kraft Paper Bowls Wholesale",
+  "White Paper Salad Bowls",
+  "HORECA Food Packaging",
+  "Custom Printed Paper Bowls",
+  "Paper Bowls with PET Lids",
+  "500ml • 750ml • 1000ml",
+  "Paper Bowl Manufacturer Surat",
+  "Paper Food Container Exporter India",
+  "UK & Europe Packaging Supplier",
+  "Cloud Kitchen & QSR Packaging",
+  "Factory Direct Price",
+  "Private Label & OEM Manufacturer",
+  "Leak Resistant & Food Grade",
+  "FDA & FSC Certified",
 ];
 
 export function KeywordScroll() {

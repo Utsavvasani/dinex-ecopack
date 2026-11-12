@@ -10,17 +10,47 @@ export default function JsonLd({ type, data }) {
       "name": "DineX Ecopack",
       "url": "https://dinexecopack.com",
       "logo": "https://dinexecopack.com/logo.png",
-      "description": "Premium eco-friendly packaging solutions specializing in kraft paper salad bowls and sustainable paper packaging.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "UAE",
-        "addressRegion": "Dubai",
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer service",
-        "email": "info@dinexecopack.com",
-      }
+      "description": "DineX Ecopack is a premier manufacturer and exporter of kraft paper salad bowls, white paper bowls, custom printed containers, and PET lids based in Surat, Gujarat with sales in London, UK.",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "03, Laxmiba Warehouse, Valthan",
+          "addressLocality": "Surat",
+          "addressRegion": "Gujarat",
+          "postalCode": "394325",
+          "addressCountry": "IN"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Belmont rise",
+          "addressLocality": "Cheam, London",
+          "postalCode": "SM26EE",
+          "addressCountry": "GB"
+        }
+      ],
+      "knowsAbout": [
+        "Paper Salad Bowl Manufacturing",
+        "Kraft Paper Bowls Wholesale",
+        "Disposable Food Packaging",
+        "Custom Printed Food Containers",
+        "HORECA Foodservice Packaging",
+        "Food Delivery Packaging"
+      ],
+      "areaServed": ["India", "United Kingdom", "European Union", "United Arab Emirates", "United States"],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "+91-9274748030",
+          "email": "info@dinexecopack.com"
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "international sales",
+          "telephone": "+44-7879905973",
+          "email": "info@dinexecopack.com"
+        }
+      ]
     };
   }
 

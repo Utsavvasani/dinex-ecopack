@@ -102,7 +102,7 @@ export function HeroSection() {
           transition={{ duration: 0.5 }}
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs md:text-sm font-semibold mb-6">
           <Globe className="w-4 h-4 text-primary" />
-          <span>Global Export Partner for Premium Paper Bowls</span>
+          <span>Paper Salad Bowl Manufacturer & Global Food Packaging Exporter</span>
         </motion.div>
 
         <Tilt rotationFactor={8} isRevese>
@@ -123,8 +123,8 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
           className="mt-6 max-w-[42rem] leading-normal text-foreground sm:text-xl sm:leading-8">
-          stylish salad bowls designed to showcase your food while protecting
-          the planet. Perfect for restaurants, catering, and delivery services.
+          Premium kraft paper salad bowls, crisp white bowls, and custom branded containers
+          engineered for restaurants, cloud kitchens, takeaway catering, and HORECA food service.
         </motion.p>
 
         <motion.p
@@ -132,9 +132,8 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.25, ease: "easeOut" }}
           className="mt-3 max-w-2xl text-sm md:text-base text-muted-foreground font-medium leading-relaxed">
-          Supplying international distributors, food chains, and sustainable brands
-          across 50+ countries with export-grade, certified paper bowls. Engineered
-          for global logistics and designed to meet strict international environmental standards.
+          Factory-direct supply for distributors, importers, and hospitality chains across the UK, Europe,
+          UAE, and 50+ countries. Certified food-grade, leak-resistant 500ml, 750ml, and 1000ml bowls with snap-fit PET lids.
         </motion.p>
 
         <motion.div
