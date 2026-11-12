@@ -10,25 +10,25 @@ const productCategories = [
   {
     name: "Kraft Paper Salad Bowls",
     description: "Premium food-grade kraft paper salad bowls",
-    image: "/products/kraft_paper_salad_bowls/500ml/1.jpg",
+    image: "/KRFT/main-eco-friendly-fsc-certified-salad-bowls-sustainable-kraft-bowl-wholesale-01.jpg",
     link: "/products/kraft-paper-salad-bowls",
   },
   {
     name: "White Paper Bowls",
     description: "Crisp, clean food-grade white paper bowls",
-    image: "/assets/paper_cup_bowl.PNG",
+    image: "/WT/IMG_9821.PNG",
     link: "/products/white-paper-bowls",
   },
   {
     name: "Printed Bowls",
     description: "Custom printed & branded paper salad bowls",
-    image: "/products/kraft_paper_salad_bowls/750ml/Gemini_Generated_Image_gxvi47gxvi47gxvi.jpg",
+    image: "/CUSTOM KRAFT-WHITE/Wholesale_Kraft_Paper_Salad_Bowls_Leak-Proof_PE-Coated_Bowl_Manufacturer.jpg",
     link: "/products/printed-bowls",
   },
   {
     name: "PET Lids",
     description: "High-clarity, leak-proof matching PET lids",
-    image: "/products/kraft_paper_salad_bowls/1000ml/Gemini_Generated_Image_sck8gzsck8gzsck8.jpg",
+    image: "/LID/IMG_9833.PNG",
     link: "/products/pet-lids",
   },
 ];

@@ -20,29 +20,24 @@ export const navDropdowns = [
     isGrid: true,
     items: [
       {
-        title: "Round Plates",
-        href: "/products/round-plates",
-        image: "/landing/round-plates.png",
-      },
-      {
-        title: "Bowls",
-        href: "/products/bowls",
-        image: "/landing/food-containers.png",
-      },
-      {
-        title: "Meal Trays",
-        href: "/products/meal-trays",
-        image: "/landing/meal-trays.png",
-      },
-      {
-        title: "Clamshells",
-        href: "/products/clamshells",
-        image: "/landing/clamshell.png",
-      },
-      {
         title: "Kraft Paper Salad Bowls",
         href: "/products/kraft-paper-salad-bowls",
-        image: "/products/kraft_paper_salad_bowls/500ml/1.jpg",
+        image: "/KRFT/main-eco-friendly-fsc-certified-salad-bowls-sustainable-kraft-bowl-wholesale-01.jpg",
+      },
+      {
+        title: "White Paper Bowls",
+        href: "/products/white-paper-bowls",
+        image: "/WT/IMG_9821.PNG",
+      },
+      {
+        title: "Custom Printed Bowls",
+        href: "/products/printed-bowls",
+        image: "/CUSTOM KRAFT-WHITE/Wholesale_Kraft_Paper_Salad_Bowls_Leak-Proof_PE-Coated_Bowl_Manufacturer.jpg",
+      },
+      {
+        title: "PET Matching Lids",
+        href: "/products/pet-lids",
+        image: "/LID/IMG_9833.PNG",
       },
     ],
   },
