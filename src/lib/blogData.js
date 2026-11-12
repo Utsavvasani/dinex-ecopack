@@ -74,12 +74,12 @@ export const BLOG_POSTS = [
               <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">Mixed material streams disrupt recycling and composting</td>
             </tr>
             <tr class="bg-primary/5">
-              <td class="p-4 border-b font-black italic text-foreground text-xs md:text-sm">Molded Sugarcane Bagasse</td>
-              <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">DineX meal trays, clamshells, bowls, plates</td>
+              <td class="p-4 border-b font-black italic text-foreground text-xs md:text-sm">Uncoated Virgin Paper Containers</td>
+              <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">DineX paper salad bowls, food containers</td>
               <td class="p-4 border-b text-primary font-black text-xs md:text-sm">30–90 Days</td>
               <td class="p-4 border-b text-primary font-bold text-xs md:text-sm">60–120 Days</td>
               <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">Degrades naturally</td>
-              <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">100% bio-based agricultural fiber; 0% synthetic polymers</td>
+              <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">100% natural virgin paperboard fiber; 0% synthetic plastic base</td>
             </tr>
           </tbody>
         </table>
@@ -192,7 +192,7 @@ export const BLOG_POSTS = [
               <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">Good for reheating</td>
               <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">Convenient diner reheating experience</td>
               <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">Risk of plasticizer migration at high heat</td>
-              <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">Bagasse provides superior thermal stability</td>
+              <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">Heavy-duty paperboard provides superior thermal stability</td>
             </tr>
             <tr class="bg-primary/5">
               <td class="p-4 border-b font-black italic text-foreground text-xs md:text-sm">Compost Compatibility</td>
@@ -207,7 +207,7 @@ export const BLOG_POSTS = [
       </div>
 
       <h3>The PLA (Polylactic Acid) Biopolymer Alternative</h3>
-      <p>Polylactic Acid (PLA) is synthesized from fermented plant starch (predominantly cornstarch or sugarcane glucose). When extruded onto paperboard, it provides clear liquid resistance comparable to PE for chilled or room-temperature items. Because PLA is bio-based, it is certified for industrial composting under standards like ASTM D6400 and EN 13432.</p>
+      <p>Polylactic Acid (PLA) is synthesized from fermented plant starch (predominantly cornstarch or plant sugars). When extruded onto paperboard, it provides clear liquid resistance comparable to PE for chilled or room-temperature items. Because PLA is bio-based, it is certified for industrial composting under standards like ASTM D6400 and EN 13432.</p>
 
       <p>However, PLA requires specific thermophilic conditions to decompose: sustained temperatures of <strong>131°F to 160°F (55°C to 70°C)</strong> combined with high relative humidity (&gt;60%) and intensive microbial activity. In these commercial vessels, the heat first hydrolyzes the ester bonds of the polymer chain, reducing molecular weight so bacteria and fungi can metabolize the remaining fragments into CO2 and organic humus within <strong>60 to 180 days</strong>. If placed in an ordinary home backyard compost heap, where temperatures rarely exceed 85°F (30°C), a PLA-lined cup will show virtually no degradation even after 18 to 24 months.</p>
 
@@ -264,7 +264,7 @@ export const BLOG_POSTS = [
           </li>
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">2</span>
-            <span class="text-sm"><strong>Home / Backyard Composting Piles:</strong> Passive, ambient-temperature systems fluctuating between 15°C and 35°C (59°F–95°F) with irregular turning and erratic moisture. Only mono-material uncoated paper, unprinted newsprint, and chemical-free sugarcane bagasse can consistently break down in this environment (typically requiring <strong>2 to 6 months</strong>).</span>
+            <span class="text-sm"><strong>Home / Backyard Composting Piles:</strong> Passive, ambient-temperature systems fluctuating between 15°C and 35°C (59°F–95°F) with irregular turning and erratic moisture. Only mono-material uncoated paper, unprinted newsprint, and chemical-free virgin paperboard can consistently break down in this environment (typically requiring <strong>2 to 6 months</strong>).</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">3</span>
@@ -349,7 +349,7 @@ export const BLOG_POSTS = [
             <tr>
               <td class="p-4 border-b font-black italic text-foreground text-xs md:text-sm">Single-Stream Waste Clearance</td>
               <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">Catering staff and diners dispose of food scraps and containers into a single organic bin</td>
-              <td class="p-4 border-b text-primary font-black text-xs md:text-sm">Sugarcane Bagasse & Certified Paper</td>
+              <td class="p-4 border-b text-primary font-black text-xs md:text-sm">Certified Paper Packaging & Bowls</td>
               <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">Commercial organics collection bin</td>
               <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">Reduces restaurant floor sorting labor and waste disposal fees by up to 25%</td>
             </tr>
@@ -363,14 +363,14 @@ export const BLOG_POSTS = [
             <tr>
               <td class="p-4 border-b font-black italic text-foreground text-xs md:text-sm">Enhanced Brand Loyalty</td>
               <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">Natural fiber texture provides a tactile, premium dining presentation</td>
-              <td class="p-4 border-b text-primary font-black text-xs md:text-sm">DineX Unbleached & White Bagasse</td>
+              <td class="p-4 border-b text-primary font-black text-xs md:text-sm">DineX Kraft & White Paper Bowls</td>
               <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">Consistent custom embossing</td>
               <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">Higher customer retention among environmentally conscious Gen-Z and Millennial diners</td>
             </tr>
             <tr class="bg-primary/5">
               <td class="p-4 border-b font-black italic text-foreground text-xs md:text-sm">Closed-Loop Soil Renewal</td>
               <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">Agricultural byproducts return to the soil as nutrient-rich compost</td>
-              <td class="p-4 border-b text-primary font-black text-xs md:text-sm">Plant-based bagasse solutions</td>
+              <td class="p-4 border-b text-primary font-black text-xs md:text-sm">Plant-based paper solutions</td>
               <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">Municipal or local composting loop</td>
               <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">Measurable Scope 3 ESG carbon reduction for sustainability reports</td>
             </tr>
@@ -448,11 +448,11 @@ export const BLOG_POSTS = [
         <ol class="space-y-3">
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">1</span>
-            <span class="text-sm"><strong>Audit the Destination Waste Stream:</strong> Map your customer locations. Do they operate in municipal markets with dedicated organics collection (e.g., Seattle, San Francisco, Milan, Dubai)? If organics collection exists, certified compostable barriers create immense value. If municipal waste goes predominantly to incineration or landfill, mono-material paper or bagasse reduces virgin fossil plastic input.</span>
+            <span class="text-sm"><strong>Audit the Destination Waste Stream:</strong> Map your customer locations. Do they operate in municipal markets with dedicated organics collection (e.g., Seattle, San Francisco, Milan, Dubai)? If organics collection exists, certified compostable barriers create immense value. If municipal waste goes predominantly to incineration or landfill, mono-material paper containers reduce virgin fossil plastic input.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">2</span>
-            <span class="text-sm"><strong>Match Culinary Stress Profiles:</strong> Avoid forcing one single material into every menu item. Use PLA-lined paper or clear bio-PET for cold salads and desserts (&lt;45°C). For hot soups, greasy gravies, and sizzling curries (&gt;90°C), transition to DineX molded sugarcane bagasse, which naturally resists boiling liquids and hot oils without synthetic plastic linings.</span>
+            <span class="text-sm"><strong>Match Culinary Stress Profiles:</strong> Avoid forcing one single material into every menu item. Use PLA-lined paper or clear bio-PET for cold salads and desserts (&lt;45°C). For hot soups, greasy gravies, and sizzling curries (&gt;90°C), transition to DineX heavy-duty paper salad bowls and containers with high-performance barrier coatings, which naturally resist hot liquids and oils.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">3</span>
@@ -483,7 +483,7 @@ export const BLOG_POSTS = [
           <tbody>
             <tr>
               <td class="p-4 border-b font-black italic text-foreground text-xs md:text-sm">Lining Chemistry</td>
-              <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">PE vs PLA vs Aqueous dispersion vs Bagasse</td>
+              <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">PE vs PLA vs Aqueous dispersion coatings</td>
               <td class="p-4 border-b text-muted-foreground text-xs md:text-sm">Dictates compostability and legal claim safety</td>
               <td class="p-4 border-b text-primary font-black text-xs md:text-sm">Exact resin and coating spec disclosed</td>
               <td class="p-4 border-b text-destructive font-black text-xs md:text-sm">Vague phrases like "100% Eco-Friendly"</td>
@@ -548,7 +548,7 @@ export const BLOG_POSTS = [
 
         <div class="bg-primary/5 p-6 rounded-2xl border border-primary/10">
           <h3 class="text-primary font-black text-base md:text-lg mb-2">7. What is the most reliable sustainable alternative for hot, oily foods?</h3>
-          <p class="text-sm md:text-base text-muted-foreground m-0">Molded sugarcane bagasse tableware (such as DineX Ecopack bowls, clamshells, and plates) is the gold standard. Its dense interwoven plant fiber matrix withstands boiling liquids and hot oils up to 120°C without requiring petroleum plastic linings or harmful PFAS chemicals, breaking down completely into organic humus within 30 to 90 days.</p>
+          <p class="text-sm md:text-base text-muted-foreground m-0">Heavy-duty kraft paper bowls and leak-proof paper containers (such as DineX Ecopack salad bowls and bowls with matching lids) are the premier standard. Their dense, virgin paperboard matrix withstands boiling liquids and hot oils up to 100°C without requiring harmful PFAS chemicals, delivering dependable performance and easy recyclability.</p>
         </div>
 
         <div class="bg-primary/5 p-6 rounded-2xl border border-primary/10">
@@ -558,7 +558,7 @@ export const BLOG_POSTS = [
 
         <div class="bg-primary/5 p-6 rounded-2xl border border-primary/10">
           <h3 class="text-primary font-black text-base md:text-lg mb-2">9. How can restaurants safeguard against greenwashing penalties?</h3>
-          <p class="text-sm md:text-base text-muted-foreground m-0">Avoid vague marketing slogans like "100% Natural" or "Eco-Safe". Clearly disclose the specific lining material (e.g., "Industrial Compostable PLA Lining" or "100% Bagasse Fiber"), print the exact BPI or TÜV certification license number on the container, and provide unambiguous consumer disposal instructions.</p>
+          <p class="text-sm md:text-base text-muted-foreground m-0">Avoid vague marketing slogans like "100% Natural" or "Eco-Safe". Clearly disclose the specific lining material (e.g., "Industrial Compostable PLA Lining" or "FSC Certified Paperboard"), print the exact BPI or TÜV certification license number on the container, and provide unambiguous consumer disposal instructions.</p>
         </div>
 
         <div class="bg-primary/5 p-6 rounded-2xl border border-primary/10">
@@ -574,7 +574,7 @@ export const BLOG_POSTS = [
         "True sustainability in food service packaging is achieved when the functional performance during the meal is matched by clean, complete return to the earth after the meal."
       </blockquote>
 
-      <p>By transitioning from traditional plastic-coated paperboard to certified compostable solutions and DineX Ecopack sugarcane bagasse tableware, commercial brands unlock the optimal balance: uncompromised dining performance, total zero-plastic compliance, and a verifiable circular lifecycle that replenishes the soil.</p>
+      <p>By transitioning from traditional plastic-coated paperboard to certified compostable solutions and DineX Ecopack sustainable paper containers, commercial brands unlock the optimal balance: uncompromised dining performance, total zero-plastic compliance, and a verifiable circular lifecycle that protects the environment.</p>
   `,
     tags: ["Compostability","Paper Packaging","Decomposition","Sustainability","Materials Science"],
     date: "April 22, 2026",
@@ -833,7 +833,7 @@ export const BLOG_POSTS = [
         <ul class="space-y-2">
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">1</span>
-            <span class="text-sm"><strong>Zero-Plastic & PFAS-Free:</strong> Audited 100% bio-based sugarcane bagasse and certified compostable barriers compliant with EU PPWR, US State bans, and UAE Resolution 380.</span>
+            <span class="text-sm"><strong>Eco-Friendly & PFAS-Free:</strong> Audited food-grade kraft paperboard and certified barriers compliant with EU PPWR, US State bans, and UAE Resolution 380.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">2</span>
@@ -1178,7 +1178,7 @@ DineX Ecopack is a professional flexible packaging manufacturer serving global f
         <ul class="space-y-2">
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">1</span>
-            <span class="text-sm"><strong>Zero-Plastic & PFAS-Free:</strong> Audited 100% bio-based sugarcane bagasse and certified compostable barriers compliant with EU PPWR, US State bans, and UAE Resolution 380.</span>
+            <span class="text-sm"><strong>Eco-Friendly & PFAS-Free:</strong> Audited food-grade kraft paperboard and certified barriers compliant with EU PPWR, US State bans, and UAE Resolution 380.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">2</span>
@@ -1460,7 +1460,7 @@ DineX Ecopack is a professional flexible packaging manufacturer serving global f
         <ul class="space-y-2">
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">1</span>
-            <span class="text-sm"><strong>Zero-Plastic & PFAS-Free:</strong> Audited 100% bio-based sugarcane bagasse and certified compostable barriers compliant with EU PPWR, US State bans, and UAE Resolution 380.</span>
+            <span class="text-sm"><strong>Eco-Friendly & PFAS-Free:</strong> Audited food-grade kraft paperboard and certified barriers compliant with EU PPWR, US State bans, and UAE Resolution 380.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">2</span>
@@ -1812,7 +1812,7 @@ DineX Ecopack is a professional flexible packaging manufacturer serving global f
         <ul class="space-y-2">
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">1</span>
-            <span class="text-sm"><strong>Zero-Plastic & PFAS-Free:</strong> Audited 100% bio-based sugarcane bagasse and certified compostable barriers compliant with EU PPWR, US State bans, and UAE Resolution 380.</span>
+            <span class="text-sm"><strong>Eco-Friendly & PFAS-Free:</strong> Audited food-grade kraft paperboard and certified barriers compliant with EU PPWR, US State bans, and UAE Resolution 380.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">2</span>
@@ -1873,7 +1873,7 @@ DineX Ecopack is a professional flexible packaging manufacturer serving global f
         </div>
       </div>
 `,
-    tags: ["Corporate Catering","Event Logistics","Bagasse Tableware","Premium Packaging","B2B"],
+    tags: ["Corporate Catering","Event Logistics","Kraft Paper Bowls","Premium Packaging","B2B"],
     date: "May 16, 2026",
     author: {
       name: "Corporate Hospitality Team",
@@ -2099,7 +2099,7 @@ DineX Ecopack is a professional flexible packaging manufacturer serving global f
         <ul class="space-y-2">
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">1</span>
-            <span class="text-sm"><strong>Zero-Plastic & PFAS-Free:</strong> Audited 100% bio-based sugarcane bagasse and certified compostable barriers compliant with EU PPWR, US State bans, and UAE Resolution 380.</span>
+            <span class="text-sm"><strong>Eco-Friendly & PFAS-Free:</strong> Audited food-grade kraft paperboard and certified barriers compliant with EU PPWR, US State bans, and UAE Resolution 380.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">2</span>
@@ -2362,7 +2362,7 @@ DineX Ecopack is a professional flexible packaging manufacturer serving global f
         <ul class="space-y-2">
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">1</span>
-            <span class="text-sm"><strong>Zero-Plastic & PFAS-Free:</strong> Audited 100% bio-based sugarcane bagasse and certified compostable barriers compliant with EU PPWR, US State bans, and UAE Resolution 380.</span>
+            <span class="text-sm"><strong>Eco-Friendly & PFAS-Free:</strong> Audited food-grade kraft paperboard and certified barriers compliant with EU PPWR, US State bans, and UAE Resolution 380.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">2</span>
@@ -2731,7 +2731,7 @@ DineX Ecopack is a professional flexible packaging manufacturer serving global f
         <ul class="space-y-2">
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">1</span>
-            <span class="text-sm"><strong>Zero-Plastic & PFAS-Free:</strong> Audited 100% bio-based sugarcane bagasse and certified compostable barriers compliant with EU PPWR, US State bans, and UAE Resolution 380.</span>
+            <span class="text-sm"><strong>Eco-Friendly & PFAS-Free:</strong> Audited food-grade kraft paperboard and certified barriers compliant with EU PPWR, US State bans, and UAE Resolution 380.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">2</span>
@@ -2820,7 +2820,7 @@ DineX Ecopack is a professional flexible packaging manufacturer serving global f
     title:
       "Wholesale Disposable Paper Bowls for Foodservice: Sizing, Linings & Supplier Selection",
     excerpt:
-      "A comprehensive buyer guide comparing kraft paper, white paperboard, and bagasse bowls across liquid barriers (PE, PLA, water-based), rim strength, and volume purchasing.",
+      "A comprehensive buyer guide comparing kraft paper, white paperboard, and eco-friendly salad bowls across liquid barriers (PE, PLA, water-based), rim strength, and volume purchasing.",
     content: `      <p>For foodservice operators in the United States, disposable paper bowls wholesale is one of the most practical ways to secure scalable, food-safe, brand-ready packaging for dine-in, takeout, and delivery. Whether you run a restaurant group in Chicago, a commissary kitchen in Los Angeles, a salad concept in Austin, or a distributor serving New York and Miami, bulk paper bowl purchasing helps control packaging costs, standardize quality, and support menu expansion.</p>
       <p>Paper bowls are now widely used for soups, grain bowls, poke, salads, noodles, desserts, frozen treats, and hot sides. Buyers are no longer choosing bowls based on size alone. They compare lining materials, leak resistance, lid compatibility, rim strength, print quality, carton efficiency, and food-contact documentation. In the U.S. market, this is especially important because operators must balance sustainability expectations, delivery performance, and increasingly tight labor and storage constraints.</p>
       <p>Factory-direct sourcing can offer meaningful advantages when it is managed correctly. Buyers working with experienced manufacturers often gain better pricing visibility, more customization options, and stronger control over materials and production schedules. Companies looking for reliable packaging partners often review suppliers with established export experience, traceable compliance systems, and flexible customization support. For example, buyers exploring a broad packaging portfolio can review food packaging product options to compare bowl styles, coatings, and related takeaway formats.</p>
@@ -3108,7 +3108,7 @@ DineX Ecopack is a professional flexible packaging manufacturer serving global f
         <ul class="space-y-2">
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">1</span>
-            <span class="text-sm"><strong>Zero-Plastic & PFAS-Free:</strong> Audited 100% bio-based sugarcane bagasse and certified compostable barriers compliant with EU PPWR, US State bans, and UAE Resolution 380.</span>
+            <span class="text-sm"><strong>Eco-Friendly & PFAS-Free:</strong> Audited food-grade kraft paperboard and certified barriers compliant with EU PPWR, US State bans, and UAE Resolution 380.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white font-black shrink-0 mt-0.5 text-xs">2</span>

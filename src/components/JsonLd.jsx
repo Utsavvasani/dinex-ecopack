@@ -10,7 +10,7 @@ export default function JsonLd({ type, data }) {
       "name": "DineX Ecopack",
       "url": "https://dinexecopack.com",
       "logo": "https://dinexecopack.com/logo.png",
-      "description": "Premium eco-friendly packaging solutions specializing in sugarcane bagasse tableware.",
+      "description": "Premium eco-friendly packaging solutions specializing in kraft paper salad bowls and sustainable paper packaging.",
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "UAE",
@@ -67,7 +67,7 @@ export default function JsonLd({ type, data }) {
       "@context": "https://schema.org",
       "@type": "ItemList",
       "name": data.categoryName,
-      "description": `Browse our ${data.categoryName} collection of sustainable sugarcane bagasse tableware.`,
+      "description": `Browse our ${data.categoryName} collection of sustainable paper bowls and eco-friendly packaging.`,
       "itemListElement": data.products.map((product, index) => ({
         "@type": "ListItem",
         "position": index + 1,

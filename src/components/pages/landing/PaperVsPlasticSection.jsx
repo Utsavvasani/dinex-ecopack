@@ -25,63 +25,63 @@ import Link from "next/link";
 const comparisonData = [
   {
     feature: "Material",
-    bagasse: "Sustainably sourced wood/plant pulp (renewable)",
+    paper: "Sustainably sourced virgin wood/plant fiber (renewable)",
     plastic: "Petroleum-based (non-renewable)",
-    bagasseIcon: "✔",
+    paperIcon: "✔",
     plasticIcon: "✘",
   },
   {
     feature: "Durability",
-    bagasse: "Sturdy, moisture-resistant, and food-safe",
+    paper: "Sturdy, moisture-resistant, and food-safe",
     plastic: "Highly durable and moisture-resistant",
-    bagasseIcon: "✔",
+    paperIcon: "✔",
     plasticIcon: "✔",
   },
   {
     feature: "Biodegradability",
-    bagasse: "100% biodegradable and recyclable",
+    paper: "100% biodegradable and recyclable",
     plastic: "Takes hundreds of years to decompose",
-    bagasseIcon: "✔",
+    paperIcon: "✔",
     plasticIcon: "✘",
   },
   {
     feature: "Compostability",
-    bagasse: "Home and industrially compostable",
+    paper: "Compostable & eco-friendly degradable",
     plastic: "Not compostable",
-    bagasseIcon: "✔",
+    paperIcon: "✔",
     plasticIcon: "✘",
   },
   {
     feature: "Microwave Safe",
-    bagasse: "Yes",
+    paper: "Yes",
     plastic: "Some types are microwave-safe",
-    bagasseIcon: "✔",
+    paperIcon: "✔",
     plasticIcon: "⚠",
   },
   {
     feature: "Portability",
-    bagasse: "Lightweight and strong",
+    paper: "Lightweight and strong",
     plastic: "Lightweight and strong",
-    bagasseIcon: "✔",
+    paperIcon: "✔",
     plasticIcon: "✔",
   },
   {
     feature: "Cost",
-    bagasse: "Competitive and eco-friendly",
+    paper: "Competitive and eco-friendly",
     plastic: "Low production cost",
-    bagasseIcon: "✔",
+    paperIcon: "✔",
     plasticIcon: "✔",
   },
   {
     feature: "Environmental Impact",
-    bagasse: "Low carbon footprint, reduces plastic waste",
+    paper: "Low carbon footprint, reduces plastic waste",
     plastic: "High pollution contributes to microplastics",
-    bagasseIcon: "✔",
+    paperIcon: "✔",
     plasticIcon: "✘",
   },
 ];
 
-export function BagasseVsPlasticSection() {
+export function PaperVsPlasticSection() {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -127,7 +127,7 @@ export function BagasseVsPlasticSection() {
                 { label: "Microwave safe", icon: Waves },
                 { label: "Oil & water resistant", icon: Droplets },
                 { label: "Plastic-free", icon: Ban },
-                { label: "Made from agricultural waste", icon: Sprout },
+                { label: "Responsibly sourced fibers", icon: Sprout },
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-2.5 group">
                   <item.icon className="size-4 text-primary group-hover:scale-110 transition-transform" />
@@ -198,7 +198,7 @@ export function BagasseVsPlasticSection() {
                     </td>
                     <td
                       className={`p-4 bg-primary/15 text-center font-bold text-gray-800 text-sm border-b border-primary/5 ${i === comparisonData.length - 1 ? "rounded-b-[2rem]" : ""}`}>
-                      {row.bagasse}
+                      {row.paper}
                     </td>
                     <td
                       className={`p-4 bg-primary/10 text-center font-medium text-sm border-b border-primary/5 ${i === comparisonData.length - 1 ? "rounded-b-[2rem]" : ""}`}>
@@ -243,7 +243,7 @@ export function BagasseVsPlasticSection() {
                 <div className="grid grid-cols-2 gap-3">
                   <div className="space-y-1">
                     <div className="text-sm font-bold text-gray-800 leading-tight">
-                      {row.bagasse}
+                      {row.paper}
                     </div>
                   </div>
                   <div className="space-y-1 border-l border-primary/50 pl-3">

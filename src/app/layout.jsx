@@ -16,13 +16,13 @@ const inter = Inter({
 
 export const metadata = {
   description:
-    "Premium eco-friendly packaging solutions. High-quality sugarcane bagasse tableware, compostable plates, bowls, and meal boxes for a sustainable future.",
+    "Premium eco-friendly packaging solutions. High-quality kraft paper salad bowls, white paper bowls, printed containers, and sustainable food packaging.",
   keywords: [
     "DineX Ecopack",
-    "Bagasse Tableware Manufacturer",
-    "Bagasse Tableware Exporter",
-    "Sugarcane Bagasse Tableware",
-    "Sugarcane Tableware Manufacturer",
+    "Kraft Paper Salad Bowls",
+    "Paper Bowl Manufacturer",
+    "Paper Food Container Exporter",
+    "Sustainable Paper Packaging",
     "Compostable Tableware Manufacturer",
     "Biodegradable Tableware Supplier",
     "Eco Friendly Tableware",
@@ -40,7 +40,7 @@ export const metadata = {
     "Private Label Packaging Manufacturer",
     "OEM Packaging Manufacturer",
     "Food Packaging Manufacturer India",
-    "Bagasse Tableware Manufacturer India",
+    "Paper Salad Bowl Manufacturer India",
     "Kraft Bowl Manufacturer India",
     "Paper Bowl Manufacturer India",
     "Packaging Exporter India",
@@ -64,8 +64,8 @@ export const metadata = {
     "Cloud Kitchen Packaging",
     "QSR Packaging Manufacturer",
     "Food Delivery Packaging Supplier",
-    "UK Bagasse Tableware Manufacturer",
-    "Indian Bagasse Tableware Manufacturer Export UK",
+    "UK Paper Bowl Manufacturer",
+    "Indian Paper Bowl Manufacturer Export UK",
     "Global Packaging Manufacturer",
     "International Packaging Supplier",
   ],

@@ -5,40 +5,17 @@ import { StatsSection } from "@/components/pages/landing/StatsSection";
 import { WhyChooseUsSection } from "@/components/pages/landing/WhyChooseUsSection";
 import { ProcessLifecycleSection } from "@/components/pages/landing/ProcessLifecycleSection";
 import { FloatingSection } from "@/components/pages/landing/FloatingSection";
-import { BagasseVsPlasticSection } from "@/components/pages/landing/BagasseVsPlasticSection";
+import { PaperVsPlasticSection } from "@/components/pages/landing/PaperVsPlasticSection";
 import { ExportBenefitsSection } from "@/components/pages/landing/ExportBenefitsSection";
 
 export const metadata = {
-  title: "DineX Ecopack | Bagasse Tableware & Sugarcane Bagasse Manufacturer",
+  title: "DineX Ecopack | Premium Kraft Paper Salad Bowls & Food Packaging Manufacturer",
   description:
-    "Explore the widest range of high-quality sugarcane bagasse plates, bowls, and meal boxes. 100% compostable and sustainable packaging solutions by DineX Ecopack.",
+    "Explore our high-quality kraft paper salad bowls, white paper bowls, and custom printed food containers. Sustainable and eco-friendly food packaging solutions by DineX Ecopack.",
   keywords: [
-    "Bagasse Plates Manufacturer",
-    "Bagasse Bowls Manufacturer",
-    "Bagasse Clamshell Manufacturer",
-    "Bagasse Food Containers",
-    "Bagasse Meal Trays",
-    "Bagasse Packaging Manufacturer",
-    "Wholesale Bagasse Tableware",
-    "Bulk Bagasse Plates",
-    "Private Label Bagasse Tableware",
-    "OEM Bagasse Tableware",
-    "Custom Bagasse Packaging",
-    "Disposable Tableware Manufacturer",
-    "Sugarcane Pulp Tableware Manufacturer",
-    "Molded Fiber Tableware Manufacturer",
-    "Plant Fiber Tableware Supplier",
-    "Bagasse Disposable Plates",
-    "Bagasse Disposable Bowls",
-    "Bagasse Lunch Box Manufacturer",
-    "Bagasse Burger Box Manufacturer",
-    "Bagasse Takeaway Container",
-    "Bagasse Food Tray Supplier",
-    "Compostable Food Containers",
-    "Eco Friendly Food Containers",
-    "Plastic Free Tableware Manufacturer",
-    "Natural Fiber Packaging",
+    "Kraft Paper Salad Bowls",
     "Kraft Salad Bowl Manufacturer",
+    "Paper Bowl Manufacturer",
     "Disposable Salad Bowl Supplier",
     "Food Grade Paper Bowl",
     "Leak Resistant Paper Bowl",
@@ -48,9 +25,12 @@ export const metadata = {
     "Wholesale Paper Bowls",
     "Bulk Salad Bowls",
     "Eco Friendly Paper Bowls",
-    "Eco Friendly Food Packaging",
-    "Compostable Food Packaging",
-    "Biodegradable Food Packaging",
+    "White Paper Bowls",
+    "Custom Printed Paper Bowls",
+    "Paper Food Containers",
+    "Compostable Food Containers",
+    "Eco Friendly Food Containers",
+    "Plastic Free Tableware Manufacturer",
     "Sustainable Food Packaging",
     "Green Food Packaging",
     "Custom Food Packaging",
@@ -61,6 +41,10 @@ export const metadata = {
     "Packaging for Cafes",
     "Packaging for QSR Chains",
     "Packaging for Food Delivery",
+    "Wholesale Food Containers",
+    "Bulk Food Packaging",
+    "Private Label Packaging",
+    "OEM Food Packaging",
   ],
 };
 
@@ -74,7 +58,7 @@ export default function Home() {
       <ExportBenefitsSection />
       <ProductPreviewSection />
       <WhyChooseUsSection />
-      <BagasseVsPlasticSection />
+      <PaperVsPlasticSection />
       <ProcessLifecycleSection />
     </div>
   );

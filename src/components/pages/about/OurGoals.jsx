@@ -46,8 +46,8 @@ export function OurGoals() {
             {/* Left — Image with centered title overlay */}
             <div className="relative min-h-[340px] lg:min-h-[500px] border-b lg:border-b-0 lg:border-r border-primary/10">
               <Image
-                src="/landing/sugarcane_premium.png"
-                alt="Sugarcane Bagasse"
+                src="/KRFT/main-eco-friendly-fsc-certified-salad-bowls-sustainable-kraft-bowl-wholesale-01.jpg"
+                alt="Sustainable Kraft Paper Bowls"
                 fill
                 className="object-cover opacity-65"
               />

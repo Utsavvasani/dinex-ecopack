@@ -30,8 +30,8 @@ export function FloatingSection() {
                 Harnessing Earth&apos;s Most Renewable Resources
               </h3>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                We transform agricultural by-products into premium salad bowls
-                and paper bowls to significantly reduce the global carbon
+                We transform sustainably sourced paperboard and natural wood fibers into premium salad bowls
+                and paper containers to significantly reduce the global carbon
                 footprint. By choosing DineX Ecopack, you&apos;re not just
                 selecting a product; you&apos;re adopting a solution that
                 nurtures the planet by returning to it, creating a seamless

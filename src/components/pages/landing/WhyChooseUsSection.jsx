@@ -7,7 +7,7 @@ const reasons = [
     number: "One",
     title: "Sustainable by Nature",
     description:
-      "Our paper bowls are made from renewable materials, turning agricultural fibers into eco-friendly packaging solutions.",
+      "Our paper bowls are made from renewable materials, utilizing certified sustainable paperboard for eco-friendly packaging solutions.",
   },
   {
     number: "Two",

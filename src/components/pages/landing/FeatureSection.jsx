@@ -68,7 +68,7 @@ const features = [
   },
   {
     title: "Renewable Resources",
-    description: "Made entirely from renewable sugarcane bagasse.",
+    description: "Made entirely from renewable, sustainably sourced paperboard.",
     icon: RenewableIcon,
     color: "text-primary",
     bg: "bg-primary/10",
@@ -93,7 +93,7 @@ const itemVariants = {
 export function FeatureSection() {
   return (
     <section className="w-full bg-background relative overflow-hidden">
-      {/* Decorative leaf/bagasse graphic suggestion */}
+      {/* Decorative leaf graphic suggestion */}
       <div className="absolute -right-[20%] top-[10%] opacity-5 pointer-events-none rotate-45 scale-150">
         <Leaf size={600} />
       </div>

@@ -4,7 +4,7 @@ import JsonLd from "@/components/JsonLd";
 export const metadata = {
   title: "Sustainability Insights & Industry News | DineX Ecopack Blog",
   description:
-    "Stay informed with the latest research, ROI data, and technical insights on sugarcane bagasse and the global shift toward sustainable food packaging.",
+    "Stay informed with the latest research, ROI data, and technical insights on sustainable paper packaging, kraft salad bowls, and the global shift toward eco-friendly food containers.",
 };
 
 export default function Page() {

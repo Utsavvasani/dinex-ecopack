@@ -3,8 +3,8 @@
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 
 const keywords = [
-  "Bagasse Tableware",
-  "Sugarcane Bagasse",
+  "Kraft Paper Bowls",
+  "Salad Bowl Manufacturer",
   "Compostable",
   "Biodegradable",
   "Eco-Friendly",

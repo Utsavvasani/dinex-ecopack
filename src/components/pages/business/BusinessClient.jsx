@@ -279,8 +279,8 @@ export default function BusinessClient() {
               Catalogs & Inquiries
             </h3>
             <p className="text-sm text-gray-600 leading-relaxed">
-              Explore our sugarcane bagasse tableware, meal trays, and kraft
-              paper bowls. Request samples and export pricing directly.
+              Explore our kraft paper salad bowls, white paper bowls, and custom
+              branded packaging. Request samples and export pricing directly.
             </p>
           </div>
 
