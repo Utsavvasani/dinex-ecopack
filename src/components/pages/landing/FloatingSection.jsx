@@ -63,7 +63,7 @@ export function FloatingSection() {
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               className="absolute -top-12 -left-12 w-40 h-40 md:w-56 md:h-56 -rotate-12 drop-shadow-2xl">
               <Image
-                src="/landing/round.png"
+                src="/landing/product1.png"
                 alt="Premium Paper Bowls"
                 fill
                 className="object-contain"
@@ -80,7 +80,7 @@ export function FloatingSection() {
               }}
               className="absolute -bottom-8 md:-bottom-15 -right-8 w-48 h-48 md:w-64 md:h-64 rotate-15 drop-shadow-2xl">
               <Image
-                src="/landing/rectangle.png"
+                src="/landing/product2.png"
                 alt="Biodegradable Plate"
                 fill
                 className="object-contain"
